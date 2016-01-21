@@ -11,7 +11,7 @@ public class Mift
     static long DOWN_TIME = 6; //* 1000
     static boolean appendReport = false;
     static boolean appendOutput = false;
-    static boolean injectDownTime = false;
+    static boolean interjectDownTime = true;
     static int infiniteOcean = 1;
     static int assemblyLine1[] = {0, 0, 0};
     static int buffer = 0;
@@ -39,13 +39,13 @@ public class Mift
             @Override
             public void run()
             {
-                if (injectDownTime && !tWasSecsPerHour && (t >= SECS_PER_HOUR))
+                if (interjectDownTime && !tWasSecsPerHour && (t >= SECS_PER_HOUR))
                 {
                     tWasSecsPerHour = true;
                     displayText = "Deliberate 1/2 hour down time";
                     System.out.println(displayText);
                     outputs[i++] = displayText;
-                    try {Thread.sleep(SECS_PER_HOUR);}
+                    try {Thread.sleep(SECS_PER_HOUR / 2);}
                     catch (Exception exception) {}
                     t1 += SECS_PER_HOUR;
                 }

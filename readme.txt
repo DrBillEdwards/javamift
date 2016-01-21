@@ -16,6 +16,7 @@ To compile changes and run:
 
 from DOS command line,
 
+    git pull
     javac Mift.java
     java Mift
 
