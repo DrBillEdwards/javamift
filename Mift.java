@@ -29,6 +29,8 @@ public class Mift
     static boolean tWasSecsPerHour = false;
     static String outputs[] = new String[40000];
     static int i = 0;
+    static boolean appendReport = true;
+    static boolean appendOutput = true;
 
     public static void main(String[] args)
     {
@@ -135,16 +137,16 @@ public class Mift
                 {
                     try
                     {
-                        FileWriter fw= null;
-                        File file =null;
+                        FileWriter fw = null;
+                        File file = null;
                         try
                         {
-                            file=new File("report.txt");
+                            file = new File("report.txt");
                             if(!file.exists())
                             {
                                 file.createNewFile();
                             }
-                            fw = new FileWriter(file);
+                            fw = new FileWriter(file, appendReport);
 
                             for(int i = 0; i < outputs.length; i++)
                             {
@@ -156,7 +158,7 @@ public class Mift
 
                             fw.flush();
                             fw.close();
-                            System.out.println("File written succesfully");
+                            System.out.println("Report file written succesfully");
                         }
                         catch (IOException e)
                         {
@@ -164,7 +166,31 @@ public class Mift
                         }
                     }
                     catch(Exception exception){}
-                    System.exit(1);
+
+                    try
+                    {
+                        FileWriter fw = null;
+                        File file = null;
+                        try
+                        {
+                            file = new File("output.txt");
+                            if(!file.exists())
+                            {
+                                file.createNewFile();
+                            }
+                            fw = new FileWriter(file, appendOutput);
+                            fw.write(String.valueOf(output) + '\n');
+                            fw.flush();
+                            fw.close();
+                            System.out.println("Output file written succesfully");
+                        }
+                        catch (IOException e)
+                        {
+                            e.printStackTrace();
+                        }
+                    }
+                    catch(Exception exception){}
+                    System.exit(0);
                 }
             }
         };
