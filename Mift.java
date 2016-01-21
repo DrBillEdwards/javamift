@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.io.*;
 
 public class Mift
 {
@@ -26,6 +27,8 @@ public class Mift
     static long SECS_PER_HOUR = 3600;
     static int t = 0;
     static boolean tWasSecsPerHour = false;
+    static String outputs[] = new String[40000];
+    static int i = 0;
 
     public static void main(String[] args)
     {
@@ -37,7 +40,9 @@ public class Mift
                 if (!tWasSecsPerHour && (t >= SECS_PER_HOUR))
                 {
                     tWasSecsPerHour = true;
-                    System.out.println("Deliberate 1/2 hour down time");
+                    displayText = "Deliberate 1/2 hour down time";
+                    System.out.println(displayText);
+                    outputs[i++] = displayText;
                     try {Thread.sleep(SECS_PER_HOUR);}
                     catch (Exception exception) {}
                     t1 += SECS_PER_HOUR;
@@ -58,10 +63,12 @@ public class Mift
                     displayText += "assembly line 1: " + assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2] + " ";
                     displayText += "buffer: " + buffer;
                     System.out.println(displayText);
+                    outputs[i++] = displayText;
                 }
                 else
                 {
                     System.out.println("FAILED1:");
+                    outputs[i++] = "FAILED1:";
                     try {Thread.sleep(DOWN_TIME);}
                     catch (Exception exception) {}
                     t1 += DOWN_TIME;
@@ -69,6 +76,7 @@ public class Mift
                     displayText += "assembly line 1: " + assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2] + " ";
                     displayText += "buffer: " + buffer;
                     System.out.println(displayText);
+                    outputs[i++] = displayText;
                 }
             }
         };
@@ -99,10 +107,12 @@ public class Mift
                     displayText += "output: " + output + " ";
                     displayText += "buffer: " + buffer;
                     System.out.println(displayText);
+                    outputs[i++] = displayText;
                 }
                 else
                 {
                     System.out.println("FAILED2:");
+                    outputs[i++] = "FAILED2:";
                     try {Thread.sleep(DOWN_TIME);}
                     catch(Exception exception) {}
                     t2 += DOWN_TIME;
@@ -110,6 +120,7 @@ public class Mift
                     displayText += "assembly line 2: " + assemblyLine2[0] + assemblyLine2[1] + assemblyLine2[2] + " ";
                     displayText += "buffer: " + buffer;
                     System.out.println(displayText);
+                    outputs[i++] = displayText;
                 }
             }
         };
@@ -122,6 +133,37 @@ public class Mift
                 t += 1;
                 if(t > RUN_SECONDS)
                 {
+                    try
+                    {
+                        FileWriter fw= null;
+                        File file =null;
+                        try
+                        {
+                            file=new File("report.txt");
+                            if(!file.exists())
+                            {
+                                file.createNewFile();
+                            }
+                            fw = new FileWriter(file);
+
+                            for(int i = 0; i < outputs.length; i++)
+                            {
+                                if(outputs[i] != null)
+                                {
+                                    fw.write(outputs[i] + '\n');
+                                }
+                            }
+
+                            fw.flush();
+                            fw.close();
+                            System.out.println("File written succesfully");
+                        }
+                        catch (IOException e)
+                        {
+                            e.printStackTrace();
+                        }
+                    }
+                    catch(Exception exception){}
                     System.exit(1);
                 }
             }
