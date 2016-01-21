@@ -29,8 +29,9 @@ public class Mift
     static boolean tWasSecsPerHour = false;
     static String outputs[] = new String[40000];
     static int i = 0;
-    static boolean appendReport = true;
-    static boolean appendOutput = true;
+    static boolean appendReport = false;
+    static boolean appendOutput = false;
+    static boolean injectDownTime = false;
 
     public static void main(String[] args)
     {
@@ -39,7 +40,7 @@ public class Mift
             @Override
             public void run()
             {
-                if (!tWasSecsPerHour && (t >= SECS_PER_HOUR))
+                if (injectDownTime && !tWasSecsPerHour && (t >= SECS_PER_HOUR))
                 {
                     tWasSecsPerHour = true;
                     displayText = "Deliberate 1/2 hour down time";

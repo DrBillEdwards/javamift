@@ -2,19 +2,16 @@
 
 MIFT - Move It Forward Theory
 
-NOTE:
-if you don't want the deliberate 1/2 hour down time after 1 hour,
-comment out (//) the following lines in Mift.java as shown here,
+OPTIONS:
 
-//                if (!tWasSecsPerHour && (t >= SECS_PER_HOUR))
-//                {
-//                    tWasSecsPerHour = true;
-//                    System.out.println("Deliberate 1/2 hour down time");
-//                    try {Thread.sleep(SECS_PER_HOUR);}
-//                    catch (Exception exception) {}
-//                    t1 += SECS_PER_HOUR;
-//                }
-
+    CYCLE_TIME_SECONDS_1 = 54
+    CYCLE_TIME_SECONDS_2 = 60
+    RUN_SECONDS = 36000
+    DOWN_TIME = 6
+    SECS_PER_HOUR = 3600
+    appendReport = false
+    appendOutput = false
+    injectDownTime = false
 
 To compile changes and run:
 
