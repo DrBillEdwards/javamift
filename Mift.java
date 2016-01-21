@@ -5,13 +5,13 @@ import java.io.*;
 
 public class Mift
 {
-    static String file = "thritySixRuns.txt";
-    static long t1 = 0;
-    static long t2 = 0;
     static long CYCLE_TIME_SECONDS_1 = 54; //* 1000
     static long CYCLE_TIME_SECONDS_2 = 60; //* 1000
     static double RUN_SECONDS = 36000; //* 1000
     static long DOWN_TIME = 6; //* 1000
+    static boolean appendReport = false;
+    static boolean appendOutput = false;
+    static boolean injectDownTime = false;
     static int infiniteOcean = 1;
     static int assemblyLine1[] = {0, 0, 0};
     static int buffer = 0;
@@ -26,12 +26,11 @@ public class Mift
     static String displayText = "";
     static long SECS_PER_HOUR = 3600;
     static int t = 0;
+    static long t1 = 0;
+    static long t2 = 0;
     static boolean tWasSecsPerHour = false;
     static String outputs[] = new String[40000];
     static int i = 0;
-    static boolean appendReport = false;
-    static boolean appendOutput = false;
-    static boolean injectDownTime = false;
 
     public static void main(String[] args)
     {

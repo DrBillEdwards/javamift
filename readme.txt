@@ -8,7 +8,6 @@ OPTIONS:
     CYCLE_TIME_SECONDS_2 = 60
     RUN_SECONDS = 36000
     DOWN_TIME = 6
-    SECS_PER_HOUR = 3600
     appendReport = false
     appendOutput = false
     injectDownTime = false
