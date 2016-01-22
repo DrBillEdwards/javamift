@@ -5,12 +5,12 @@ import java.io.*;
 
 public class Mift
 {
-    static long CYCLE_TIME_SECONDS_1 = 54; //* 1000
-    static long CYCLE_TIME_SECONDS_2 = 60; //* 1000
-    static double RUN_SECONDS = 36000; //* 1000
-    static long DOWN_TIME = 6; //* 1000
+    static long CYCLE_TIME_SECONDS_1 = 54;
+    static long CYCLE_TIME_SECONDS_2 = 60;
+    static double RUN_SECONDS = 36000;
+    static long DOWN_TIME = 6;
     static boolean appendReport = false;
-    static boolean appendOutput = false;
+    static boolean appendOutput = true;
     static boolean interjectDownTime = true;
     static int infiniteOcean = 1;
     static int assemblyLine1[] = {0, 0, 0};
@@ -31,6 +31,68 @@ public class Mift
     static boolean tWasSecsPerHour = false;
     static String outputs[] = new String[40000];
     static int i = 0;
+
+    public static void writeToOutputFile(String fileName)
+    {
+        try
+        {
+            FileWriter fw = null;
+            File file = null;
+            try
+            {
+                file = new File(fileName);
+                if(!file.exists())
+                {
+                    file.createNewFile();
+                }
+                fw = new FileWriter(file, appendReport);
+
+                for(int i = 0; i < outputs.length; i++)
+                {
+                    if(outputs[i] != null)
+                    {
+                        fw.write(outputs[i] + '\n');
+                    }
+                }
+
+                fw.flush();
+                fw.close();
+                System.out.println(fileName + " written succesfully");
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch(Exception exception){}
+    }
+
+    public static void writeToReportFile(String fileName)
+    {
+        try
+        {
+            FileWriter fw = null;
+            File file = null;
+            try
+            {
+                file = new File(fileName);
+                if(!file.exists())
+                {
+                    file.createNewFile();
+                }
+                fw = new FileWriter(file, appendOutput);
+                fw.write(String.valueOf(output) + '\n');
+                fw.flush();
+                fw.close();
+                System.out.println(fileName + " written succesfully");
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch(Exception exception){}
+    }
 
     public static void main(String[] args)
     {
@@ -135,61 +197,8 @@ public class Mift
                 t += 1;
                 if(t > RUN_SECONDS)
                 {
-                    try
-                    {
-                        FileWriter fw = null;
-                        File file = null;
-                        try
-                        {
-                            file = new File("report.txt");
-                            if(!file.exists())
-                            {
-                                file.createNewFile();
-                            }
-                            fw = new FileWriter(file, appendReport);
-
-                            for(int i = 0; i < outputs.length; i++)
-                            {
-                                if(outputs[i] != null)
-                                {
-                                    fw.write(outputs[i] + '\n');
-                                }
-                            }
-
-                            fw.flush();
-                            fw.close();
-                            System.out.println("Report file written succesfully");
-                        }
-                        catch (IOException e)
-                        {
-                            e.printStackTrace();
-                        }
-                    }
-                    catch(Exception exception){}
-
-                    try
-                    {
-                        FileWriter fw = null;
-                        File file = null;
-                        try
-                        {
-                            file = new File("output.txt");
-                            if(!file.exists())
-                            {
-                                file.createNewFile();
-                            }
-                            fw = new FileWriter(file, appendOutput);
-                            fw.write(String.valueOf(output) + '\n');
-                            fw.flush();
-                            fw.close();
-                            System.out.println("Output file written succesfully");
-                        }
-                        catch (IOException e)
-                        {
-                            e.printStackTrace();
-                        }
-                    }
-                    catch(Exception exception){}
+                    writeToOutputFile("output.txt");
+                    writeToReportFile("report.txt");
                     System.exit(0);
                 }
             }
