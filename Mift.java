@@ -10,8 +10,9 @@ public class Mift
     static double RUN_SECONDS = 36000;
     static long DOWN_TIME = 6;
     static boolean appendReport = false;
-    static boolean appendOutput = true;
-    static boolean interjectDownTime = true;
+    static boolean appendOutput = false;
+    static boolean interjectDownTime = false;
+    static boolean interjectDownTimes = true;
     static int infiniteOcean = 1;
     static int assemblyLine1[] = {0, 0, 0};
     static int buffer = 0;
@@ -28,8 +29,8 @@ public class Mift
     static int t = 0;
     static long t1 = 0;
     static long t2 = 0;
-    static boolean tWasSecsPerHour = false;
     static String outputs[] = new String[40000];
+    static int runHour = 1;
     static int i = 0;
 
     public static void writeToOutputFile(String fileName)
@@ -101,22 +102,128 @@ public class Mift
             @Override
             public void run()
             {
-                if (interjectDownTime && !tWasSecsPerHour && (t >= SECS_PER_HOUR))
+                if(interjectDownTime)
                 {
-                    tWasSecsPerHour = true;
                     displayText = "Deliberate 1/2 hour down time";
                     System.out.println(displayText);
                     outputs[i++] = displayText;
                     try {Thread.sleep(SECS_PER_HOUR / 2);}
                     catch (Exception exception) {}
-                    t1 += SECS_PER_HOUR;
+                    interjectDownTime = false;
+                    t1 += SECS_PER_HOUR / 2;
+                }
+                else
+                {
+                    if(interjectDownTimes)
+                    {
+                        if((runHour == 1) && t >= SECS_PER_HOUR)
+                        {
+                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
+                            System.out.println(displayText);
+                            outputs[i++] = displayText;
+                            try {Thread.sleep(SECS_PER_HOUR / 2);}
+                            catch (Exception exception) {}
+                            runHour++;
+                            t1 += SECS_PER_HOUR / 2;
+                        }
+                        else if((runHour == 2) && (t >= (SECS_PER_HOUR * 2)))
+                        {
+                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
+                            System.out.println(displayText);
+                            outputs[i++] = displayText;
+                            try {Thread.sleep(SECS_PER_HOUR / 2);}
+                            catch (Exception exception) {}
+                            runHour++;
+                            t1 += SECS_PER_HOUR / 2;
+                        }
+                        else if((runHour == 3) && (t >= (SECS_PER_HOUR * 3)))
+                        {
+                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
+                            System.out.println(displayText);
+                            outputs[i++] = displayText;
+                            try {Thread.sleep(SECS_PER_HOUR / 2);}
+                            catch (Exception exception) {}
+                            runHour++;
+                            t1 += SECS_PER_HOUR / 2;
+                        }
+                        else if((runHour == 4) && (t >= (SECS_PER_HOUR * 4)))
+                        {
+                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
+                            System.out.println(displayText);
+                            outputs[i++] = displayText;
+                            try {Thread.sleep(SECS_PER_HOUR / 2);}
+                            catch (Exception exception) {}
+                            runHour++;
+                            t1 += SECS_PER_HOUR / 2;
+                        }
+                        else if((runHour == 5) && (t >= (SECS_PER_HOUR * 5)))
+                        {
+                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
+                            System.out.println(displayText);
+                            outputs[i++] = displayText;
+                            try {Thread.sleep(SECS_PER_HOUR / 2);}
+                            catch (Exception exception) {}
+                            runHour++;
+                            t1 += SECS_PER_HOUR / 2;
+                        }
+                        else if((runHour == 6) && (t >= (SECS_PER_HOUR * 6)))
+                        {
+                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
+                            System.out.println(displayText);
+                            outputs[i++] = displayText;
+                            try {Thread.sleep(SECS_PER_HOUR / 2);}
+                            catch (Exception exception) {}
+                            runHour++;
+                            t1 += SECS_PER_HOUR / 2;
+                        }
+                        else if((runHour == 7) && (t >= (SECS_PER_HOUR * 7)))
+                        {
+                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
+                            System.out.println(displayText);
+                            outputs[i++] = displayText;
+                            try {Thread.sleep(SECS_PER_HOUR / 2);}
+                            catch (Exception exception) {}
+                            runHour++;
+                            t1 += SECS_PER_HOUR / 2;
+                        }
+                        else if((runHour == 8) && (t >= (SECS_PER_HOUR * 8)))
+                        {
+                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
+                            System.out.println(displayText);
+                            outputs[i++] = displayText;
+                            try {Thread.sleep(SECS_PER_HOUR / 2);}
+                            catch (Exception exception) {}
+                            runHour++;
+                            t1 += SECS_PER_HOUR / 2;
+                        }
+                        else if((runHour == 9) && (t >= (SECS_PER_HOUR * 9)))
+                        {
+                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
+                            System.out.println(displayText);
+                            outputs[i++] = displayText;
+                            try {Thread.sleep(SECS_PER_HOUR / 2);}
+                            catch (Exception exception) {}
+                            runHour++;
+                            t1 += SECS_PER_HOUR / 2;
+                        }
+                        else if((runHour == 10) && (t >= (SECS_PER_HOUR * 10)))
+                        {
+                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
+                            System.out.println(displayText);
+                            outputs[i++] = displayText;
+                            try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
+                            runHour++;
+                            t1 += SECS_PER_HOUR / 2;
+                        }
+                    }
                 }
                 Random rand = new Random();
                 r1 = new Random().nextDouble();
                 r2 = new Random().nextDouble();
                 r3 = new Random().nextDouble();
                 if (!(((assemblyLine1[0] == 1) && (r1 >= .98)) || ((assemblyLine1[1] == 1) && (r2 >= .95)) || ((assemblyLine1[2] == 1) && (r3 >= .99)))) {
-                    if (buffer < 2) {
+                    if (buffer < 2)
+                    {
                         buffer += assemblyLine1[2];
                         assemblyLine1[2] = assemblyLine1[1];
                         assemblyLine1[1] = assemblyLine1[0];
@@ -197,8 +304,8 @@ public class Mift
                 t += 1;
                 if(t > RUN_SECONDS)
                 {
-                    writeToOutputFile("output.txt");
-                    writeToReportFile("report.txt");
+                    writeToOutputFile("report.txt");
+                    writeToReportFile("output.txt");
                     System.exit(0);
                 }
             }
