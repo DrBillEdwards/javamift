@@ -12,7 +12,7 @@ public class Mift
     static boolean appendReport = false;
     static boolean appendOutput = false;
     static boolean interjectDownTime = false;
-    static boolean interjectDownTimes = true;
+    static boolean interjectDownTimes = false;
     static int infiniteOcean = 1;
     static int assemblyLine1[] = {0, 0, 0};
     static int buffer = 0;

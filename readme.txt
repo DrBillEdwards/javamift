@@ -11,6 +11,7 @@ OPTIONS:
     appendReport = false
     appendOutput = false
     injectDownTime = false
+    interjectDownTimes = true
 
 To compile changes and run:
 
