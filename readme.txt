@@ -12,14 +12,23 @@ OPTIONS:
     appendOutput = false
     injectDownTime = false
     interjectDownTimes = true
+    r1Limit = .98
+    r2Limit = .95
+    r3Limit = .99
+    r4Limit = .98
+    r5Limit = .90
+    r6Limit = .92
+    r7Limit = .75
+    r8Limit = .50
+    r9Limit = .90
 
 To compile changes and run:
 
 from DOS command line,
 
     git pull
-    javac Mift.java
-    java Mift
+    javac Mift1.java
+    java Mift1
 
 You should see something like this,
 

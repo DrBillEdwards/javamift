@@ -3,7 +3,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.io.*;
 
-public class Mift
+public class Mift1
 {
     static long CYCLE_TIME_SECONDS_1 = 54;
     static long CYCLE_TIME_SECONDS_2 = 60;
@@ -15,7 +15,7 @@ public class Mift
     static boolean interjectDownTimes = false;
     static int infiniteOcean = 1;
     static int assemblyLine1[] = {0, 0, 0};
-    static int buffer = 0;
+    static int buffer1 = 0;
     static int assemblyLine2[] = {0, 0, 0};
     static int output = 0;
     static double r1 = 0;
@@ -222,9 +222,9 @@ public class Mift
                 r2 = new Random().nextDouble();
                 r3 = new Random().nextDouble();
                 if (!(((assemblyLine1[0] == 1) && (r1 >= .98)) || ((assemblyLine1[1] == 1) && (r2 >= .95)) || ((assemblyLine1[2] == 1) && (r3 >= .99)))) {
-                    if (buffer < 2)
+                    if (buffer1 < 2)
                     {
-                        buffer += assemblyLine1[2];
+                        buffer1 += assemblyLine1[2];
                         assemblyLine1[2] = assemblyLine1[1];
                         assemblyLine1[1] = assemblyLine1[0];
                         assemblyLine1[0] = infiniteOcean;
@@ -232,7 +232,7 @@ public class Mift
                     t1 += CYCLE_TIME_SECONDS_1;
                     displayText = "t1: " + t1 + " ";
                     displayText += "assembly line 1: " + assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2] + " ";
-                    displayText += "buffer: " + buffer;
+                    displayText += "buffer1: " + buffer1;
                     System.out.println(displayText);
                     outputs[i++] = displayText;
                 }
@@ -245,7 +245,7 @@ public class Mift
                     t1 += DOWN_TIME;
                     displayText = "t1: " + Math.round(t1) + " ";
                     displayText += "assembly line 1: " + assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2] + " ";
-                    displayText += "buffer: " + buffer;
+                    displayText += "buffer1: " + buffer1;
                     System.out.println(displayText);
                     outputs[i++] = displayText;
                 }
@@ -267,16 +267,16 @@ public class Mift
                     assemblyLine2[2] = assemblyLine2[1];
                     assemblyLine2[1] = assemblyLine2[0];
                     assemblyLine2[0] = 0;
-                    if(buffer > 0)
+                    if(buffer1 > 0)
                     {
-                        buffer -= 1;
+                        buffer1 -= 1;
                         assemblyLine2[0] = 1;
                     }
                     t2 += CYCLE_TIME_SECONDS_2;
                     displayText = "t2: " + t2 + " ";
                     displayText += "assembly line 2: " + assemblyLine2[0] + assemblyLine2[1] + assemblyLine2[2] + " ";
                     displayText += "output: " + output + " ";
-                    displayText += "buffer: " + buffer;
+                    displayText += "buffer1: " + buffer1;
                     System.out.println(displayText);
                     outputs[i++] = displayText;
                 }
@@ -289,7 +289,7 @@ public class Mift
                     t2 += DOWN_TIME;
                     displayText = "t2: " + t2 + " ";
                     displayText += "assembly line 2: " + assemblyLine2[0] + assemblyLine2[1] + assemblyLine2[2] + " ";
-                    displayText += "buffer: " + buffer;
+                    displayText += "buffer1: " + buffer1;
                     System.out.println(displayText);
                     outputs[i++] = displayText;
                 }
