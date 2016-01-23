@@ -41,7 +41,7 @@ OR
     javac Mift1.java
     java Mift1
 OR
-    Download the zip file of the project with your browser from github, located on the right hand side of https://github.com/DrBillEdwards/javamift
+    Download the zip file of the project with your browser from github, with Download ZIP button located on the right hand side of https://github.com/DrBillEdwards/javamift
 
 You should see something like this,
 
