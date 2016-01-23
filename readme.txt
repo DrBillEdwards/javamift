@@ -12,6 +12,7 @@ OPTIONS:
     appendOutput = false
     injectDownTime = false
     interjectDownTimes = true
+    BUFFER_MAX = 5 : for Mift 2 implementation
     r1Limit = .98
     r2Limit = .95
     r3Limit = .99
