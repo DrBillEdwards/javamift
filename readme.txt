@@ -29,7 +29,15 @@ To compile changes and run:
 
 from DOS command line,
 
+    change directory to your project directory
     git pull
+    javac Mift1.java
+    java Mift1
+OR
+    You can always make a new project directory/folder, change directory into that folder and run the following command from the DOS window:
+    git clone https://github.com/DrBillEdwards/javamift.git
+    This command will download the whole project into the new folder, brand new javamift folder with all my latest changes.
+    Then from the current directory you changed to, change directory again into the new javamift, compile, and run.
     javac Mift1.java
     java Mift1
 
