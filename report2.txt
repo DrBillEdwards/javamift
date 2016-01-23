@@ -1,1684 +1,1450 @@
-t1: 46 assembly line 1: 100 buffer 1: 0 buffer 2: 0 output: 0 
-t2: 63 assembly line 2: 000 buffer 1: 0 buffer 2: 0 output: 0 
-t3: 400 assembly line 3: 000 buffer 1: 0 buffer 2: 0 output: 0 
-t1: 92 assembly line 1: 110 buffer 1: 0 buffer 2: 0 output: 0 
-t2: 126 assembly line 2: 000 buffer 1: 0 buffer 2: 0 output: 0 
-t1: 138 assembly line 1: 111 buffer 1: 0 buffer 2: 0 output: 0 
-t2: 189 assembly line 2: 000 buffer 1: 0 buffer 2: 0 output: 0 
-t1: 184 assembly line 1: 111 buffer 1: 1 buffer 2: 0 output: 0 
-FAILED1:
-t1: 190 assembly line 1: 111 buffer 1: 1 buffer 2: 0 output: 0 
-t2: 252 assembly line 2: 100 buffer 1: 0 buffer 2: 0 output: 0 
-t1: 236 assembly line 1: 111 buffer 1: 1 buffer 2: 0 output: 0 
-t2: 315 assembly line 2: 110 buffer 1: 0 buffer 2: 0 output: 0 
-t1: 282 assembly line 1: 111 buffer 1: 1 buffer 2: 0 output: 0 
-t1: 328 assembly line 1: 111 buffer 1: 2 buffer 2: 0 output: 0 
-t2: 378 assembly line 2: 111 buffer 1: 1 buffer 2: 0 output: 0 
-t1: 374 assembly line 1: 111 buffer 1: 2 buffer 2: 0 output: 0 
-t2: 441 assembly line 2: 111 buffer 1: 1 buffer 2: 1 output: 0 
-t1: 420 assembly line 1: 111 buffer 1: 2 buffer 2: 1 output: 0 
-t3: 800 assembly line 3: 100 buffer 1: 2 buffer 2: 0 output: 0 
-t2: 504 assembly line 2: 111 buffer 1: 1 buffer 2: 1 output: 0 
-t1: 466 assembly line 1: 111 buffer 1: 2 buffer 2: 1 output: 0 
-t1: 512 assembly line 1: 111 buffer 1: 3 buffer 2: 1 output: 0 
-t2: 567 assembly line 2: 111 buffer 1: 2 buffer 2: 2 output: 0 
-t1: 558 assembly line 1: 111 buffer 1: 3 buffer 2: 2 output: 0 
-t2: 630 assembly line 2: 111 buffer 1: 2 buffer 2: 3 output: 0 
-t1: 604 assembly line 1: 111 buffer 1: 3 buffer 2: 3 output: 0 
-t2: 693 assembly line 2: 111 buffer 1: 2 buffer 2: 4 output: 0 
-t1: 650 assembly line 1: 111 buffer 1: 3 buffer 2: 4 output: 0 
-FAILED1:
-t1: 656 assembly line 1: 111 buffer 1: 3 buffer 2: 4 output: 0 
-t2: 756 assembly line 2: 111 buffer 1: 2 buffer 2: 5 output: 0 
-t1: 702 assembly line 1: 111 buffer 1: 3 buffer 2: 5 output: 0 
-t2: 819 assembly line 2: 111 buffer 1: 3 buffer 2: 5 output: 0 
-t1: 748 assembly line 1: 111 buffer 1: 4 buffer 2: 5 output: 0 
-t3: 1200 assembly line 3: 110 buffer 1: 4 buffer 2: 4 output: 0 
-t1: 794 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 0 
-FAILED2:
-t2: 825 assembly line 2: 111 buffer 1: 5 buffer 2: 4 output: 0 
-t1: 840 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 0 
-FAILED2:
-t2: 831 assembly line 2: 111 buffer 1: 5 buffer 2: 4 output: 0 
-t1: 886 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 0 
-t2: 894 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 0 
-t1: 932 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t1: 978 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t2: 957 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 0 
-FAILED1:
-t1: 984 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t2: 1020 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t1: 1030 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t2: 1083 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t1: 1076 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t1: 1122 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t2: 1146 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t3: 1600 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 0 
-t1: 1168 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 0 
-t2: 1209 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 0 
-t1: 1214 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t2: 1272 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t1: 1260 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t1: 1306 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t2: 1335 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t1: 1352 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-FAILED2:
-t2: 1341 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t1: 1398 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t1: 1444 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t2: 1404 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t1: 1490 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t2: 1467 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t1: 1536 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 0 
-t3: 2000 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 1 
-t2: 1530 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 1 
-t1: 1582 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 1628 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED2:
-t2: 1536 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED1:
-t1: 1634 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 1599 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 1680 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED2:
-FAILED1:
-t2: 1605 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 1686 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 1732 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED2:
-t2: 1611 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 1778 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 1674 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 1824 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED3:
-t3: 2006 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 1870 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 1737 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 1916 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 1800 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 1962 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 1863 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2008 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED1:
-t1: 2014 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2014 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2060 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED2:
-t2: 1932 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2106 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 1995 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED1:
-t1: 2112 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED1:
-t1: 2118 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2058 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED3:
-t3: 2012 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2164 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED2:
-t2: 2064 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2210 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2127 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2256 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2302 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2190 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2348 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2253 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2394 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2440 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2316 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED1:
-t1: 2446 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED2:
-t2: 2322 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2492 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED3:
-t3: 2018 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2385 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2538 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2584 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2448 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2630 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2511 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2676 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2574 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2722 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2768 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2637 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2814 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2700 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2860 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED3:
-t3: 2024 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2906 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2763 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2952 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2826 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 2998 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED2:
-t2: 2832 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3044 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED1:
-t1: 3050 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED2:
-t2: 2838 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3096 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2901 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3142 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 2964 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3188 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3234 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED2:
-t2: 2970 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED3:
-t3: 2030 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3280 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 3033 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3326 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3372 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-FAILED2:
-t2: 3039 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3418 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 3102 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3464 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 3165 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3510 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3556 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 3228 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3602 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t2: 3291 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t1: 3648 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 1 
-t3: 2430 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 2 
-FAILED2:
-t1: 3694 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 2 
-t2: 3297 assembly line 2: 111 buffer 1: 5 buffer 2: 4 output: 2 
-t1: 3740 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 2 
-t2: 3360 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 2 
-FAILED1:
-t1: 3746 assembly line 1: 111 buffer 1: 4 buffer 2: 5 output: 2 
-t2: 3423 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 2 
-t1: 3792 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 3486 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 3838 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 3884 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 3549 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 3930 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 3612 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 3976 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-FAILED3:
-t1: 4022 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 3675 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t3: 2436 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4068 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 3738 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4114 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 3801 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4160 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-FAILED1:
-t1: 4166 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 3864 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4212 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 3927 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4258 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 3990 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4304 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4350 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4053 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-FAILED3:
-t3: 2442 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4396 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4116 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4442 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4488 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4179 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4534 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4242 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4580 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-FAILED2:
-t2: 4248 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4626 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4672 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4311 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4718 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4374 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4764 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-FAILED3:
-t3: 2448 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4437 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4810 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4856 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4500 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4902 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4563 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4948 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 4994 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4626 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5040 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4689 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5086 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4752 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5132 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5178 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-FAILED3:
-t2: 4815 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t3: 2454 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 2 
-FAILED1:
-t1: 5184 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-FAILED2:
-t2: 4821 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5230 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4884 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5276 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5322 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 4947 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5368 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 5010 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5414 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 5073 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5460 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5506 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 5136 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-FAILED3:
-t3: 2460 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5552 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 5199 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5598 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5644 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-FAILED2:
-t2: 5205 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5690 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-FAILED2:
-t2: 5211 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5736 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 5274 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5782 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5828 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 5337 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5874 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t2: 5400 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t1: 5920 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 2 
-t3: 2860 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 3 
-t2: 5463 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 3 
-t1: 5966 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 3 
-t1: 6012 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 3 
-t2: 5526 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 3 
-t1: 6058 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 3 
-t2: 5589 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 3 
-FAILED1:
-t1: 6064 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 3 
-t1: 6110 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 3 
-t2: 5652 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 3 
-FAILED1:
-t1: 6116 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 3 
-t2: 5715 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 3 
-t1: 6162 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 3 
-t2: 5778 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 3 
-t1: 6208 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 3 
-t1: 6254 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 3 
-t3: 3260 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 4 
-t2: 5841 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 4 
-t1: 6300 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 4 
-FAILED2:
-t2: 5847 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 4 
-t1: 6346 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 4 
-t2: 5910 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 4 
-FAILED1:
-t1: 6352 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 4 
-t1: 6398 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 4 
-t2: 5973 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 4 
-FAILED1:
-t1: 6404 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 4 
-t2: 6036 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 4 
-t1: 6450 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 4 
-t2: 6099 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 4 
-t1: 6496 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 4 
-t1: 6542 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 4 
-t2: 6162 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 4 
-t3: 3660 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 5 
-t1: 6588 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 5 
-t2: 6225 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 5 
-t1: 6634 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 6680 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 6288 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 6726 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 6351 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 6772 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 6414 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 6818 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 6864 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 6477 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 6910 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED2:
-t2: 6483 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 6956 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED3:
-t3: 3666 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED2:
-t1: 7002 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 6489 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7048 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 6552 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED1:
-t1: 7054 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED2:
-t2: 6558 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7100 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7146 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 6621 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7192 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 6684 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7238 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 6747 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7284 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7330 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 6810 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED3:
-t3: 3672 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7376 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 6873 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7422 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 6936 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7468 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7514 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 6999 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7560 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7062 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7606 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7125 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7652 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7698 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED2:
-t2: 7131 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED3:
-FAILED1:
-t3: 3678 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7704 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7194 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED1:
-t1: 7710 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7756 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7257 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7802 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED2:
-t2: 7263 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7848 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7326 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7894 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7940 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED2:
-t2: 7332 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 7986 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7395 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8032 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED3:
-t3: 3684 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7458 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8078 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED1:
-t1: 8084 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7521 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8130 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7584 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8176 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8222 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7647 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8268 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7710 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8314 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7773 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8360 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8406 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7836 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED3:
-t3: 3690 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8452 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-FAILED2:
-t2: 7842 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8498 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7905 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8544 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8590 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 7968 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8636 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 8031 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8682 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8728 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 8094 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8774 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t2: 8157 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 5 
-t1: 8820 assembly line 1: 111 buffer 1: 5 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 6 
-t1: 8820 assembly line 1: 111 buffer 1: 5 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 6 
-FAILED2:
-t2: 8163 assembly line 2: 111 buffer 1: 5 buffer 2: 4 output: 6 
-FAILED1:
-t1: 8826 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 6 
-t1: 8872 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 6 
-t2: 8226 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 6 
-t1: 8918 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 6 
-t2: 8289 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 6 
-t1: 8964 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 6 
-t2: 8352 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 6 
-t1: 9010 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 6 
-t1: 9056 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 6 
-t2: 8415 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 6 
-t1: 9102 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 6 
-t2: 8478 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 6 
-FAILED1:
-t1: 9108 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 6 
-t3: 4490 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 7 
-FAILED2:
-t1: 9154 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 7 
-t2: 8484 assembly line 2: 111 buffer 1: 5 buffer 2: 4 output: 7 
-t1: 9200 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 7 
-FAILED2:
-t2: 8490 assembly line 2: 111 buffer 1: 5 buffer 2: 4 output: 7 
-t1: 9246 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 7 
-t2: 8553 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 7 
-FAILED1:
-t1: 9252 assembly line 1: 111 buffer 1: 4 buffer 2: 5 output: 7 
-t1: 9298 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t2: 8616 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9344 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t2: 8679 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9390 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t2: 8742 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9436 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9482 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t2: 8805 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-FAILED3:
-t3: 4496 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 7 
-FAILED1:
-t1: 9488 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-FAILED2:
-t2: 8811 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9534 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-FAILED2:
-t1: 9580 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t2: 8817 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9626 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t2: 8880 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9672 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t2: 8943 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9718 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9764 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t2: 9006 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9810 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-FAILED2:
-t2: 9012 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9856 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-FAILED3:
-t3: 4502 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t2: 9075 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9902 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9948 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-FAILED2:
-t2: 9081 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 9994 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t2: 9144 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 10040 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t2: 9207 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 10086 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 10132 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t2: 9270 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 10178 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t2: 9333 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t1: 10224 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 7 
-t3: 4902 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 8 
-t1: 10270 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 8 
-t2: 9396 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 8 
-t1: 10316 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 9459 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10362 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 9522 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10408 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10454 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 9585 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10500 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 9648 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10546 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED2:
-t2: 9654 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10592 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10638 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 9717 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED3:
-t3: 4908 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10684 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 9780 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10730 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 9843 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10776 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10822 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 9906 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10868 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 9969 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10914 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 10960 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10032 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11006 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED2:
-t2: 10038 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED1:
-t1: 11012 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED3:
-t3: 4914 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10101 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11058 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11104 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10164 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11150 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10227 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11196 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10290 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11242 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11288 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10353 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11334 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED2:
-t2: 10359 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11380 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED3:
-t1: 11426 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t3: 4920 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10422 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11472 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10485 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11518 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10548 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11564 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11610 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10611 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11656 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10674 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED1:
-t1: 11662 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10737 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11708 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11754 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10800 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED3:
-t3: 4926 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED1:
-t1: 11760 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED2:
-t2: 10806 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11806 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10869 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11852 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED1:
-t1: 11858 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10932 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11904 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 10995 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11950 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 11996 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED2:
-t2: 11001 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12042 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 11064 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED1:
-t1: 12048 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED3:
-t3: 4932 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED2:
-t2: 11070 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12094 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12140 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 11133 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12186 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED2:
-t2: 11139 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12232 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 11202 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12278 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12324 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 11265 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12370 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED2:
-t2: 11271 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12416 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED3:
-t1: 12462 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 11334 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t3: 4938 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12508 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 11397 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12554 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 11460 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12600 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12646 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED2:
-t2: 11466 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12692 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED2:
-t2: 11472 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12738 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 11535 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12784 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12830 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 11598 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED3:
-t3: 4944 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12876 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 11661 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED1:
-t1: 12882 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12928 assembly line 1: 111 buffer 1: 5 buffer 2: 5 
-t1: 12928 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 12974 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 11787 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 13020 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-FAILED2:
-t2: 11793 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 13066 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 13112 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 11856 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 13158 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t2: 11919 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t1: 13204 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 8 
-t3: 5344 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 9 
-FAILED2:
-t2: 11925 assembly line 2: 111 buffer 1: 5 buffer 2: 4 output: 9 
-t1: 13250 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 9 
-t1: 13296 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 9 
-t2: 11988 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 9 
-FAILED1:
-t1: 13302 assembly line 1: 111 buffer 1: 4 buffer 2: 5 output: 9 
-t2: 12051 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 9 
-t1: 13348 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 9 
-FAILED2:
-t1: 13394 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 9 
-t2: 12057 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 9 
-t1: 13440 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 9 
-t2: 12120 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 9 
-t1: 13486 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 9 
-FAILED2:
-t2: 12126 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 9 
-t1: 13532 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 9 
-t1: 13578 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 9 
-t3: 5744 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 10 
-FAILED2:
-t2: 12132 assembly line 2: 111 buffer 1: 5 buffer 2: 4 output: 10 
-t1: 13624 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 10 
-t2: 12195 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 10 
-t1: 13670 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 12258 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 13716 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 13762 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 12321 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 13808 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 12384 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 13854 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 12447 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED1:
-t1: 13860 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 13906 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 12510 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED3:
-t3: 5750 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 13952 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 12573 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 13998 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14044 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED2:
-t2: 12579 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14090 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 12642 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14136 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 12705 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14182 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14228 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 12768 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14274 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 12831 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14320 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED3:
-t3: 5756 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 12894 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14366 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14412 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 12957 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14458 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13020 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14504 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13083 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14550 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14596 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13146 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14642 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13209 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14688 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14734 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13272 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED3:
-t3: 5762 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14780 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13335 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14826 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13398 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED1:
-t1: 14832 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14878 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13461 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14924 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13524 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 14970 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED2:
-t1: 15016 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13530 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15062 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13593 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED3:
-t3: 5768 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15108 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED2:
-t2: 13599 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15154 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15200 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13662 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15246 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13725 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15292 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED2:
-t2: 13731 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15338 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15384 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13794 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15430 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13857 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15476 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED3:
-t3: 5774 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13920 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15522 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15568 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED2:
-t2: 13926 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15614 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13989 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15660 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED2:
-t1: 15706 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 13995 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15752 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED2:
-t2: 14001 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15798 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14064 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15844 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15890 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14127 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED3:
-t3: 5780 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15936 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14190 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 15982 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14253 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16028 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16074 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14316 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16120 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14379 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16166 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14442 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16212 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16258 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14505 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED3:
-t1: 16304 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t3: 5786 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14568 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16350 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED1:
-t2: 14631 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16356 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16402 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14694 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED1:
-t1: 16408 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14757 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16454 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16500 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14820 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16546 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14883 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16592 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED3:
-t3: 5792 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 14946 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED1:
-t1: 16598 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16644 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 15009 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16690 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 15072 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16736 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16782 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 15135 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16828 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 15198 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED1:
-t1: 16834 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 15261 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16880 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED1:
-t2: 15324 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 15324 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED3:
-t3: 5798 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 10 
-FAILED1:
-t1: 16892 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 15387 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16938 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 15450 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 16984 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 17030 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 15513 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 17076 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 15576 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 17122 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 15639 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 17168 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 17214 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t2: 15702 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t1: 17260 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 10 
-t3: 6198 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 11 
-t2: 15765 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 11 
-t1: 17306 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17352 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 15828 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17398 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 15891 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17444 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 15954 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17490 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17536 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16017 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17582 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16080 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17628 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED3:
-t3: 6204 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16143 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17674 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17720 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16206 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17766 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16269 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17812 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17858 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16332 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17904 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED2:
-t2: 16338 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17950 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16401 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 17996 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18042 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16464 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED3:
-t3: 6210 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18088 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED2:
-t2: 16470 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18134 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16533 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18180 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18226 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED2:
-t2: 16539 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18272 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16602 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18318 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16665 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18364 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18410 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16728 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18456 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED3:
-t3: 6216 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16791 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18502 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18548 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16854 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18594 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED2:
-t2: 16860 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18640 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED2:
-t2: 16866 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18686 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18732 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16929 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18778 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 16992 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18824 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED3:
-t3: 6222 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 17055 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18870 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18916 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 17118 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 18962 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 17181 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED1:
-t1: 18968 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 19014 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 17244 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 19060 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 17307 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 19106 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 17370 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 19152 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 19198 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED2:
-t2: 17376 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED3:
-t3: 6228 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 19244 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED2:
-t2: 17382 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-FAILED1:
-t1: 19250 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 17445 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 19296 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 19342 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 17508 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 19388 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 17571 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 19434 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 19480 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 17634 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 19526 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t2: 17697 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t1: 19572 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 11 
-t3: 6628 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 12 
-t2: 17760 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 12 
-t1: 19618 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 19664 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 17823 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 19710 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 17886 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 19756 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 17949 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 19802 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 19848 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18012 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 19894 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18075 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 19940 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED3:
-t2: 18138 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t3: 6634 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 19986 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20032 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18201 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20078 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18264 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20124 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20170 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18327 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20216 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18390 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED1:
-t1: 20222 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18453 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20268 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20314 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED2:
-t2: 18459 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED3:
-t3: 6640 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20360 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18522 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20406 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18585 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20452 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20498 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18648 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20544 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18711 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20590 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20636 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18774 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20682 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18837 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20728 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED3:
-t3: 6646 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18900 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20774 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20820 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 18963 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20866 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19026 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20912 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19089 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 20958 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21004 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED2:
-t2: 19095 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21050 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED2:
-t2: 19101 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21096 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED3:
-t2: 19164 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21142 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t3: 6652 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21188 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19227 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21234 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19290 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21280 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21326 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19353 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21372 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED2:
-t2: 19359 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21418 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19422 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21464 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21510 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19485 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED3:
-t3: 6658 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21556 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED2:
-t2: 19491 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21602 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19554 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21648 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21694 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED2:
-t2: 19560 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21740 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED2:
-t2: 19566 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED1:
-t1: 21746 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21792 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19629 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21838 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19692 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21884 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED3:
-t3: 6664 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19755 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21930 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 21976 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19818 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED1:
-t1: 21982 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19881 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-FAILED1:
-t1: 21988 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 19944 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 22034 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 22080 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 20007 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 22126 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 20070 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 22172 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t1: 22218 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t2: 20133 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 12 
-t3: 7064 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 13 
-FAILED1:
-t1: 22224 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 13 
-FAILED2:
-t2: 20139 assembly line 2: 111 buffer 1: 5 buffer 2: 4 output: 13 
-t1: 22270 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 13 
-t2: 20202 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 13 
-t1: 22316 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22362 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 20265 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22408 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 20328 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22454 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 20391 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22500 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22546 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 20454 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED3:
-t3: 7070 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22592 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED2:
-t2: 20460 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22638 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 20523 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22684 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22730 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 20586 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED1:
-t1: 22736 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 20649 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22782 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22828 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 20712 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22874 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED2:
-t2: 20718 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22920 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED3:
-t3: 7076 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 20781 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 22966 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23012 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 20844 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23058 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 20907 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23104 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 20970 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23150 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23196 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21033 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23242 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21096 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23288 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23334 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED2:
-FAILED3:
-t2: 21102 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t3: 7082 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23380 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21165 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23426 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21228 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23472 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23518 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21291 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23564 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21354 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23610 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21417 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23656 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23702 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21480 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED3:
-t3: 7088 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23748 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21543 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23794 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21606 
-t2: 21606 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23886 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21669 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED1:
-t1: 23892 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21732 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23938 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 23984 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21795 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24030 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21858 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24076 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED3:
-t3: 7094 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21921 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24122 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24168 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 21984 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24214 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 22047 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24260 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 22110 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24306 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24352 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED2:
-t2: 22116 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24398 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 22179 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24444 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24490 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED2:
-t2: 22185 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED3:
-t3: 7100 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24536 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED2:
-t2: 22191 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24582 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 22254 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24628 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24674 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 22317 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED1:
-t1: 24680 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 22380 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24726 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 22443 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24772 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24818 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED2:
-t2: 22449 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED3:
-t1: 24864 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t3: 7106 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 22512 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24910 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 24956 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-FAILED2:
-t2: 22518 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 25002 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 22581 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 25048 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 22644 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 25094 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 25140 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 22707 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 25186 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t2: 22770 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t1: 25232 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 13 
-t3: 7506 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 14 
-t2: 22833 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 14 
-FAILED1:
-t1: 25238 assembly line 1: 111 buffer 1: 4 buffer 2: 5 output: 14 
-t1: 25284 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t2: 22896 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t1: 25330 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t2: 22959 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t1: 25376 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-FAILED2:
-t1: 25422 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t2: 22965 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t1: 25468 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t2: 23028 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t1: 25514 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t2: 23091 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t1: 25560 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-FAILED1:
-FAILED2:
-t1: 25566 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t2: 23097 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 14 
-FAILED3:
-t3: 7512 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t1: 25612 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t2: 23160 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t1: 25658 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t2: 23223 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t1: 25704 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t1: 25750 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t2: 23286 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t1: 25796 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t2: 23349 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t1: 25842 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-FAILED2:
-t1: 25888 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t2: 23355 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t1: 25934 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 14 
-FAILED2:
-t2: 23361 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 14 
-t3: 7912 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 15 
-t1: 25980 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 15 
-t2: 23424 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 15 
-t1: 26026 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26072 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-FAILED2:
-t2: 23430 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26118 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-FAILED2:
-t2: 23436 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26164 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t2: 23499 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26210 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26256 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-FAILED2:
-t2: 23505 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26302 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t2: 23568 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 15 
-FAILED1:
-t1: 26308 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-FAILED3:
-t3: 7918 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t2: 23631 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26354 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26400 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t2: 23694 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26446 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t2: 23757 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26492 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26538 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t2: 23820 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26584 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t2: 23883 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26630 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t2: 23946 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26676 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t1: 26722 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 15 
-FAILED2:
-t2: 23952 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 15 
-t3: 8318 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 16 
-t1: 26768 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 16 
-t2: 24015 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 16 
-t1: 26814 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24078 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 26860 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 26906 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24141 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 26952 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24204 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 26998 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24267 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27044 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27090 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24330 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27136 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-FAILED3:
-t3: 8324 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24393 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27182 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27228 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24456 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27274 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24519 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27320 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24582 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27366 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27412 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24645 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27458 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24708 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27504 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-FAILED3:
-t3: 8330 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24771 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27550 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27596 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24834 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27642 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 24897 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27688 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-FAILED1:
-t2: 24960 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27694 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27740 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25023 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27786 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-FAILED2:
-t2: 25029 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27832 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27878 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25092 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-FAILED3:
-t3: 8336 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27924 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25155 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 27970 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25218 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28016 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28062 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25281 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28108 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25344 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28154 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-FAILED2:
-t1: 28200 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25350 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28246 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25413 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28292 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-FAILED3:
-t3: 8342 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25476 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28338 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28384 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25539 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28430 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25602 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28476 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25665 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28522 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28568 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25728 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28614 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t2: 25791 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t1: 28660 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 16 
-t3: 8742 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 17 
-t2: 25854 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 17 
-FAILED1:
-t1: 28666 assembly line 1: 111 buffer 1: 4 buffer 2: 5 output: 17 
-t1: 28712 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t2: 25917 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 28758 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t2: 25980 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 28804 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 28850 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t2: 26043 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 28896 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t2: 26106 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 28942 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t2: 26169 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 28988 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 29034 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t2: 26232 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 17 
-FAILED3:
-t3: 8748 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 29080 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t2: 26295 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 29126 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-FAILED2:
-t1: 29172 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t2: 26301 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 17 
-FAILED1:
-t1: 29178 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-FAILED2:
-t2: 26307 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 29224 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t2: 26370 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 29270 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 29316 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-FAILED2:
-t2: 26376 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 29362 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-FAILED2:
-t2: 26382 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t1: 29408 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 17 
-t3: 9148 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 18 
-t2: 26445 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 18 
-t1: 29454 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED1:
-t2: 26508 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 29460 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 29506 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 26571 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 29552 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 26634 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 29598 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 29644 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 26697 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 29690 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 26760 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 29736 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED3:
-t2: 26823 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 29782 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t3: 9154 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 29828 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 26886 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 29874 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 26949 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 29920 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 29966 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27012 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30012 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27075 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30058 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED2:
-t2: 27081 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30104 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30150 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27144 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED3:
-t3: 9160 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30196 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27207 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30242 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED2:
-t1: 30288 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27213 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30334 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27276 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30380 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED2:
-t2: 27282 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30426 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED1:
-t2: 27345 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30432 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30478 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED2:
-t2: 27351 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30524 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED3:
-t3: 9166 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED2:
-t2: 27357 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30570 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30616 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27420 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED1:
-t1: 30622 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27483 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30668 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27546 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30714 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30760 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27609 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30806 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27672 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30852 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27735 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30898 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED3:
-t3: 9172 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30944 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27798 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 30990 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27861 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31036 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31082 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27924 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED1:
-t1: 31088 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 27987 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31134 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED2:
-t2: 27993 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31180 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31226 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28056 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED3:
-t3: 9178 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31272 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28119 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31318 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28182 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31364 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31410 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28245 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31456 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28308 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED1:
-t1: 31462 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31508 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28371 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31554 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28434 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31600 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED3:
-t3: 9184 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED2:
-t2: 28440 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31646 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31692 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28503 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31738 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28566 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31784 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED2:
-t1: 31830 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28572 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31876 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28635 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31922 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28698 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 31968 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28761 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32014 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED3:
-t3: 9190 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32060 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED2:
-t2: 28767 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32106 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED2:
-t2: 28773 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32152 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32198 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28836 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED1:
-t1: 32204 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED2:
-t2: 28842 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32250 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28905 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED1:
-t1: 32256 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32302 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 28968 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED3:
-t3: 9196 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32348 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 29031 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32394 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 29094 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32440 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32486 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED2:
-t2: 29100 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32532 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 29163 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32578 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32624 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 29226 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32670 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 29289 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32716 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-FAILED3:
-t3: 9202 assembly line 3: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 29352 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32762 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32808 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 29415 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32854 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 29478 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32900 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 29541 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32946 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 32992 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 29604 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 33038 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 29667 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 33084 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t1: 33130 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t2: 29730 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 18 
-t3: 9602 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 19 
-t1: 33176 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 19 
-t2: 29793 assembly line 2: 111 buffer 1: 4 buffer 2: 5 output: 19 
-t1: 33222 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 19 
-t2: 29856 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 19 
-t1: 33268 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 19 
-FAILED1:
-t1: 33274 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 19 
-t1: 33274 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 19 
-t1: 33320 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 19 
-t2: 29982 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 19 
-t1: 33366 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 19 
-FAILED2:
-t2: 29988 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 19 
-t1: 33412 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 19 
-t1: 33458 assembly line 1: 111 buffer 1: 5 buffer 2: 5 output: 19 
-FAILED2:
-t2: 29994 assembly line 2: 111 buffer 1: 5 buffer 2: 5 output: 19 
-t3: 10002 assembly line 3: 111 buffer 1: 5 buffer 2: 4 output: 20 
-t1: 33504 assembly line 1: 111 buffer 1: 5 buffer 2: 4 output: 20 
+t2: 60 assembly line 2: 000 output: 0 buffer1: 0
+t2: 60 assembly line 2: 000 output: 0 buffer1: 0
+t1: 108 assembly line 1: 110 buffer1: 0
+t2: 120 assembly line 2: 000 output: 0 buffer1: 0
+t1: 162 assembly line 1: 111 buffer1: 0
+t2: 180 assembly line 2: 000 output: 0 buffer1: 0
+t1: 216 assembly line 1: 111 buffer1: 1
+t2: 240 assembly line 2: 100 output: 0 buffer1: 0
+t1: 270 assembly line 1: 111 buffer1: 1
+t2: 300 assembly line 2: 110 output: 0 buffer1: 0
+t1: 324 assembly line 1: 111 buffer1: 1
+t2: 360 assembly line 2: 111 output: 0 buffer1: 0
+t1: 378 assembly line 1: 111 buffer1: 1
+t2: 420 assembly line 2: 111 output: 1 buffer1: 0
+t1: 432 assembly line 1: 111 buffer1: 1
+t2: 480 assembly line 2: 111 output: 2 buffer1: 0
+t1: 486 assembly line 1: 111 buffer1: 1
+t2: 540 assembly line 2: 111 output: 3 buffer1: 0
+t1: 540 assembly line 1: 111 buffer1: 1
+FAILED1:
+FAILED2:
+t2: 546 assembly line 2: 111 buffer1: 1
+t1: 546 assembly line 1: 111 buffer1: 1
+t1: 600 assembly line 1: 111 buffer1: 2
+t2: 606 assembly line 2: 111 output: 4 buffer1: 1
+t1: 654 assembly line 1: 111 buffer1: 2
+t2: 666 assembly line 2: 111 output: 5 buffer1: 1
+t1: 708 assembly line 1: 111 buffer1: 2
+t2: 726 assembly line 2: 111 output: 6 buffer1: 1
+t1: 762 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 732 assembly line 2: 111 buffer1: 2
+t1: 816 assembly line 1: 111 buffer1: 2
+t2: 792 assembly line 2: 111 output: 7 buffer1: 1
+t1: 870 assembly line 1: 111 buffer1: 2
+t2: 852 assembly line 2: 111 output: 8 buffer1: 1
+t1: 924 assembly line 1: 111 buffer1: 2
+t2: 912 assembly line 2: 111 output: 9 buffer1: 1
+t1: 978 assembly line 1: 111 buffer1: 2
+t2: 972 assembly line 2: 111 output: 10 buffer1: 1
+t1: 1032 assembly line 1: 111 buffer1: 2
+t1: 1086 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 978 assembly line 2: 111 buffer1: 2
+t1: 1140 assembly line 1: 111 buffer1: 2
+t2: 1038 assembly line 2: 111 output: 11 buffer1: 1
+t1: 1194 assembly line 1: 111 buffer1: 2
+t2: 1098 assembly line 2: 111 output: 12 buffer1: 1
+t1: 1248 assembly line 1: 111 buffer1: 2
+t2: 1158 assembly line 2: 111 output: 13 buffer1: 1
+t1: 1302 assembly line 1: 111 buffer1: 2
+t2: 1218 assembly line 2: 111 output: 14 buffer1: 1
+t1: 1356 assembly line 1: 111 buffer1: 2
+t2: 1278 assembly line 2: 111 output: 15 buffer1: 1
+t1: 1410 assembly line 1: 111 buffer1: 2
+t2: 1338 assembly line 2: 111 output: 16 buffer1: 1
+t1: 1464 assembly line 1: 111 buffer1: 2
+t2: 1398 assembly line 2: 111 output: 17 buffer1: 1
+t1: 1518 assembly line 1: 111 buffer1: 2
+t2: 1458 assembly line 2: 111 output: 18 buffer1: 1
+t1: 1572 assembly line 1: 111 buffer1: 2
+FAILED1:
+t2: 1518 assembly line 2: 111 output: 19 buffer1: 1
+t1: 1578 assembly line 1: 111 buffer1: 1
+t1: 1632 assembly line 1: 111 buffer1: 2
+t2: 1578 assembly line 2: 111 output: 20 buffer1: 1
+t1: 1686 assembly line 1: 111 buffer1: 2
+t2: 1638 assembly line 2: 111 output: 21 buffer1: 1
+t1: 1740 assembly line 1: 111 buffer1: 2
+t2: 1698 assembly line 2: 111 output: 22 buffer1: 1
+t1: 1794 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 1704 assembly line 2: 111 buffer1: 2
+t1: 1848 assembly line 1: 111 buffer1: 2
+t2: 1764 assembly line 2: 111 output: 23 buffer1: 1
+t1: 1902 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 1770 assembly line 2: 111 buffer1: 2
+t1: 1956 assembly line 1: 111 buffer1: 2
+t2: 1830 assembly line 2: 111 output: 24 buffer1: 1
+t1: 2010 assembly line 1: 111 buffer1: 2
+t2: 1890 assembly line 2: 111 output: 25 buffer1: 1
+t1: 2064 assembly line 1: 111 buffer1: 2
+FAILED1:
+t2: 1950 assembly line 2: 111 output: 26 buffer1: 1
+t1: 2070 assembly line 1: 111 buffer1: 1
+FAILED1:
+t1: 2076 assembly line 1: 111 buffer1: 1
+FAILED2:
+t2: 1956 assembly line 2: 111 buffer1: 1
+t1: 2130 assembly line 1: 111 buffer1: 2
+t2: 2016 assembly line 2: 111 output: 27 buffer1: 1
+t1: 2184 assembly line 1: 111 buffer1: 2
+t2: 2076 assembly line 2: 111 output: 28 buffer1: 1
+t1: 2238 assembly line 1: 111 buffer1: 2
+t2: 2136 assembly line 2: 111 output: 29 buffer1: 1
+t1: 2292 assembly line 1: 111 buffer1: 2
+t2: 2196 assembly line 2: 111 output: 30 buffer1: 1
+t1: 2346 assembly line 1: 111 buffer1: 2
+t2: 2256 assembly line 2: 111 output: 31 buffer1: 1
+t1: 2400 assembly line 1: 111 buffer1: 2
+t2: 2316 assembly line 2: 111 output: 32 buffer1: 1
+t1: 2454 assembly line 1: 111 buffer1: 2
+t2: 2376 assembly line 2: 111 output: 33 buffer1: 1
+t1: 2508 assembly line 1: 111 buffer1: 2
+t1: 2562 assembly line 1: 111 buffer1: 2
+t2: 2436 assembly line 2: 111 output: 34 buffer1: 1
+t1: 2616 assembly line 1: 111 buffer1: 2
+t2: 2496 assembly line 2: 111 output: 35 buffer1: 1
+t1: 2670 assembly line 1: 111 buffer1: 2
+t2: 2556 assembly line 2: 111 output: 36 buffer1: 1
+t1: 2724 assembly line 1: 111 buffer1: 2
+t2: 2616 assembly line 2: 111 output: 37 buffer1: 1
+t1: 2778 assembly line 1: 111 buffer1: 2
+t2: 2676 assembly line 2: 111 output: 38 buffer1: 1
+t1: 2832 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 2682 assembly line 2: 111 buffer1: 2
+t1: 2886 assembly line 1: 111 buffer1: 2
+t2: 2742 assembly line 2: 111 output: 39 buffer1: 1
+t1: 2940 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 2748 assembly line 2: 111 buffer1: 2
+t1: 2994 assembly line 1: 111 buffer1: 2
+t2: 2808 assembly line 2: 111 output: 40 buffer1: 1
+t1: 3048 assembly line 1: 111 buffer1: 2
+t1: 3102 assembly line 1: 111 buffer1: 2
+t2: 2868 assembly line 2: 111 output: 41 buffer1: 1
+t1: 3156 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 2874 assembly line 2: 111 buffer1: 2
+t1: 3210 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 2880 assembly line 2: 111 buffer1: 2
+FAILED1:
+t1: 3216 assembly line 1: 111 buffer1: 2
+t2: 2940 assembly line 2: 111 output: 42 buffer1: 1
+t1: 3270 assembly line 1: 111 buffer1: 2
+t2: 3000 assembly line 2: 111 output: 43 buffer1: 1
+t1: 3324 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 3006 assembly line 2: 111 buffer1: 2
+t1: 3378 assembly line 1: 111 buffer1: 2
+t2: 3066 assembly line 2: 111 output: 44 buffer1: 1
+FAILED1:
+t1: 3384 assembly line 1: 111 buffer1: 1
+t2: 3126 assembly line 2: 111 output: 45 buffer1: 0
+t1: 3438 assembly line 1: 111 buffer1: 1
+FAILED2:
+t1: 3492 assembly line 1: 111 buffer1: 2
+t2: 3132 assembly line 2: 111 buffer1: 2
+t1: 3546 assembly line 1: 111 buffer1: 2
+t2: 3192 assembly line 2: 111 output: 46 buffer1: 1
+t1: 3600 assembly line 1: 111 buffer1: 2
+t2: 3252 assembly line 2: 111 output: 47 buffer1: 1
+t1: 3654 assembly line 1: 111 buffer1: 2
+t2: 3312 assembly line 2: 111 output: 48 buffer1: 1
+t1: 3708 assembly line 1: 111 buffer1: 2
+t2: 3372 assembly line 2: 111 output: 49 buffer1: 1
+t1: 3762 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 3378 assembly line 2: 111 buffer1: 2
+t1: 3816 assembly line 1: 111 buffer1: 2
+t2: 3438 assembly line 2: 111 output: 50 buffer1: 1
+t1: 3870 assembly line 1: 111 buffer1: 2
+t2: 3498 assembly line 2: 111 output: 51 buffer1: 1
+t1: 3924 assembly line 1: 111 buffer1: 2
+t2: 3558 assembly line 2: 111 output: 52 buffer1: 1
+t1: 3978 assembly line 1: 111 buffer1: 2
+t2: 3618 assembly line 2: 111 output: 53 buffer1: 1
+t1: 4032 assembly line 1: 111 buffer1: 2
+t1: 4086 assembly line 1: 111 buffer1: 2
+t2: 3678 assembly line 2: 111 output: 54 buffer1: 1
+t1: 4140 assembly line 1: 111 buffer1: 2
+t2: 3738 assembly line 2: 111 output: 55 buffer1: 1
+t1: 4194 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 3744 assembly line 2: 111 buffer1: 2
+t1: 4248 assembly line 1: 111 buffer1: 2
+t2: 3804 assembly line 2: 111 output: 56 buffer1: 1
+t1: 4302 assembly line 1: 111 buffer1: 2
+t2: 3864 assembly line 2: 111 output: 57 buffer1: 1
+FAILED1:
+t1: 4308 assembly line 1: 111 buffer1: 1
+FAILED2:
+t2: 3870 assembly line 2: 111 buffer1: 1
+t1: 4362 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 3876 assembly line 2: 111 buffer1: 2
+t1: 4416 assembly line 1: 111 buffer1: 2
+t2: 3936 assembly line 2: 111 output: 58 buffer1: 1
+t1: 4470 assembly line 1: 111 buffer1: 2
+t2: 3996 assembly line 2: 111 output: 59 buffer1: 1
+t1: 4524 assembly line 1: 111 buffer1: 2
+t1: 4578 assembly line 1: 111 buffer1: 2
+t2: 4056 assembly line 2: 111 output: 60 buffer1: 1
+t1: 4632 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 4062 assembly line 2: 111 buffer1: 2
+t1: 4686 assembly line 1: 111 buffer1: 2
+t2: 4122 assembly line 2: 111 output: 61 buffer1: 1
+t1: 4740 assembly line 1: 111 buffer1: 2
+t2: 4182 assembly line 2: 111 output: 62 buffer1: 1
+t1: 4794 assembly line 1: 111 buffer1: 2
+t2: 4242 assembly line 2: 111 output: 63 buffer1: 1
+t1: 4848 assembly line 1: 111 buffer1: 2
+t2: 4302 assembly line 2: 111 output: 64 buffer1: 1
+t1: 4902 assembly line 1: 111 buffer1: 2
+t2: 4362 assembly line 2: 111 output: 65 buffer1: 1
+t1: 4956 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 4368 assembly line 2: 111 buffer1: 2
+FAILED1:
+t1: 4962 assembly line 1: 111 buffer1: 2
+t2: 4428 assembly line 2: 111 output: 66 buffer1: 1
+t1: 5016 assembly line 1: 111 buffer1: 2
+t1: 5070 assembly line 1: 111 buffer1: 2
+t2: 4488 assembly line 2: 111 output: 67 buffer1: 1
+t1: 5124 assembly line 1: 111 buffer1: 2
+t2: 4548 assembly line 2: 111 output: 68 buffer1: 1
+t1: 5178 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 4554 assembly line 2: 111 buffer1: 2
+t1: 5232 assembly line 1: 111 buffer1: 2
+t2: 4614 assembly line 2: 111 output: 69 buffer1: 1
+t1: 5286 assembly line 1: 111 buffer1: 2
+t2: 4674 assembly line 2: 111 output: 70 buffer1: 1
+t1: 5340 assembly line 1: 111 buffer1: 2
+t2: 4734 assembly line 2: 111 output: 71 buffer1: 1
+t1: 5394 assembly line 1: 111 buffer1: 2
+t2: 4794 assembly line 2: 111 output: 72 buffer1: 1
+FAILED1:
+t1: 5400 assembly line 1: 111 buffer1: 1
+t2: 4854 assembly line 2: 111 output: 73 buffer1: 0
+t1: 5454 assembly line 1: 111 buffer1: 1
+t2: 4914 assembly line 2: 111 output: 74 buffer1: 0
+t1: 5508 assembly line 1: 111 buffer1: 1
+t1: 5562 assembly line 1: 111 buffer1: 2
+t2: 4974 assembly line 2: 111 output: 75 buffer1: 1
+t1: 5616 assembly line 1: 111 buffer1: 2
+t2: 5034 assembly line 2: 111 output: 76 buffer1: 1
+t1: 5670 assembly line 1: 111 buffer1: 2
+t2: 5094 assembly line 2: 111 output: 77 buffer1: 1
+t1: 5724 assembly line 1: 111 buffer1: 2
+t2: 5154 assembly line 2: 111 output: 78 buffer1: 1
+t1: 5778 assembly line 1: 111 buffer1: 2
+t2: 5214 assembly line 2: 111 output: 79 buffer1: 1
+t1: 5832 assembly line 1: 111 buffer1: 2
+t2: 5274 assembly line 2: 111 output: 80 buffer1: 1
+t1: 5886 assembly line 1: 111 buffer1: 2
+t2: 5334 assembly line 2: 111 output: 81 buffer1: 1
+t1: 5940 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 5340 assembly line 2: 111 buffer1: 2
+t1: 5994 assembly line 1: 111 buffer1: 2
+t2: 5400 assembly line 2: 111 output: 82 buffer1: 1
+t1: 6048 assembly line 1: 111 buffer1: 2
+t1: 6102 assembly line 1: 111 buffer1: 2
+t2: 5460 assembly line 2: 111 output: 83 buffer1: 1
+t1: 6156 assembly line 1: 111 buffer1: 2
+t2: 5520 assembly line 2: 111 output: 84 buffer1: 1
+t1: 6210 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 5526 assembly line 2: 111 buffer1: 2
+t1: 6264 assembly line 1: 111 buffer1: 2
+t2: 5586 assembly line 2: 111 output: 85 buffer1: 1
+t1: 6318 assembly line 1: 111 buffer1: 2
+t2: 5646 assembly line 2: 111 output: 86 buffer1: 1
+t1: 6372 assembly line 1: 111 buffer1: 2
+t2: 5706 assembly line 2: 111 output: 87 buffer1: 1
+t1: 6426 assembly line 1: 111 buffer1: 2
+t2: 5766 assembly line 2: 111 output: 88 buffer1: 1
+t1: 6480 assembly line 1: 111 buffer1: 2
+t2: 5826 assembly line 2: 111 output: 89 buffer1: 1
+t1: 6534 assembly line 1: 111 buffer1: 2
+t2: 5886 assembly line 2: 111 output: 90 buffer1: 1
+t1: 6588 assembly line 1: 111 buffer1: 2
+t1: 6642 assembly line 1: 111 buffer1: 2
+t2: 5946 assembly line 2: 111 output: 91 buffer1: 1
+t1: 6696 assembly line 1: 111 buffer1: 2
+t2: 6006 assembly line 2: 111 output: 92 buffer1: 1
+t1: 6750 assembly line 1: 111 buffer1: 2
+t2: 6066 assembly line 2: 111 output: 93 buffer1: 1
+t1: 6804 assembly line 1: 111 buffer1: 2
+t2: 6126 assembly line 2: 111 output: 94 buffer1: 1
+FAILED1:
+t1: 6810 assembly line 1: 111 buffer1: 1
+t2: 6186 assembly line 2: 111 output: 95 buffer1: 0
+t1: 6864 assembly line 1: 111 buffer1: 1
+FAILED2:
+t2: 6192 assembly line 2: 111 buffer1: 1
+t1: 6918 assembly line 1: 111 buffer1: 2
+t2: 6252 assembly line 2: 111 output: 96 buffer1: 1
+t1: 6972 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 6258 assembly line 2: 111 buffer1: 2
+t1: 7026 assembly line 1: 111 buffer1: 2
+t2: 6318 assembly line 2: 111 output: 97 buffer1: 1
+t1: 7080 assembly line 1: 111 buffer1: 2
+t1: 7134 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 6324 assembly line 2: 111 buffer1: 2
+t1: 7188 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 6330 assembly line 2: 111 buffer1: 2
+t1: 7242 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 6336 assembly line 2: 111 buffer1: 2
+t1: 7296 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 6342 assembly line 2: 111 buffer1: 2
+t1: 7350 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 6348 assembly line 2: 111 buffer1: 2
+t1: 7404 assembly line 1: 111 buffer1: 2
+t2: 6408 assembly line 2: 111 output: 98 buffer1: 1
+t1: 7458 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 6414 assembly line 2: 111 buffer1: 2
+t1: 7512 assembly line 1: 111 buffer1: 2
+t2: 6474 assembly line 2: 111 output: 99 buffer1: 1
+t1: 7566 assembly line 1: 111 buffer1: 2
+t2: 6534 assembly line 2: 111 output: 100 buffer1: 1
+t1: 7620 assembly line 1: 111 buffer1: 2
+t1: 7674 assembly line 1: 111 buffer1: 2
+t2: 6594 assembly line 2: 111 output: 101 buffer1: 1
+t1: 7728 assembly line 1: 111 buffer1: 2
+t2: 6654 assembly line 2: 111 output: 102 buffer1: 1
+t1: 7782 assembly line 1: 111 buffer1: 2
+t2: 6714 assembly line 2: 111 output: 103 buffer1: 1
+t1: 7836 assembly line 1: 111 buffer1: 2
+t2: 6774 assembly line 2: 111 output: 104 buffer1: 1
+t1: 7890 assembly line 1: 111 buffer1: 2
+t2: 6834 assembly line 2: 111 output: 105 buffer1: 1
+t1: 7944 assembly line 1: 111 buffer1: 2
+t2: 6894 assembly line 2: 111 output: 106 buffer1: 1
+t1: 7998 assembly line 1: 111 buffer1: 2
+t2: 6954 assembly line 2: 111 output: 107 buffer1: 1
+t1: 8052 assembly line 1: 111 buffer1: 2
+t2: 7014 assembly line 2: 111 output: 108 buffer1: 1
+t1: 8106 assembly line 1: 111 buffer1: 2
+FAILED2:
+FAILED1:
+t2: 7020 assembly line 2: 111 buffer1: 2
+t1: 8112 assembly line 1: 111 buffer1: 2
+t1: 8166 assembly line 1: 111 buffer1: 2
+t2: 7080 assembly line 2: 111 output: 109 buffer1: 1
+t1: 8220 assembly line 1: 111 buffer1: 2
+t2: 7140 assembly line 2: 111 output: 110 buffer1: 1
+t1: 8274 assembly line 1: 111 buffer1: 2
+t2: 7200 assembly line 2: 111 output: 111 buffer1: 1
+t1: 8328 assembly line 1: 111 buffer1: 2
+t2: 7260 assembly line 2: 111 output: 112 buffer1: 1
+t1: 8382 assembly line 1: 111 buffer1: 2
+t2: 7320 assembly line 2: 111 output: 113 buffer1: 1
+t1: 8436 assembly line 1: 111 buffer1: 2
+t2: 7380 assembly line 2: 111 output: 114 buffer1: 1
+t1: 8490 assembly line 1: 111 buffer1: 2
+t2: 7440 assembly line 2: 111 output: 115 buffer1: 1
+t1: 8544 assembly line 1: 111 buffer1: 2
+t2: 7500 assembly line 2: 111 output: 116 buffer1: 1
+FAILED1:
+t1: 8550 assembly line 1: 111 buffer1: 1
+t2: 7560 assembly line 2: 111 output: 117 buffer1: 0
+t1: 8604 assembly line 1: 111 buffer1: 1
+t1: 8658 assembly line 1: 111 buffer1: 2
+t2: 7620 assembly line 2: 111 output: 118 buffer1: 1
+t1: 8712 assembly line 1: 111 buffer1: 2
+t2: 7680 assembly line 2: 111 output: 119 buffer1: 1
+t1: 8766 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 7686 assembly line 2: 111 buffer1: 2
+FAILED1:
+t1: 8772 assembly line 1: 111 buffer1: 2
+t2: 7746 assembly line 2: 111 output: 120 buffer1: 1
+t1: 8826 assembly line 1: 111 buffer1: 2
+t2: 7806 assembly line 2: 111 output: 121 buffer1: 1
+t1: 8880 assembly line 1: 111 buffer1: 2
+t2: 7866 assembly line 2: 111 output: 122 buffer1: 1
+t1: 8934 assembly line 1: 111 buffer1: 2
+t2: 7926 assembly line 2: 111 output: 123 buffer1: 1
+t1: 8988 assembly line 1: 111 buffer1: 2
+t2: 7986 assembly line 2: 111 output: 124 buffer1: 1
+t1: 9042 assembly line 1: 111 buffer1: 2
+t2: 8046 assembly line 2: 111 output: 125 buffer1: 1
+t1: 9096 assembly line 1: 111 buffer1: 2
+t1: 9150 assembly line 1: 111 buffer1: 2
+t2: 8106 assembly line 2: 111 output: 126 buffer1: 1
+FAILED1:
+t1: 9156 assembly line 1: 111 buffer1: 1
+t2: 8166 assembly line 2: 111 output: 127 buffer1: 0
+t1: 9210 assembly line 1: 111 buffer1: 1
+FAILED2:
+t2: 8172 assembly line 2: 111 buffer1: 1
+t1: 9264 assembly line 1: 111 buffer1: 2
+t2: 8232 assembly line 2: 111 output: 128 buffer1: 1
+t1: 9318 assembly line 1: 111 buffer1: 2
+t2: 8292 assembly line 2: 111 output: 129 buffer1: 1
+t1: 9372 assembly line 1: 111 buffer1: 2
+t2: 8352 assembly line 2: 111 output: 130 buffer1: 1
+t1: 9426 assembly line 1: 111 buffer1: 2
+t2: 8412 assembly line 2: 111 output: 131 buffer1: 1
+t1: 9480 assembly line 1: 111 buffer1: 2
+t2: 8472 assembly line 2: 111 output: 132 buffer1: 1
+t1: 9534 assembly line 1: 111 buffer1: 2
+t2: 8532 assembly line 2: 111 output: 133 buffer1: 1
+t1: 9588 assembly line 1: 111 buffer1: 2
+t1: 9642 assembly line 1: 111 buffer1: 2
+t2: 8592 assembly line 2: 111 output: 134 buffer1: 1
+t1: 9696 assembly line 1: 111 buffer1: 2
+t2: 8652 assembly line 2: 111 output: 135 buffer1: 1
+t1: 9750 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 8658 assembly line 2: 111 buffer1: 2
+t1: 9804 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 8664 assembly line 2: 111 buffer1: 2
+t1: 9858 assembly line 1: 111 buffer1: 2
+t2: 8724 assembly line 2: 111 output: 136 buffer1: 1
+FAILED1:
+t1: 9864 assembly line 1: 111 buffer1: 1
+t2: 8784 assembly line 2: 111 output: 137 buffer1: 0
+t1: 9918 assembly line 1: 111 buffer1: 1
+t2: 8844 assembly line 2: 111 output: 138 buffer1: 0
+t1: 9972 assembly line 1: 111 buffer1: 1
+t2: 8904 assembly line 2: 111 output: 139 buffer1: 0
+t1: 10026 assembly line 1: 111 buffer1: 1
+FAILED2:
+t1: 10080 assembly line 1: 111 buffer1: 2
+t2: 8910 assembly line 2: 111 buffer1: 2
+t1: 10134 assembly line 1: 111 buffer1: 2
+t2: 8970 assembly line 2: 111 output: 140 buffer1: 1
+t1: 10188 assembly line 1: 111 buffer1: 2
+t2: 9030 assembly line 2: 111 output: 141 buffer1: 1
+t1: 10242 assembly line 1: 111 buffer1: 2
+t2: 9090 assembly line 2: 111 output: 142 buffer1: 1
+t1: 10296 assembly line 1: 111 buffer1: 2
+t2: 9150 assembly line 2: 111 output: 143 buffer1: 1
+t1: 10350 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 9156 assembly line 2: 111 buffer1: 2
+t1: 10404 assembly line 1: 111 buffer1: 2
+t2: 9216 assembly line 2: 111 output: 144 buffer1: 1
+t1: 10458 assembly line 1: 111 buffer1: 2
+t2: 9276 assembly line 2: 111 output: 145 buffer1: 1
+t1: 10512 assembly line 1: 111 buffer1: 2
+t2: 9336 assembly line 2: 111 output: 146 buffer1: 1
+t1: 10566 assembly line 1: 111 buffer1: 2
+t2: 9396 assembly line 2: 111 output: 147 buffer1: 1
+t1: 10620 assembly line 1: 111 buffer1: 2
+t1: 10674 assembly line 1: 111 buffer1: 2
+t2: 9456 assembly line 2: 111 output: 148 buffer1: 1
+t1: 10728 assembly line 1: 111 buffer1: 2
+t2: 9516 assembly line 2: 111 output: 149 buffer1: 1
+t1: 10782 assembly line 1: 111 buffer1: 2
+t2: 9576 assembly line 2: 111 output: 150 buffer1: 1
+t1: 10836 assembly line 1: 111 buffer1: 2
+t2: 9636 assembly line 2: 111 output: 151 buffer1: 1
+t1: 10890 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 9642 assembly line 2: 111 buffer1: 2
+t1: 10944 assembly line 1: 111 buffer1: 2
+t2: 9702 assembly line 2: 111 output: 152 buffer1: 1
+t1: 10998 assembly line 1: 111 buffer1: 2
+t2: 9762 assembly line 2: 111 output: 153 buffer1: 1
+t1: 11052 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 9768 assembly line 2: 111 buffer1: 2
+t1: 11106 assembly line 1: 111 buffer1: 2
+FAILED2:
+t1: 11160 assembly line 1: 111 buffer1: 2
+t2: 9774 assembly line 2: 111 buffer1: 2
+t1: 11214 assembly line 1: 111 buffer1: 2
+t2: 9834 assembly line 2: 111 output: 154 buffer1: 1
+t1: 11268 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 9840 assembly line 2: 111 buffer1: 2
+t1: 11322 assembly line 1: 111 buffer1: 2
+t2: 9900 assembly line 2: 111 output: 155 buffer1: 1
+t1: 11376 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 9906 assembly line 2: 111 buffer1: 2
+t1: 11430 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 9912 assembly line 2: 111 buffer1: 2
+t1: 11484 assembly line 1: 111 buffer1: 2
+t2: 9972 assembly line 2: 111 output: 156 buffer1: 1
+t1: 11538 assembly line 1: 111 buffer1: 2
+t2: 10032 assembly line 2: 111 output: 157 buffer1: 1
+t1: 11592 assembly line 1: 111 buffer1: 2
+t2: 10092 assembly line 2: 111 output: 158 buffer1: 1
+FAILED1:
+t1: 11598 assembly line 1: 111 buffer1: 1
+t2: 10152 assembly line 2: 111 output: 159 buffer1: 0
+t1: 11652 assembly line 1: 111 buffer1: 1
+t1: 11706 assembly line 1: 111 buffer1: 2
+t2: 10212 assembly line 2: 111 output: 160 buffer1: 1
+t1: 11760 assembly line 1: 111 buffer1: 2
+t2: 10272 assembly line 2: 111 output: 161 buffer1: 1
+t1: 11814 assembly line 1: 111 buffer1: 2
+t2: 10332 assembly line 2: 111 output: 162 buffer1: 1
+t1: 11868 assembly line 1: 111 buffer1: 2
+t2: 10392 assembly line 2: 111 output: 163 buffer1: 1
+FAILED1:
+t1: 11874 assembly line 1: 111 buffer1: 1
+t2: 10452 assembly line 2: 111 output: 164 buffer1: 0
+t1: 11928 assembly line 1: 111 buffer1: 1
+t2: 10512 assembly line 2: 111 output: 165 buffer1: 0
+FAILED1:
+t1: 11934 assembly line 1: 111 buffer1: 0
+t2: 10572 assembly line 2: 011 output: 166 buffer1: 0
+t1: 11988 assembly line 1: 111 buffer1: 1
+t2: 10632 assembly line 2: 101 output: 167 buffer1: 0
+t1: 12042 assembly line 1: 111 buffer1: 1
+t2: 10692 assembly line 2: 110 output: 168 buffer1: 0
+t1: 12096 assembly line 1: 111 buffer1: 1
+t1: 12150 assembly line 1: 111 buffer1: 2
+t2: 10752 assembly line 2: 111 output: 168 buffer1: 1
+t1: 12204 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 10758 assembly line 2: 111 buffer1: 2
+t1: 12258 assembly line 1: 111 buffer1: 2
+t2: 10818 assembly line 2: 111 output: 169 buffer1: 1
+t1: 12312 assembly line 1: 111 buffer1: 2
+t2: 10878 assembly line 2: 111 output: 170 buffer1: 1
+t1: 12366 assembly line 1: 111 buffer1: 2
+t2: 10938 assembly line 2: 111 output: 171 buffer1: 1
+t1: 12420 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 10944 assembly line 2: 111 buffer1: 2
+t1: 12474 assembly line 1: 111 buffer1: 2
+t2: 11004 assembly line 2: 111 output: 172 buffer1: 1
+t1: 12528 assembly line 1: 111 buffer1: 2
+t2: 11064 assembly line 2: 111 output: 173 buffer1: 1
+t1: 12582 assembly line 1: 111 buffer1: 2
+t2: 11124 assembly line 2: 111 output: 174 buffer1: 1
+t1: 12636 assembly line 1: 111 buffer1: 2
+t1: 12690 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 11130 assembly line 2: 111 buffer1: 2
+t1: 12744 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 11136 assembly line 2: 111 buffer1: 2
+t1: 12798 assembly line 1: 111 buffer1: 2
+t2: 11196 assembly line 2: 111 output: 175 buffer1: 1
+t1: 12852 assembly line 1: 111 buffer1: 2
+t2: 11256 assembly line 2: 111 output: 176 buffer1: 1
+t1: 12906 assembly line 1: 111 buffer1: 2
+t2: 11316 assembly line 2: 111 output: 177 buffer1: 1
+t1: 12960 assembly line 1: 111 buffer1: 2
+t2: 11376 assembly line 2: 111 output: 178 buffer1: 1
+t1: 13014 assembly line 1: 111 buffer1: 2
+t2: 11436 assembly line 2: 111 output: 179 buffer1: 1
+t1: 13068 assembly line 1: 111 buffer1: 2
+t2: 11496 assembly line 2: 111 output: 180 buffer1: 1
+t1: 13122 assembly line 1: 111 buffer1: 2
+t2: 11556 assembly line 2: 111 output: 181 buffer1: 1
+t1: 13176 assembly line 1: 111 buffer1: 2
+t1: 13230 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 11562 assembly line 2: 111 buffer1: 2
+FAILED1:
+t1: 13236 assembly line 1: 111 buffer1: 2
+t2: 11622 assembly line 2: 111 output: 182 buffer1: 1
+t1: 13290 assembly line 1: 111 buffer1: 2
+t2: 11682 assembly line 2: 111 output: 183 buffer1: 1
+t1: 13344 assembly line 1: 111 buffer1: 2
+t2: 11742 assembly line 2: 111 output: 184 buffer1: 1
+t1: 13398 assembly line 1: 111 buffer1: 2
+t2: 11802 assembly line 2: 111 output: 185 buffer1: 1
+t1: 13452 assembly line 1: 111 buffer1: 2
+t2: 11862 assembly line 2: 111 output: 186 buffer1: 1
+t1: 13506 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 11868 assembly line 2: 111 buffer1: 2
+t1: 13560 assembly line 1: 111 buffer1: 2
+t2: 11928 assembly line 2: 111 output: 187 buffer1: 1
+t1: 13614 assembly line 1: 111 buffer1: 2
+t2: 11988 assembly line 2: 111 output: 188 buffer1: 1
+t1: 13668 assembly line 1: 111 buffer1: 2
+t1: 13722 assembly line 1: 111 buffer1: 2
+t2: 12048 assembly line 2: 111 output: 189 buffer1: 1
+t1: 13776 assembly line 1: 111 buffer1: 2
+t2: 12108 assembly line 2: 111 output: 190 buffer1: 1
+t1: 13830 assembly line 1: 111 buffer1: 2
+t2: 12168 assembly line 2: 111 output: 191 buffer1: 1
+t1: 13884 assembly line 1: 111 buffer1: 2
+t2: 12228 assembly line 2: 111 output: 192 buffer1: 1
+t1: 13938 assembly line 1: 111 buffer1: 2
+t2: 12288 assembly line 2: 111 output: 193 buffer1: 1
+t1: 13992 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 12294 assembly line 2: 111 buffer1: 2
+t1: 14046 assembly line 1: 111 buffer1: 2
+t2: 12354 assembly line 2: 111 output: 194 buffer1: 1
+t1: 14100 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 12360 assembly line 2: 111 buffer1: 2
+t1: 14154 assembly line 1: 111 buffer1: 2
+t2: 12420 assembly line 2: 111 output: 195 buffer1: 1
+t1: 14208 assembly line 1: 111 buffer1: 2
+t1: 14262 assembly line 1: 111 buffer1: 2
+t2: 12480 assembly line 2: 111 output: 196 buffer1: 1
+t1: 14316 assembly line 1: 111 buffer1: 2
+t2: 12540 assembly line 2: 111 output: 197 buffer1: 1
+t1: 14370 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 12546 assembly line 2: 111 buffer1: 2
+t1: 14424 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 12552 assembly line 2: 111 buffer1: 2
+t1: 14478 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 12558 assembly line 2: 111 buffer1: 2
+t1: 14532 assembly line 1: 111 buffer1: 2
+t2: 12618 assembly line 2: 111 output: 198 buffer1: 1
+t1: 14586 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 12624 assembly line 2: 111 buffer1: 2
+t1: 14640 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 12630 assembly line 2: 111 buffer1: 2
+t1: 14694 assembly line 1: 111 buffer1: 2
+t2: 12690 assembly line 2: 111 output: 199 buffer1: 1
+t1: 14748 assembly line 1: 111 buffer1: 2
+FAILED1:
+t2: 12750 assembly line 2: 111 output: 200 buffer1: 1
+t1: 14754 assembly line 1: 111 buffer1: 1
+t1: 14808 assembly line 1: 111 buffer1: 2
+t2: 12810 assembly line 2: 111 output: 201 buffer1: 1
+t1: 14862 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 12816 assembly line 2: 111 buffer1: 2
+t1: 14916 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 12822 assembly line 2: 111 buffer1: 2
+t1: 14970 assembly line 1: 111 buffer1: 2
+t2: 12882 assembly line 2: 111 output: 202 buffer1: 1
+t1: 15024 assembly line 1: 111 buffer1: 2
+t2: 12942 assembly line 2: 111 output: 203 buffer1: 1
+FAILED1:
+t1: 15030 assembly line 1: 111 buffer1: 1
+FAILED2:
+t2: 12948 assembly line 2: 111 buffer1: 1
+t1: 15084 assembly line 1: 111 buffer1: 2
+t2: 13008 assembly line 2: 111 output: 204 buffer1: 1
+t1: 15138 assembly line 1: 111 buffer1: 2
+FAILED2:
+t1: 15192 assembly line 1: 111 buffer1: 2
+t2: 13014 assembly line 2: 111 buffer1: 2
+t1: 15246 assembly line 1: 111 buffer1: 2
+t2: 13074 assembly line 2: 111 output: 205 buffer1: 1
+t1: 15300 assembly line 1: 111 buffer1: 2
+t2: 13134 assembly line 2: 111 output: 206 buffer1: 1
+t1: 15354 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 13140 assembly line 2: 111 buffer1: 2
+t1: 15408 assembly line 1: 111 buffer1: 2
+t2: 13200 assembly line 2: 111 output: 207 buffer1: 1
+t1: 15462 assembly line 1: 111 buffer1: 2
+t2: 13260 assembly line 2: 111 output: 208 buffer1: 1
+t1: 15516 assembly line 1: 111 buffer1: 2
+t2: 13320 assembly line 2: 111 output: 209 buffer1: 1
+t1: 15570 assembly line 1: 111 buffer1: 2
+t2: 13380 assembly line 2: 111 output: 210 buffer1: 1
+t1: 15624 assembly line 1: 111 buffer1: 2
+t2: 13440 assembly line 2: 111 output: 211 buffer1: 1
+t1: 15678 assembly line 1: 111 buffer1: 2
+t2: 13500 assembly line 2: 111 output: 212 buffer1: 1
+FAILED1:
+t1: 15684 assembly line 1: 111 buffer1: 1
+t1: 15738 assembly line 1: 111 buffer1: 2
+t2: 13560 assembly line 2: 111 output: 213 buffer1: 1
+t1: 15792 assembly line 1: 111 buffer1: 2
+t2: 13620 assembly line 2: 111 output: 214 buffer1: 1
+t1: 15846 assembly line 1: 111 buffer1: 2
+t2: 13680 assembly line 2: 111 output: 215 buffer1: 1
+t1: 15900 assembly line 1: 111 buffer1: 2
+t2: 13740 assembly line 2: 111 output: 216 buffer1: 1
+t1: 15954 assembly line 1: 111 buffer1: 2
+t2: 13800 assembly line 2: 111 output: 217 buffer1: 1
+t1: 16008 assembly line 1: 111 buffer1: 2
+t2: 13860 assembly line 2: 111 output: 218 buffer1: 1
+t1: 16062 assembly line 1: 111 buffer1: 2
+t2: 13920 assembly line 2: 111 output: 219 buffer1: 1
+t1: 16116 assembly line 1: 111 buffer1: 2
+t2: 13980 assembly line 2: 111 output: 220 buffer1: 1
+t1: 16170 assembly line 1: 111 buffer1: 2
+t2: 14040 assembly line 2: 111 output: 221 buffer1: 1
+t1: 16224 assembly line 1: 111 buffer1: 2
+t1: 16278 assembly line 1: 111 buffer1: 2
+t2: 14100 assembly line 2: 111 output: 222 buffer1: 1
+t1: 16332 assembly line 1: 111 buffer1: 2
+t2: 14160 assembly line 2: 111 output: 223 buffer1: 1
+t1: 16386 assembly line 1: 111 buffer1: 2
+t2: 14220 assembly line 2: 111 output: 224 buffer1: 1
+t1: 16440 assembly line 1: 111 buffer1: 2
+t2: 14280 assembly line 2: 111 output: 225 buffer1: 1
+t1: 16494 assembly line 1: 111 buffer1: 2
+t2: 14340 assembly line 2: 111 output: 226 buffer1: 1
+t1: 16548 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 14346 assembly line 2: 111 buffer1: 2
+t1: 16602 assembly line 1: 111 buffer1: 2
+t2: 14406 assembly line 2: 111 output: 227 buffer1: 1
+t1: 16656 assembly line 1: 111 buffer1: 2
+t2: 14466 assembly line 2: 111 output: 228 buffer1: 1
+t1: 16710 assembly line 1: 111 buffer1: 2
+FAILED2:
+FAILED1:
+t2: 14472 assembly line 2: 111 buffer1: 2
+t1: 16716 assembly line 1: 111 buffer1: 2
+t1: 16770 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 14478 assembly line 2: 111 buffer1: 2
+t1: 16824 assembly line 1: 111 buffer1: 2
+t2: 14538 assembly line 2: 111 output: 229 buffer1: 1
+t1: 16878 assembly line 1: 111 buffer1: 2
+t2: 14598 assembly line 2: 111 output: 230 buffer1: 1
+FAILED1:
+t1: 16884 assembly line 1: 111 buffer1: 1
+t2: 14658 assembly line 2: 111 output: 231 buffer1: 0
+t1: 16938 assembly line 1: 111 buffer1: 1
+FAILED2:
+t2: 14664 assembly line 2: 111 buffer1: 1
+t1: 16992 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 14670 assembly line 2: 111 buffer1: 2
+t1: 17046 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 14676 assembly line 2: 111 buffer1: 2
+t1: 17100 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 14682 assembly line 2: 111 buffer1: 2
+t1: 17154 assembly line 1: 111 buffer1: 2
+FAILED2:
+t1: 17208 assembly line 1: 111 buffer1: 2
+t2: 14688 assembly line 2: 111 buffer1: 2
+t1: 17262 assembly line 1: 111 buffer1: 2
+t2: 14748 assembly line 2: 111 output: 232 buffer1: 1
+t1: 17316 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 14754 assembly line 2: 111 buffer1: 2
+t1: 17370 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 14760 assembly line 2: 111 buffer1: 2
+t1: 17424 assembly line 1: 111 buffer1: 2
+t2: 14820 assembly line 2: 111 output: 233 buffer1: 1
+t1: 17478 assembly line 1: 111 buffer1: 2
+t2: 14880 assembly line 2: 111 output: 234 buffer1: 1
+t1: 17532 assembly line 1: 111 buffer1: 2
+t2: 14940 assembly line 2: 111 output: 235 buffer1: 1
+FAILED1:
+t1: 17538 assembly line 1: 111 buffer1: 1
+t2: 15000 assembly line 2: 111 output: 236 buffer1: 0
+t1: 17592 assembly line 1: 111 buffer1: 1
+t2: 15060 assembly line 2: 111 output: 237 buffer1: 0
+t1: 17646 assembly line 1: 111 buffer1: 1
+t2: 15120 assembly line 2: 111 output: 238 buffer1: 0
+t1: 17700 assembly line 1: 111 buffer1: 1
+t1: 17754 assembly line 1: 111 buffer1: 2
+t2: 15180 assembly line 2: 111 output: 239 buffer1: 1
+t1: 17808 assembly line 1: 111 buffer1: 2
+t2: 15240 assembly line 2: 111 output: 240 buffer1: 1
+t1: 17862 assembly line 1: 111 buffer1: 2
+t2: 15300 assembly line 2: 111 output: 241 buffer1: 1
+t1: 17916 assembly line 1: 111 buffer1: 2
+t2: 15360 assembly line 2: 111 output: 242 buffer1: 1
+t1: 17970 assembly line 1: 111 buffer1: 2
+t2: 15420 assembly line 2: 111 output: 243 buffer1: 1
+FAILED1:
+t1: 17976 assembly line 1: 111 buffer1: 1
+FAILED2:
+t2: 15426 assembly line 2: 111 buffer1: 1
+t1: 18030 assembly line 1: 111 buffer1: 2
+t2: 15486 assembly line 2: 111 output: 244 buffer1: 1
+t1: 18084 assembly line 1: 111 buffer1: 2
+t2: 15546 assembly line 2: 111 output: 245 buffer1: 1
+t1: 18138 assembly line 1: 111 buffer1: 2
+FAILED2:
+t1: 18192 assembly line 1: 111 buffer1: 2
+t2: 15552 assembly line 2: 111 buffer1: 2
+t1: 18246 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 15558 assembly line 2: 111 buffer1: 2
+FAILED1:
+t2: 15618 assembly line 2: 111 output: 246 buffer1: 1
+t2: 15618 assembly line 2: 111 output: 246 buffer1: 1
+t1: 18306 assembly line 1: 111 buffer1: 2
+t2: 15678 assembly line 2: 111 output: 247 buffer1: 1
+FAILED1:
+t1: 18312 assembly line 1: 111 buffer1: 1
+t2: 15738 assembly line 2: 111 output: 248 buffer1: 0
+t1: 18366 assembly line 1: 111 buffer1: 1
+t2: 15798 assembly line 2: 111 output: 249 buffer1: 0
+t1: 18420 assembly line 1: 111 buffer1: 1
+t2: 15858 assembly line 2: 111 output: 250 buffer1: 0
+t1: 18474 assembly line 1: 111 buffer1: 1
+t2: 15918 assembly line 2: 111 output: 251 buffer1: 0
+t1: 18528 assembly line 1: 111 buffer1: 1
+FAILED2:
+t2: 15924 assembly line 2: 111 buffer1: 1
+t1: 18582 assembly line 1: 111 buffer1: 2
+t2: 15984 assembly line 2: 111 output: 252 buffer1: 1
+t1: 18636 assembly line 1: 111 buffer1: 2
+FAILED1:
+t2: 16044 assembly line 2: 111 output: 253 buffer1: 1
+t1: 18642 assembly line 1: 111 buffer1: 1
+t1: 18696 assembly line 1: 111 buffer1: 2
+t2: 16104 assembly line 2: 111 output: 254 buffer1: 1
+t1: 18750 assembly line 1: 111 buffer1: 2
+t2: 16164 assembly line 2: 111 output: 255 buffer1: 1
+t1: 18804 assembly line 1: 111 buffer1: 2
+t2: 16224 assembly line 2: 111 output: 256 buffer1: 1
+t1: 18858 assembly line 1: 111 buffer1: 2
+t2: 16284 assembly line 2: 111 output: 257 buffer1: 1
+t1: 18912 assembly line 1: 111 buffer1: 2
+t2: 16344 assembly line 2: 111 output: 258 buffer1: 1
+t1: 18966 assembly line 1: 111 buffer1: 2
+t2: 16404 assembly line 2: 111 output: 259 buffer1: 1
+t1: 19020 assembly line 1: 111 buffer1: 2
+t2: 16464 assembly line 2: 111 output: 260 buffer1: 1
+t1: 19074 assembly line 1: 111 buffer1: 2
+t2: 16524 assembly line 2: 111 output: 261 buffer1: 1
+t1: 19128 assembly line 1: 111 buffer1: 2
+t1: 19182 assembly line 1: 111 buffer1: 2
+t2: 16584 assembly line 2: 111 output: 262 buffer1: 1
+t1: 19236 assembly line 1: 111 buffer1: 2
+t2: 16644 assembly line 2: 111 output: 263 buffer1: 1
+t1: 19290 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 16650 assembly line 2: 111 buffer1: 2
+t1: 19344 assembly line 1: 111 buffer1: 2
+t2: 16710 assembly line 2: 111 output: 264 buffer1: 1
+t1: 19398 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 16716 assembly line 2: 111 buffer1: 2
+t1: 19452 assembly line 1: 111 buffer1: 2
+t2: 16776 assembly line 2: 111 output: 265 buffer1: 1
+t1: 19506 assembly line 1: 111 buffer1: 2
+t2: 16836 assembly line 2: 111 output: 266 buffer1: 1
+t1: 19560 assembly line 1: 111 buffer1: 2
+t2: 16896 assembly line 2: 111 output: 267 buffer1: 1
+t1: 19614 assembly line 1: 111 buffer1: 2
+t2: 16956 assembly line 2: 111 output: 268 buffer1: 1
+t1: 19668 assembly line 1: 111 buffer1: 2
+t1: 19722 assembly line 1: 111 buffer1: 2
+t2: 17016 assembly line 2: 111 output: 269 buffer1: 1
+t1: 19776 assembly line 1: 111 buffer1: 2
+t2: 17076 assembly line 2: 111 output: 270 buffer1: 1
+t1: 19830 assembly line 1: 111 buffer1: 2
+t2: 17136 assembly line 2: 111 output: 271 buffer1: 1
+t1: 19884 assembly line 1: 111 buffer1: 2
+t2: 17196 assembly line 2: 111 output: 272 buffer1: 1
+t1: 19938 assembly line 1: 111 buffer1: 2
+t2: 17256 assembly line 2: 111 output: 273 buffer1: 1
+t1: 19992 assembly line 1: 111 buffer1: 2
+t2: 17316 assembly line 2: 111 output: 274 buffer1: 1
+t1: 20046 assembly line 1: 111 buffer1: 2
+t2: 17376 assembly line 2: 111 output: 275 buffer1: 1
+t1: 20100 assembly line 1: 111 buffer1: 2
+t2: 17436 assembly line 2: 111 output: 276 buffer1: 1
+t1: 20154 assembly line 1: 111 buffer1: 2
+t2: 17496 assembly line 2: 111 output: 277 buffer1: 1
+t1: 20208 assembly line 1: 111 buffer1: 2
+t1: 20262 assembly line 1: 111 buffer1: 2
+t2: 17556 assembly line 2: 111 output: 278 buffer1: 1
+t1: 20316 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 17562 assembly line 2: 111 buffer1: 2
+t1: 20370 assembly line 1: 111 buffer1: 2
+t2: 17622 assembly line 2: 111 output: 279 buffer1: 1
+t1: 20424 assembly line 1: 111 buffer1: 2
+t2: 17682 assembly line 2: 111 output: 280 buffer1: 1
+t1: 20478 assembly line 1: 111 buffer1: 2
+t2: 17742 assembly line 2: 111 output: 281 buffer1: 1
+t1: 20532 assembly line 1: 111 buffer1: 2
+t2: 17802 assembly line 2: 111 output: 282 buffer1: 1
+t1: 20586 assembly line 1: 111 buffer1: 2
+t2: 17862 assembly line 2: 111 output: 283 buffer1: 1
+t1: 20640 assembly line 1: 111 buffer1: 2
+t2: 17922 assembly line 2: 111 output: 284 buffer1: 1
+t1: 20694 assembly line 1: 111 buffer1: 2
+t2: 17982 assembly line 2: 111 output: 285 buffer1: 1
+t1: 20748 assembly line 1: 111 buffer1: 2
+t1: 20802 assembly line 1: 111 buffer1: 2
+t2: 18042 assembly line 2: 111 output: 286 buffer1: 1
+t1: 20856 assembly line 1: 111 buffer1: 2
+t2: 18102 assembly line 2: 111 output: 287 buffer1: 1
+t1: 20910 assembly line 1: 111 buffer1: 2
+t2: 18162 assembly line 2: 111 output: 288 buffer1: 1
+t1: 20964 assembly line 1: 111 buffer1: 2
+t2: 18222 assembly line 2: 111 output: 289 buffer1: 1
+t1: 21018 assembly line 1: 111 buffer1: 2
+t2: 18282 assembly line 2: 111 output: 290 buffer1: 1
+t1: 21072 assembly line 1: 111 buffer1: 2
+t2: 18342 assembly line 2: 111 output: 291 buffer1: 1
+FAILED1:
+t1: 21078 assembly line 1: 111 buffer1: 1
+t2: 18402 assembly line 2: 111 output: 292 buffer1: 0
+t1: 21132 assembly line 1: 111 buffer1: 1
+t2: 18462 assembly line 2: 111 output: 293 buffer1: 0
+t1: 21186 assembly line 1: 111 buffer1: 1
+t2: 18522 assembly line 2: 111 output: 294 buffer1: 0
+FAILED1:
+t1: 21192 assembly line 1: 111 buffer1: 0
+t1: 21246 assembly line 1: 111 buffer1: 1
+t2: 18582 assembly line 2: 111 output: 295 buffer1: 0
+t1: 21300 assembly line 1: 111 buffer1: 1
+t2: 18642 assembly line 2: 111 output: 296 buffer1: 0
+FAILED1:
+t1: 21306 assembly line 1: 111 buffer1: 0
+FAILED2:
+t2: 18648 assembly line 2: 111 buffer1: 0
+FAILED1:
+t1: 21312 assembly line 1: 111 buffer1: 0
+t2: 18708 assembly line 2: 011 output: 297 buffer1: 0
+t1: 21366 assembly line 1: 111 buffer1: 1
+t2: 18768 assembly line 2: 101 output: 298 buffer1: 0
+t1: 21420 assembly line 1: 111 buffer1: 1
+t2: 18828 assembly line 2: 110 output: 299 buffer1: 0
+t1: 21474 assembly line 1: 111 buffer1: 1
+t2: 18888 assembly line 2: 111 output: 299 buffer1: 0
+t1: 21528 assembly line 1: 111 buffer1: 1
+t2: 18948 assembly line 2: 111 output: 300 buffer1: 0
+t1: 21582 assembly line 1: 111 buffer1: 1
+t2: 19008 assembly line 2: 111 output: 301 buffer1: 0
+t1: 21636 assembly line 1: 111 buffer1: 1
+t1: 21690 assembly line 1: 111 buffer1: 2
+t2: 19068 assembly line 2: 111 output: 302 buffer1: 1
+FAILED1:
+t1: 21696 assembly line 1: 111 buffer1: 1
+t2: 19128 assembly line 2: 111 output: 303 buffer1: 0
+t1: 21750 assembly line 1: 111 buffer1: 1
+t2: 19188 assembly line 2: 111 output: 304 buffer1: 0
+t1: 21804 assembly line 1: 111 buffer1: 1
+FAILED2:
+t2: 19194 assembly line 2: 111 buffer1: 1
+t1: 21858 assembly line 1: 111 buffer1: 2
+t2: 19254 assembly line 2: 111 output: 305 buffer1: 1
+FAILED1:
+t1: 21864 assembly line 1: 111 buffer1: 1
+FAILED2:
+t2: 19260 assembly line 2: 111 buffer1: 1
+t1: 21918 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 19266 assembly line 2: 111 buffer1: 2
+t1: 21972 assembly line 1: 111 buffer1: 2
+t2: 19326 assembly line 2: 111 output: 306 buffer1: 1
+FAILED1:
+t1: 21978 assembly line 1: 111 buffer1: 1
+t2: 19386 assembly line 2: 111 output: 307 buffer1: 0
+t1: 22032 assembly line 1: 111 buffer1: 1
+t1: 22086 assembly line 1: 111 buffer1: 2
+t2: 19446 assembly line 2: 111 output: 308 buffer1: 1
+FAILED1:
+t1: 22092 assembly line 1: 111 buffer1: 1
+t2: 19506 assembly line 2: 111 output: 309 buffer1: 0
+FAILED1:
+t1: 22098 assembly line 1: 111 buffer1: 0
+t2: 19566 assembly line 2: 011 output: 310 buffer1: 0
+FAILED1:
+t1: 22104 assembly line 1: 111 buffer1: 0
+t2: 19626 assembly line 2: 001 output: 311 buffer1: 0
+FAILED1:
+t1: 22110 assembly line 1: 111 buffer1: 0
+t2: 19686 assembly line 2: 000 output: 312 buffer1: 0
+FAILED1:
+t1: 22116 assembly line 1: 111 buffer1: 0
+t2: 19746 assembly line 2: 000 output: 312 buffer1: 0
+t1: 22170 assembly line 1: 111 buffer1: 1
+t2: 19806 assembly line 2: 100 output: 312 buffer1: 0
+t1: 22224 assembly line 1: 111 buffer1: 1
+t2: 19866 assembly line 2: 110 output: 312 buffer1: 0
+t1: 22278 assembly line 1: 111 buffer1: 1
+t2: 19926 assembly line 2: 111 output: 312 buffer1: 0
+t1: 22332 assembly line 1: 111 buffer1: 1
+t1: 22386 assembly line 1: 111 buffer1: 2
+t2: 19986 assembly line 2: 111 output: 313 buffer1: 1
+t1: 22440 assembly line 1: 111 buffer1: 2
+t2: 20046 assembly line 2: 111 output: 314 buffer1: 1
+t1: 22494 assembly line 1: 111 buffer1: 2
+t2: 20106 assembly line 2: 111 output: 315 buffer1: 1
+t1: 22548 assembly line 1: 111 buffer1: 2
+t2: 20166 assembly line 2: 111 output: 316 buffer1: 1
+FAILED1:
+t1: 22554 assembly line 1: 111 buffer1: 1
+t2: 20226 assembly line 2: 111 output: 317 buffer1: 0
+t1: 22608 assembly line 1: 111 buffer1: 1
+t2: 20286 assembly line 2: 111 output: 318 buffer1: 0
+t1: 22662 assembly line 1: 111 buffer1: 1
+t2: 20346 assembly line 2: 111 output: 319 buffer1: 0
+t1: 22716 assembly line 1: 111 buffer1: 1
+t2: 20406 assembly line 2: 111 output: 320 buffer1: 0
+t1: 22770 assembly line 1: 111 buffer1: 1
+t2: 20466 assembly line 2: 111 output: 321 buffer1: 0
+t1: 22824 assembly line 1: 111 buffer1: 1
+t1: 22878 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 20472 assembly line 2: 111 buffer1: 2
+t1: 22932 assembly line 1: 111 buffer1: 2
+t2: 20532 assembly line 2: 111 output: 322 buffer1: 1
+t1: 22986 assembly line 1: 111 buffer1: 2
+t2: 20592 assembly line 2: 111 output: 323 buffer1: 1
+FAILED1:
+t1: 22992 assembly line 1: 111 buffer1: 1
+t2: 20652 assembly line 2: 111 output: 324 buffer1: 0
+FAILED1:
+t1: 22998 assembly line 1: 111 buffer1: 0
+t2: 20712 assembly line 2: 011 output: 325 buffer1: 0
+t1: 23052 assembly line 1: 111 buffer1: 1
+t2: 20772 assembly line 2: 101 output: 326 buffer1: 0
+t1: 23106 assembly line 1: 111 buffer1: 1
+t2: 20832 assembly line 2: 110 output: 327 buffer1: 0
+t1: 23160 assembly line 1: 111 buffer1: 1
+t2: 20892 assembly line 2: 111 output: 327 buffer1: 0
+t1: 23214 assembly line 1: 111 buffer1: 1
+t2: 20952 assembly line 2: 111 output: 328 buffer1: 0
+t1: 23268 assembly line 1: 111 buffer1: 1
+t1: 23322 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 20958 assembly line 2: 111 buffer1: 2
+t1: 23376 assembly line 1: 111 buffer1: 2
+t2: 21018 assembly line 2: 111 output: 329 buffer1: 1
+t1: 23430 assembly line 1: 111 buffer1: 2
+t2: 21078 assembly line 2: 111 output: 330 buffer1: 1
+t1: 23484 assembly line 1: 111 buffer1: 2
+t2: 21138 assembly line 2: 111 output: 331 buffer1: 1
+t1: 23538 assembly line 1: 111 buffer1: 2
+t2: 21198 assembly line 2: 111 output: 332 buffer1: 1
+t1: 23592 assembly line 1: 111 buffer1: 2
+t2: 21258 assembly line 2: 111 output: 333 buffer1: 1
+t1: 23646 assembly line 1: 111 buffer1: 2
+t2: 21318 assembly line 2: 111 output: 334 buffer1: 1
+t1: 23700 assembly line 1: 111 buffer1: 2
+t2: 21378 assembly line 2: 111 output: 335 buffer1: 1
+t1: 23754 assembly line 1: 111 buffer1: 2
+FAILED2:
+t1: 23808 assembly line 1: 111 buffer1: 2
+t2: 21384 assembly line 2: 111 buffer1: 2
+t1: 23862 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 21390 assembly line 2: 111 buffer1: 2
+t1: 23916 assembly line 1: 111 buffer1: 2
+t2: 21450 assembly line 2: 111 output: 336 buffer1: 1
+t1: 23970 assembly line 1: 111 buffer1: 2
+t2: 21510 assembly line 2: 111 output: 337 buffer1: 1
+t1: 24024 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 21516 assembly line 2: 111 buffer1: 2
+t1: 24078 assembly line 1: 111 buffer1: 2
+t2: 21576 assembly line 2: 111 output: 338 buffer1: 1
+t1: 24132 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 21582 assembly line 2: 111 buffer1: 2
+t1: 24186 assembly line 1: 111 buffer1: 2
+t2: 21642 assembly line 2: 111 output: 339 buffer1: 1
+t1: 24240 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 21648 assembly line 2: 111 buffer1: 2
+t1: 24294 assembly line 1: 111 buffer1: 2
+t2: 21708 assembly line 2: 111 output: 340 buffer1: 1
+t1: 24348 assembly line 1: 111 buffer1: 2
+FAILED1:
+t2: 21768 assembly line 2: 111 output: 341 buffer1: 1
+t1: 24354 assembly line 1: 111 buffer1: 1
+t1: 24408 assembly line 1: 111 buffer1: 2
+t2: 21828 assembly line 2: 111 output: 342 buffer1: 1
+t1: 24462 assembly line 1: 111 buffer1: 2
+t2: 21888 assembly line 2: 111 output: 343 buffer1: 1
+t1: 24516 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 21894 assembly line 2: 111 buffer1: 2
+t1: 24570 assembly line 1: 111 buffer1: 2
+t2: 21954 assembly line 2: 111 output: 344 buffer1: 1
+t1: 24624 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 21960 assembly line 2: 111 buffer1: 2
+t1: 24678 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 21966 assembly line 2: 111 buffer1: 2
+t1: 24732 assembly line 1: 111 buffer1: 2
+t2: 22026 assembly line 2: 111 output: 345 buffer1: 1
+t1: 24786 assembly line 1: 111 buffer1: 2
+FAILED2:
+t1: 24840 assembly line 1: 111 buffer1: 2
+t2: 22032 assembly line 2: 111 buffer1: 2
+t1: 24894 assembly line 1: 111 buffer1: 2
+t2: 22092 assembly line 2: 111 output: 346 buffer1: 1
+t1: 24948 assembly line 1: 111 buffer1: 2
+t2: 22152 assembly line 2: 111 output: 347 buffer1: 1
+t1: 25002 assembly line 1: 111 buffer1: 2
+t2: 22212 assembly line 2: 111 output: 348 buffer1: 1
+t1: 25056 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 22218 assembly line 2: 111 buffer1: 2
+t1: 25110 assembly line 1: 111 buffer1: 2
+t2: 22278 assembly line 2: 111 output: 349 buffer1: 1
+t1: 25164 assembly line 1: 111 buffer1: 2
+t2: 22338 assembly line 2: 111 output: 350 buffer1: 1
+FAILED1:
+t1: 25170 assembly line 1: 111 buffer1: 1
+FAILED2:
+t2: 22344 assembly line 2: 111 buffer1: 1
+t1: 25224 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 22350 assembly line 2: 111 buffer1: 2
+t1: 25278 assembly line 1: 111 buffer1: 2
+t2: 22410 assembly line 2: 111 output: 351 buffer1: 1
+FAILED1:
+t1: 25284 assembly line 1: 111 buffer1: 1
+t1: 25338 assembly line 1: 111 buffer1: 2
+t2: 22470 assembly line 2: 111 output: 352 buffer1: 1
+FAILED1:
+t1: 25344 assembly line 1: 111 buffer1: 1
+FAILED2:
+t2: 22476 assembly line 2: 111 buffer1: 1
+t1: 25398 assembly line 1: 111 buffer1: 2
+t2: 22536 assembly line 2: 111 output: 353 buffer1: 1
+t1: 25452 assembly line 1: 111 buffer1: 2
+t2: 22596 assembly line 2: 111 output: 354 buffer1: 1
+t1: 25506 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 22602 assembly line 2: 111 buffer1: 2
+t1: 25560 assembly line 1: 111 buffer1: 2
+t2: 22662 assembly line 2: 111 output: 355 buffer1: 1
+FAILED1:
+t1: 25566 assembly line 1: 111 buffer1: 1
+t2: 22722 assembly line 2: 111 output: 356 buffer1: 0
+t1: 25620 assembly line 1: 111 buffer1: 1
+t2: 22782 assembly line 2: 111 output: 357 buffer1: 0
+t1: 25674 assembly line 1: 111 buffer1: 1
+t2: 22842 assembly line 2: 111 output: 358 buffer1: 0
+t1: 25728 assembly line 1: 111 buffer1: 1
+t1: 25782 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 22848 assembly line 2: 111 buffer1: 2
+t1: 25836 assembly line 1: 111 buffer1: 2
+t2: 22908 assembly line 2: 111 output: 359 buffer1: 1
+t1: 25890 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 22914 assembly line 2: 111 buffer1: 2
+t1: 25944 assembly line 1: 111 buffer1: 2
+t2: 22974 assembly line 2: 111 output: 360 buffer1: 1
+t1: 25998 assembly line 1: 111 buffer1: 2
+t2: 23034 assembly line 2: 111 output: 361 buffer1: 1
+t1: 26052 assembly line 1: 111 buffer1: 2
+t2: 23094 assembly line 2: 111 output: 362 buffer1: 1
+t1: 26106 assembly line 1: 111 buffer1: 2
+t2: 23154 assembly line 2: 111 output: 363 buffer1: 1
+FAILED1:
+t1: 26112 assembly line 1: 111 buffer1: 1
+t2: 23214 assembly line 2: 111 output: 364 buffer1: 0
+FAILED1:
+t1: 26118 assembly line 1: 111 buffer1: 0
+t2: 23274 assembly line 2: 011 output: 365 buffer1: 0
+t1: 26172 assembly line 1: 111 buffer1: 1
+t1: 26226 assembly line 1: 111 buffer1: 2
+t2: 23334 assembly line 2: 101 output: 366 buffer1: 1
+t1: 26280 assembly line 1: 111 buffer1: 2
+t2: 23394 assembly line 2: 110 output: 367 buffer1: 1
+t1: 26334 assembly line 1: 111 buffer1: 2
+t2: 23454 assembly line 2: 111 output: 367 buffer1: 1
+t1: 26388 assembly line 1: 111 buffer1: 2
+t2: 23514 assembly line 2: 111 output: 368 buffer1: 1
+t1: 26442 assembly line 1: 111 buffer1: 2
+t2: 23574 assembly line 2: 111 output: 369 buffer1: 1
+t1: 26496 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 23580 assembly line 2: 111 buffer1: 2
+t1: 26550 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 23586 assembly line 2: 111 buffer1: 2
+t1: 26604 assembly line 1: 111 buffer1: 2
+t2: 23646 assembly line 2: 111 output: 370 buffer1: 1
+t1: 26658 assembly line 1: 111 buffer1: 2
+t2: 23706 assembly line 2: 111 output: 371 buffer1: 1
+t1: 26712 assembly line 1: 111 buffer1: 2
+t1: 26766 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 23712 assembly line 2: 111 buffer1: 2
+t1: 26820 assembly line 1: 111 buffer1: 2
+t2: 23772 assembly line 2: 111 output: 372 buffer1: 1
+t1: 26874 assembly line 1: 111 buffer1: 2
+t2: 23832 assembly line 2: 111 output: 373 buffer1: 1
+t1: 26928 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 23838 assembly line 2: 111 buffer1: 2
+FAILED1:
+t1: 26934 assembly line 1: 111 buffer1: 2
+t2: 23898 assembly line 2: 111 output: 374 buffer1: 1
+t1: 26988 assembly line 1: 111 buffer1: 2
+t2: 23958 assembly line 2: 111 output: 375 buffer1: 1
+t1: 27042 assembly line 1: 111 buffer1: 2
+t2: 24018 assembly line 2: 111 output: 376 buffer1: 1
+t1: 27096 assembly line 1: 111 buffer1: 2
+t2: 24078 assembly line 2: 111 output: 377 buffer1: 1
+t1: 27150 assembly line 1: 111 buffer1: 2
+t2: 24138 assembly line 2: 111 output: 378 buffer1: 1
+FAILED1:
+t1: 27156 assembly line 1: 111 buffer1: 1
+t1: 27210 assembly line 1: 111 buffer1: 2
+t2: 24198 assembly line 2: 111 output: 379 buffer1: 1
+t1: 27264 assembly line 1: 111 buffer1: 2
+t2: 24258 assembly line 2: 111 output: 380 buffer1: 1
+t1: 27318 assembly line 1: 111 buffer1: 2
+t2: 24318 assembly line 2: 111 output: 381 buffer1: 1
+t1: 27372 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 24324 assembly line 2: 111 buffer1: 2
+t1: 27426 assembly line 1: 111 buffer1: 2
+t2: 24384 assembly line 2: 111 output: 382 buffer1: 1
+t1: 27480 assembly line 1: 111 buffer1: 2
+t2: 24444 assembly line 2: 111 output: 383 buffer1: 1
+t1: 27534 assembly line 1: 111 buffer1: 2
+t2: 24504 assembly line 2: 111 output: 384 buffer1: 1
+t1: 27588 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 24510 assembly line 2: 111 buffer1: 2
+t1: 27642 assembly line 1: 111 buffer1: 2
+t2: 24570 assembly line 2: 111 output: 385 buffer1: 1
+t1: 27696 assembly line 1: 111 buffer1: 2
+t1: 27750 assembly line 1: 111 buffer1: 2
+t2: 24630 assembly line 2: 111 output: 386 buffer1: 1
+t1: 27804 assembly line 1: 111 buffer1: 2
+t2: 24690 assembly line 2: 111 output: 387 buffer1: 1
+t1: 27858 assembly line 1: 111 buffer1: 2
+t2: 24750 assembly line 2: 111 output: 388 buffer1: 1
+t1: 27912 assembly line 1: 111 buffer1: 2
+t2: 24810 assembly line 2: 111 output: 389 buffer1: 1
+t1: 27966 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 24816 assembly line 2: 111 buffer1: 2
+t1: 28020 assembly line 1: 111 buffer1: 2
+t2: 24876 assembly line 2: 111 output: 390 buffer1: 1
+FAILED1:
+t1: 28026 assembly line 1: 111 buffer1: 1
+t2: 24936 assembly line 2: 111 output: 391 buffer1: 0
+t1: 28080 assembly line 1: 111 buffer1: 1
+t2: 24996 assembly line 2: 111 output: 392 buffer1: 0
+t1: 28134 assembly line 1: 111 buffer1: 1
+t2: 25056 assembly line 2: 111 output: 393 buffer1: 0
+t1: 28188 assembly line 1: 111 buffer1: 1
+t1: 28242 assembly line 1: 111 buffer1: 2
+t2: 25116 assembly line 2: 111 output: 394 buffer1: 1
+t1: 28296 assembly line 1: 111 buffer1: 2
+t2: 25176 assembly line 2: 111 output: 395 buffer1: 1
+t1: 28350 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 25182 assembly line 2: 111 buffer1: 2
+t1: 28404 assembly line 1: 111 buffer1: 2
+t2: 25242 assembly line 2: 111 output: 396 buffer1: 1
+t1: 28458 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 25248 assembly line 2: 111 buffer1: 2
+t1: 28512 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 25254 assembly line 2: 111 buffer1: 2
+t1: 28566 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 25260 assembly line 2: 111 buffer1: 2
+t1: 28620 assembly line 1: 111 buffer1: 2
+t2: 25320 assembly line 2: 111 output: 397 buffer1: 1
+t1: 28674 assembly line 1: 111 buffer1: 2
+t2: 25380 assembly line 2: 111 output: 398 buffer1: 1
+t1: 28728 assembly line 1: 111 buffer1: 2
+t1: 28782 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 25386 assembly line 2: 111 buffer1: 2
+t1: 28836 assembly line 1: 111 buffer1: 2
+t2: 25446 assembly line 2: 111 output: 399 buffer1: 1
+t1: 28890 assembly line 1: 111 buffer1: 2
+t2: 25506 assembly line 2: 111 output: 400 buffer1: 1
+t1: 28944 assembly line 1: 111 buffer1: 2
+t2: 25566 assembly line 2: 111 output: 401 buffer1: 1
+t1: 28998 assembly line 1: 111 buffer1: 2
+t2: 25626 assembly line 2: 111 output: 402 buffer1: 1
+t1: 29052 assembly line 1: 111 buffer1: 2
+t2: 25686 assembly line 2: 111 output: 403 buffer1: 1
+t1: 29106 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 25692 assembly line 2: 111 buffer1: 2
+FAILED1:
+t1: 29112 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 25698 assembly line 2: 111 buffer1: 2
+t1: 29166 assembly line 1: 111 buffer1: 2
+t2: 25758 assembly line 2: 111 output: 404 buffer1: 1
+t1: 29220 assembly line 1: 111 buffer1: 2
+t1: 29274 assembly line 1: 111 buffer1: 2
+t2: 25818 assembly line 2: 111 output: 405 buffer1: 1
+t1: 29328 assembly line 1: 111 buffer1: 2
+t2: 25878 assembly line 2: 111 output: 406 buffer1: 1
+t1: 29382 assembly line 1: 111 buffer1: 2
+t2: 25938 assembly line 2: 111 output: 407 buffer1: 1
+t1: 29436 assembly line 1: 111 buffer1: 2
+t2: 25998 assembly line 2: 111 output: 408 buffer1: 1
+t1: 29490 assembly line 1: 111 buffer1: 2
+t2: 26058 assembly line 2: 111 output: 409 buffer1: 1
+t1: 29544 assembly line 1: 111 buffer1: 2
+t2: 26118 assembly line 2: 111 output: 410 buffer1: 1
+FAILED1:
+t1: 29550 assembly line 1: 111 buffer1: 1
+t2: 26178 assembly line 2: 111 output: 411 buffer1: 0
+t1: 29604 assembly line 1: 111 buffer1: 1
+t2: 26238 assembly line 2: 111 output: 412 buffer1: 0
+t1: 29658 assembly line 1: 111 buffer1: 1
+t2: 26298 assembly line 2: 111 output: 413 buffer1: 0
+t1: 29712 assembly line 1: 111 buffer1: 1
+t1: 29766 assembly line 1: 111 buffer1: 2
+t2: 26358 assembly line 2: 111 output: 414 buffer1: 1
+t1: 29820 assembly line 1: 111 buffer1: 2
+t2: 26418 assembly line 2: 111 output: 415 buffer1: 1
+FAILED1:
+t1: 29826 assembly line 1: 111 buffer1: 1
+FAILED2:
+t2: 26424 assembly line 2: 111 buffer1: 1
+t1: 29880 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 26430 assembly line 2: 111 buffer1: 2
+t1: 29934 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 26436 assembly line 2: 111 buffer1: 2
+t1: 29988 assembly line 1: 111 buffer1: 2
+t2: 26496 assembly line 2: 111 output: 416 buffer1: 1
+FAILED1:
+t1: 29994 assembly line 1: 111 buffer1: 1
+t2: 26556 assembly line 2: 111 output: 417 buffer1: 0
+t1: 30048 assembly line 1: 111 buffer1: 1
+t2: 26616 assembly line 2: 111 output: 418 buffer1: 0
+t1: 30102 assembly line 1: 111 buffer1: 1
+t2: 26676 assembly line 2: 111 output: 419 buffer1: 0
+t1: 30156 assembly line 1: 111 buffer1: 1
+t1: 30210 assembly line 1: 111 buffer1: 2
+t2: 26736 assembly line 2: 111 output: 420 buffer1: 1
+t1: 30264 assembly line 1: 111 buffer1: 2
+t2: 26796 assembly line 2: 111 output: 421 buffer1: 1
+t1: 30318 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 26802 assembly line 2: 111 buffer1: 2
+t1: 30372 assembly line 1: 111 buffer1: 2
+t2: 26862 assembly line 2: 111 output: 422 buffer1: 1
+t1: 30426 assembly line 1: 111 buffer1: 2
+t2: 26922 assembly line 2: 111 output: 423 buffer1: 1
+t1: 30480 assembly line 1: 111 buffer1: 2
+t2: 26982 assembly line 2: 111 output: 424 buffer1: 1
+t1: 30534 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 26988 assembly line 2: 111 buffer1: 2
+t1: 30588 assembly line 1: 111 buffer1: 2
+t2: 27048 assembly line 2: 111 output: 425 buffer1: 1
+t1: 30642 assembly line 1: 111 buffer1: 2
+FAILED2:
+t1: 30696 assembly line 1: 111 buffer1: 2
+t2: 27054 assembly line 2: 111 buffer1: 2
+t1: 30750 assembly line 1: 111 buffer1: 2
+t2: 27114 assembly line 2: 111 output: 426 buffer1: 1
+t1: 30804 assembly line 1: 111 buffer1: 2
+t2: 27174 assembly line 2: 111 output: 427 buffer1: 1
+t1: 30858 assembly line 1: 111 buffer1: 2
+t2: 27234 assembly line 2: 111 output: 428 buffer1: 1
+t1: 30912 assembly line 1: 111 buffer1: 2
+t2: 27294 assembly line 2: 111 output: 429 buffer1: 1
+t1: 30966 assembly line 1: 111 buffer1: 2
+t2: 27354 assembly line 2: 111 output: 430 buffer1: 1
+t1: 31020 assembly line 1: 111 buffer1: 2
+t2: 27414 assembly line 2: 111 output: 431 buffer1: 1
+t1: 31074 assembly line 1: 111 buffer1: 2
+t2: 27474 assembly line 2: 111 output: 432 buffer1: 1
+t1: 31128 assembly line 1: 111 buffer1: 2
+t2: 27534 assembly line 2: 111 output: 433 buffer1: 1
+t1: 31182 assembly line 1: 111 buffer1: 2
+t2: 27594 assembly line 2: 111 output: 434 buffer1: 1
+t1: 31236 assembly line 1: 111 buffer1: 2
+FAILED1:
+t2: 27654 assembly line 2: 111 output: 435 buffer1: 1
+t1: 31242 assembly line 1: 111 buffer1: 1
+t1: 31296 assembly line 1: 111 buffer1: 2
+t2: 27714 assembly line 2: 111 output: 436 buffer1: 1
+t1: 31350 assembly line 1: 111 buffer1: 2
+t2: 27774 assembly line 2: 111 output: 437 buffer1: 1
+t1: 31404 assembly line 1: 111 buffer1: 2
+t2: 27834 assembly line 2: 111 output: 438 buffer1: 1
+t1: 31458 assembly line 1: 111 buffer1: 2
+t2: 27894 assembly line 2: 111 output: 439 buffer1: 1
+t1: 31512 assembly line 1: 111 buffer1: 2
+t2: 27954 assembly line 2: 111 output: 440 buffer1: 1
+t1: 31566 assembly line 1: 111 buffer1: 2
+t2: 28014 assembly line 2: 111 output: 441 buffer1: 1
+t1: 31620 assembly line 1: 111 buffer1: 2
+t2: 28074 assembly line 2: 111 output: 442 buffer1: 1
+t1: 31674 assembly line 1: 111 buffer1: 2
+FAILED2:
+t1: 31728 assembly line 1: 111 buffer1: 2
+t2: 28080 assembly line 2: 111 buffer1: 2
+t1: 31782 assembly line 1: 111 buffer1: 2
+t2: 28140 assembly line 2: 111 output: 443 buffer1: 1
+t1: 31836 assembly line 1: 111 buffer1: 2
+t2: 28200 assembly line 2: 111 output: 444 buffer1: 1
+t1: 31890 assembly line 1: 111 buffer1: 2
+t2: 28260 assembly line 2: 111 output: 445 buffer1: 1
+t1: 31944 assembly line 1: 111 buffer1: 2
+t2: 28320 assembly line 2: 111 output: 446 buffer1: 1
+t1: 31998 assembly line 1: 111 buffer1: 2
+t2: 28380 assembly line 2: 111 output: 447 buffer1: 1
+t1: 32052 assembly line 1: 111 buffer1: 2
+t2: 28440 assembly line 2: 111 output: 448 buffer1: 1
+t1: 32106 assembly line 1: 111 buffer1: 2
+t2: 28500 assembly line 2: 111 output: 449 buffer1: 1
+t1: 32160 assembly line 1: 111 buffer1: 2
+t2: 28560 assembly line 2: 111 output: 450 buffer1: 1
+t1: 32214 assembly line 1: 111 buffer1: 2
+t2: 28620 assembly line 2: 111 output: 451 buffer1: 1
+t1: 32268 assembly line 1: 111 buffer1: 2
+t1: 32322 assembly line 1: 111 buffer1: 2
+t2: 28680 assembly line 2: 111 output: 452 buffer1: 1
+t1: 32376 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 28686 assembly line 2: 111 buffer1: 2
+t1: 32430 assembly line 1: 111 buffer1: 2
+t2: 28746 assembly line 2: 111 output: 453 buffer1: 1
+t1: 32484 assembly line 1: 111 buffer1: 2
+t2: 28806 assembly line 2: 111 output: 454 buffer1: 1
+t1: 32538 assembly line 1: 111 buffer1: 2
+t2: 28866 assembly line 2: 111 output: 455 buffer1: 1
+t1: 32592 assembly line 1: 111 buffer1: 2
+t2: 28926 assembly line 2: 111 output: 456 buffer1: 1
+t1: 32646 assembly line 1: 111 buffer1: 2
+t2: 28986 assembly line 2: 111 output: 457 buffer1: 1
+t1: 32700 assembly line 1: 111 buffer1: 2
+t2: 29046 assembly line 2: 111 output: 458 buffer1: 1
+t1: 32754 assembly line 1: 111 buffer1: 2
+t2: 29106 assembly line 2: 111 output: 459 buffer1: 1
+t1: 32808 assembly line 1: 111 buffer1: 2
+t1: 32862 assembly line 1: 111 buffer1: 2
+t2: 29166 assembly line 2: 111 output: 460 buffer1: 1
+t1: 32916 assembly line 1: 111 buffer1: 2
+FAILED2:
+t2: 29172 assembly line 2: 111 buffer1: 2
+t1: 32970 assembly line 1: 111 buffer1: 2
+t2: 29232 assembly line 2: 111 output: 461 buffer1: 1
+t1: 33024 assembly line 1: 111 buffer1: 2
+t2: 29292 assembly line 2: 111 output: 462 buffer1: 1
+t1: 33078 assembly line 1: 111 buffer1: 2
+t2: 29352 assembly line 2: 111 output: 463 buffer1: 1
+t1: 33132 assembly line 1: 111 buffer1: 2
+t2: 29412 assembly line 2: 111 output: 464 buffer1: 1
+t1: 33186 assembly line 1: 111 buffer1: 2
+t2: 29472 assembly line 2: 111 output: 465 buffer1: 1
+t1: 33240 assembly line 1: 111 buffer1: 2

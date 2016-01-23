@@ -22,6 +22,8 @@ OPTIONS:
     r7Limit = .75
     r8Limit = .50
     r9Limit = .90
+    REPORT_FILE_NAME = "report2.txt"
+    OUTPUT_FILE_NAME = "output2.txt"
 
 To compile changes and run:
 

@@ -24,6 +24,8 @@ public class Mift2
     static double r7Limit = .75;
     static double r8Limit = .50;
     static double r9Limit = .90;
+    static String REPORT_FILE_NAME = "report2.txt";
+    static String OUTPUT_FILE_NAME = "output2.txt";
     static int infiniteOcean = 1;
     static int assemblyLine1[] = {0, 0, 0};
     static int buffer1 = 0;
@@ -122,8 +124,8 @@ public class Mift2
                 t += 1;
                 if(t > RUN_SECONDS)
                 {
-                    writeToOutputFile("report2.txt");
-                    writeToReportFile("output2.txt");
+                    writeToOutputFile(REPORT_FILE_NAME);
+                    writeToReportFile(OUTPUT_FILE_NAME);
                     System.exit(0);
                 }
             }

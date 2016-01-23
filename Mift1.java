@@ -24,6 +24,8 @@ public class Mift1
     static double r4 = 0;
     static double r5 = 0;
     static double r6 = 0;
+    static String REPORT_FILE_NAME = "report1.txt";
+    static String OUTPUT_FILE_NAME = "output1.txt";
     static String displayText = "";
     static long SECS_PER_HOUR = 3600;
     static int t = 0;
@@ -304,8 +306,8 @@ public class Mift1
                 t += 1;
                 if(t > RUN_SECONDS)
                 {
-                    writeToOutputFile("report1.txt");
-                    writeToReportFile("output1.txt");
+                    writeToOutputFile(REPORT_FILE_NAME);
+                    writeToReportFile(OUTPUT_FILE_NAME);
                     System.exit(0);
                 }
             }
