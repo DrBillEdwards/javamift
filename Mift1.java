@@ -304,8 +304,8 @@ public class Mift1
                 t += 1;
                 if(t > RUN_SECONDS)
                 {
-                    writeToOutputFile("report.txt");
-                    writeToReportFile("output.txt");
+                    writeToOutputFile("report1.txt");
+                    writeToReportFile("output1.txt");
                     System.exit(0);
                 }
             }

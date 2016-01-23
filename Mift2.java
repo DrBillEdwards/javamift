@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.io.*;
 
 public class Mift2
 {
@@ -9,8 +10,8 @@ public class Mift2
     static long CYCLE_TIME_SECONDS_3 = 400;
     static double RUN_SECONDS = 36000;
     static long DOWN_TIME = 6;
-//    static boolean appendReport = false;
-//    static boolean appendOutput = false;
+    static boolean appendReport = false;
+    static boolean appendOutput = false;
     static boolean interjectDownTime = false;
     static boolean interjectDownTimes = false;
     static int BUFFER_MAX = 5;
@@ -48,68 +49,68 @@ public class Mift2
     static String outputs[] = new String[40000];
     static int runHour = 1;
     static int i = 0;
-//
-//    public static void writeToOutputFile(String fileName)
-//    {
-//        try
-//        {
-//            FileWriter fw = null;
-//            File file = null;
-//            try
-//            {
-//                file = new File(fileName);
-//                if(!file.exists())
-//                {
-//                    file.createNewFile();
-//                }
-//                fw = new FileWriter(file, appendReport);
-//
-//                for(int i = 0; i < outputs.length; i++)
-//                {
-//                    if(outputs[i] != null)
-//                    {
-//                        fw.write(outputs[i] + '\n');
-//                    }
-//                }
-//
-//                fw.flush();
-//                fw.close();
-//                System.out.println(fileName + " written succesfully");
-//            }
-//            catch (IOException e)
-//            {
-//                e.printStackTrace();
-//            }
-//        }
-//        catch(Exception exception){}
-//    }
-//
-//    public static void writeToReportFile(String fileName)
-//    {
-//        try
-//        {
-//            FileWriter fw = null;
-//            File file = null;
-//            try
-//            {
-//                file = new File(fileName);
-//                if(!file.exists())
-//                {
-//                    file.createNewFile();
-//                }
-//                fw = new FileWriter(file, appendOutput);
-//                fw.write(String.valueOf(output) + '\n');
-//                fw.flush();
-//                fw.close();
-//                System.out.println(fileName + " written succesfully");
-//            }
-//            catch (IOException e)
-//            {
-//                e.printStackTrace();
-//            }
-//        }
-//        catch(Exception exception){}
-//    }
+
+    public static void writeToOutputFile(String fileName)
+    {
+        try
+        {
+            FileWriter fw = null;
+            File file = null;
+            try
+            {
+                file = new File(fileName);
+                if(!file.exists())
+                {
+                    file.createNewFile();
+                }
+                fw = new FileWriter(file, appendReport);
+
+                for(int i = 0; i < outputs.length; i++)
+                {
+                    if(outputs[i] != null)
+                    {
+                        fw.write(outputs[i] + '\n');
+                    }
+                }
+
+                fw.flush();
+                fw.close();
+                System.out.println(fileName + " written succesfully");
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch(Exception exception){}
+    }
+
+    public static void writeToReportFile(String fileName)
+    {
+        try
+        {
+            FileWriter fw = null;
+            File file = null;
+            try
+            {
+                file = new File(fileName);
+                if(!file.exists())
+                {
+                    file.createNewFile();
+                }
+                fw = new FileWriter(file, appendOutput);
+                fw.write(String.valueOf(output) + '\n');
+                fw.flush();
+                fw.close();
+                System.out.println(fileName + " written succesfully");
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch(Exception exception){}
+    }
 
     public static void main(String[] args)
     {
@@ -121,8 +122,8 @@ public class Mift2
                 t += 1;
                 if(t > RUN_SECONDS)
                 {
-//                    writeToOutputFile("report.txt");
-//                    writeToReportFile("output.txt");
+                    writeToOutputFile("report2.txt");
+                    writeToReportFile("output2.txt");
                     System.exit(0);
                 }
             }
@@ -299,10 +300,6 @@ public class Mift2
                 r6 = new Random().nextDouble();
                 if(!(((assemblyLine2[0] == 1) && (r4 >= r4Limit)) || ((assemblyLine2[1] == 1) && (r5 >= r5Limit)) || ((assemblyLine2[2] == 1) && (r6 >= r6Limit))))
                 {
-                    buffer2 += assemblyLine2[2];
-                    assemblyLine2[2] = assemblyLine2[1];
-                    assemblyLine2[1] = assemblyLine2[0];
-                    assemblyLine2[0] = 0;
                     if(buffer1 > 0)
                     {
                         if(buffer2 < BUFFER_MAX)
@@ -379,8 +376,8 @@ public class Mift2
                     t3 += DOWN_TIME;
                     displayText = "t3: " + t3 + " ";
                     displayText += "assembly line 3: " + assemblyLine3[0] + assemblyLine3[1] + assemblyLine3[2] + " ";
-                    displayText += "buffer1 1: " + buffer1 + " ";
-                    displayText += "buffer1 2: " + buffer2 + " ";
+                    displayText += "buffer 1: " + buffer1 + " ";
+                    displayText += "buffer 2: " + buffer2 + " ";
                     displayText += "output: " + output + " ";
                     System.out.println(displayText);
                     outputs[i++] = displayText;
