@@ -40,6 +40,8 @@ OR
     Then from the current directory you changed to, change directory again into the new javamift, compile, and run.
     javac Mift1.java
     java Mift1
+OR
+    Download the zip file of the project with your browser from github, located on the right hand side of https://github.com/DrBillEdwards/javamift
 
 You should see something like this,
 
