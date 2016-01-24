@@ -1,6 +1,7 @@
 # javamift
 
 MIFT - Move It Forward Theory
+DOA - Dynamic Operational Availability
 
 OPTIONS:
 
