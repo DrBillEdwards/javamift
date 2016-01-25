@@ -304,9 +304,9 @@ public class Mift1
                 }
                 else
                 {
-                    if(sta1failed){staNumFailed = 1;}
-                    else if(sta2failed){staNumFailed = 2;}
-                    else if(sta3failed){staNumFailed = 3;}
+                    if(sta1failed){staNumFailed = 4;}
+                    else if(sta2failed){staNumFailed = 5;}
+                    else if(sta3failed){staNumFailed = 6;}
                     System.out.println("FAILED LINE 2, STATION: " + staNumFailed);
                     outputs[i++] = "FAILED LINE 2, STATION: " + staNumFailed;
                     try {Thread.sleep(DOWN_TIME);}
