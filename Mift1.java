@@ -5,14 +5,20 @@ import java.io.*;
 
 public class Mift1
 {
+    // OPTIONS
     static long CYCLE_TIME_SECONDS_1 = 54;
     static long CYCLE_TIME_SECONDS_2 = 60;
     static double RUN_SECONDS = 36000;
     static long DOWN_TIME = 6;
-    static boolean appendReport = false;
-    static boolean appendOutput = false;
+    static boolean appendReport = true;
+    static boolean appendOutput = true;
     static boolean interjectDownTime = false;
     static boolean interjectDownTimes = false;
+    static String REPORT_FILE_NAME = "report1.txt";
+    static String OUTPUT_FILE_NAME = "output1.txt";
+    static int NUM_RUNS = 5;
+
+    // Static Variables
     static int infiniteOcean = 1;
     static int assemblyLine1[] = {0, 0, 0};
     static int buffer1 = 0;
@@ -24,8 +30,6 @@ public class Mift1
     static double r4 = 0;
     static double r5 = 0;
     static double r6 = 0;
-    static String REPORT_FILE_NAME = "report1.txt";
-    static String OUTPUT_FILE_NAME = "output1.txt";
     static String displayText = "";
     static long SECS_PER_HOUR = 3600;
     static int t = 0;
@@ -33,7 +37,13 @@ public class Mift1
     static long t2 = 0;
     static String outputs[] = new String[40000];
     static int runHour = 1;
+    static int currRun = 1;
     static int i = 0;
+    static boolean sta1failed = false;
+    static boolean sta2failed = false;
+    static boolean sta3failed = false;
+    static int staNumFailed = 0;
+    static Timer timer1, timer2, timer3;
 
     public static void writeToOutputFile(String fileName)
     {
@@ -99,7 +109,7 @@ public class Mift1
 
     public static void main(String[] args)
     {
-        TimerTask timerTask1 = new TimerTask()
+        final TimerTask timerTask1 = new TimerTask()
         {
             @Override
             public void run()
@@ -223,7 +233,11 @@ public class Mift1
                 r1 = new Random().nextDouble();
                 r2 = new Random().nextDouble();
                 r3 = new Random().nextDouble();
-                if (!(((assemblyLine1[0] == 1) && (r1 >= .98)) || ((assemblyLine1[1] == 1) && (r2 >= .95)) || ((assemblyLine1[2] == 1) && (r3 >= .99)))) {
+                sta1failed = ((assemblyLine1[0] == 1) && (r1 >= .98));
+                sta2failed = ((assemblyLine1[1] == 1) && (r2 >= .95));
+                sta3failed = ((assemblyLine1[2] == 1) && (r3 >= .99));
+                if (!(sta1failed || sta2failed || sta3failed))
+                {
                     if (buffer1 < 2)
                     {
                         buffer1 += assemblyLine1[2];
@@ -240,8 +254,11 @@ public class Mift1
                 }
                 else
                 {
-                    System.out.println("FAILED1:");
-                    outputs[i++] = "FAILED1:";
+                    if(sta1failed){staNumFailed = 1;}
+                    else if(sta2failed){staNumFailed = 2;}
+                    else if(sta3failed){staNumFailed = 3;}
+                    System.out.println("FAILED LINE 1, STATION: " + staNumFailed);
+                    outputs[i++] = "FAILED LINE 1, STATION: " + staNumFailed;
                     try {Thread.sleep(DOWN_TIME);}
                     catch (Exception exception) {}
                     t1 += DOWN_TIME;
@@ -254,7 +271,7 @@ public class Mift1
             }
         };
 
-        TimerTask timerTask2 = new TimerTask()
+        final TimerTask timerTask2 = new TimerTask()
         {
             @Override
             public void run()
@@ -263,7 +280,10 @@ public class Mift1
                 r4 = new Random().nextDouble();
                 r5 = new Random().nextDouble();
                 r6 = new Random().nextDouble();
-                if(!(((assemblyLine2[0] == 1) && (r4 >= .92)) || ((assemblyLine2[1] == 1) && (r5 >= .90)) || ((assemblyLine2[2] == 1) && (r6 >= .94))))
+                sta1failed = ((assemblyLine2[0] == 1) && (r4 >= .92));
+                sta2failed = ((assemblyLine2[1] == 1) && (r5 >= .90));
+                sta3failed = ((assemblyLine2[2] == 1) && (r6 >= .94));
+                if(!(sta1failed || sta2failed || sta3failed))
                 {
                     output += assemblyLine2[2];
                     assemblyLine2[2] = assemblyLine2[1];
@@ -284,8 +304,11 @@ public class Mift1
                 }
                 else
                 {
-                    System.out.println("FAILED2:");
-                    outputs[i++] = "FAILED2:";
+                    if(sta1failed){staNumFailed = 1;}
+                    else if(sta2failed){staNumFailed = 2;}
+                    else if(sta3failed){staNumFailed = 3;}
+                    System.out.println("FAILED LINE 2, STATION: " + staNumFailed);
+                    outputs[i++] = "FAILED LINE 2, STATION: " + staNumFailed;
                     try {Thread.sleep(DOWN_TIME);}
                     catch(Exception exception) {}
                     t2 += DOWN_TIME;
@@ -308,18 +331,30 @@ public class Mift1
                 {
                     writeToOutputFile(REPORT_FILE_NAME);
                     writeToReportFile(OUTPUT_FILE_NAME);
-                    System.exit(0);
+                    if(currRun >= NUM_RUNS)
+                    {
+                        System.exit(0);
+                    }
+                    assemblyLine1 = new int[assemblyLine1.length];
+                    buffer1 = 0;
+                    assemblyLine2 = new int[assemblyLine2.length];
+                    output = 0;
+                    t = 0;
+                    t1 = 0;
+                    t2 = 0;
+                    outputs = new String[outputs.length];
+                    currRun++;
                 }
             }
         };
 
-        Timer timer3 = new Timer("MyTimer3");
+        timer3 = new Timer("MyTimer3");
         timer3.scheduleAtFixedRate(timerTask3, 0, 1);
 
-        Timer timer1 = new Timer("MyTimer1");
+        timer1 = new Timer("MyTimer1");
         timer1.scheduleAtFixedRate(timerTask1, 0, CYCLE_TIME_SECONDS_1);
 
-        Timer timer2 = new Timer("MyTimer2");
+        timer2 = new Timer("MyTimer2");
         timer2.scheduleAtFixedRate(timerTask2, 0, CYCLE_TIME_SECONDS_2);
     }
 }

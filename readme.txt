@@ -5,14 +5,19 @@ DOA - Dynamic Operational Availability
 
 OPTIONS:
 
-    CYCLE_TIME_SECONDS_1 = 54
-    CYCLE_TIME_SECONDS_2 = 60
-    RUN_SECONDS = 36000
-    DOWN_TIME = 6
-    appendReport = false
-    appendOutput = false
-    injectDownTime = false
-    interjectDownTimes = true
+    // OPTIONS
+    static long CYCLE_TIME_SECONDS_1 = 54;
+    static long CYCLE_TIME_SECONDS_2 = 60;
+    static double RUN_SECONDS = 36000;
+    static long DOWN_TIME = 6;
+    static boolean appendReport = true;
+    static boolean appendOutput = true;
+    static boolean interjectDownTime = false;
+    static boolean interjectDownTimes = false;
+    static String REPORT_FILE_NAME = "report1.txt";
+    static String OUTPUT_FILE_NAME = "output1.txt";
+    static int NUM_RUNS = 5;
+
     BUFFER_MAX = 5 : for Mift 2 implementation
     r1Limit = .98
     r2Limit = .95
@@ -23,8 +28,7 @@ OPTIONS:
     r7Limit = .75
     r8Limit = .50
     r9Limit = .90
-    REPORT_FILE_NAME = "report2.txt"
-    OUTPUT_FILE_NAME = "output2.txt"
+
 
 To compile changes and run:
 
