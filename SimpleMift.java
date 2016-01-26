@@ -3,7 +3,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.io.*;
 
-public class Mift1
+public class SimpleMift
 {
     // OPTIONS
     static long CYCLE_TIME_SECONDS_1 = 54;
@@ -12,11 +12,13 @@ public class Mift1
     static long DOWN_TIME = 6;
     static boolean appendReport = true;
     static boolean appendOutput = true;
-    static boolean interjectDownTime = false;
-    static boolean interjectDownTimes = false;
+    static boolean interjectDownTime = true; // EITHER
+    static boolean interjectDownTimes = false; // OR
     static String REPORT_FILE_NAME = "report1.txt";
     static String OUTPUT_FILE_NAME = "output1.txt";
-    static int NUM_RUNS = 5;
+    static int NUM_RUNS = 20;
+    static String NEW_LINES = "\n";
+    // static String NEW_LINES = "\r\n";
 
     // Static Variables
     static int infiniteOcean = 1;
@@ -64,7 +66,7 @@ public class Mift1
                 {
                     if(outputs[i] != null)
                     {
-                        fw.write(outputs[i] + '\n');
+                        fw.write(outputs[i] + NEW_LINES);
                     }
                 }
 
@@ -94,7 +96,7 @@ public class Mift1
                     file.createNewFile();
                 }
                 fw = new FileWriter(file, appendOutput);
-                fw.write(String.valueOf(output) + '\n');
+                fw.write(String.valueOf(output) + NEW_LINES);
                 fw.flush();
                 fw.close();
                 System.out.println(fileName + " written succesfully");
@@ -114,14 +116,14 @@ public class Mift1
             @Override
             public void run()
             {
-                if(interjectDownTime)
+                if(interjectDownTime && (t >= SECS_PER_HOUR) && runHour == 1)
                 {
-                    displayText = "Deliberate 1/2 hour down time";
+                    displayText = "Deliberate 1/2 hour down time line 1";
                     System.out.println(displayText);
                     outputs[i++] = displayText;
                     try {Thread.sleep(SECS_PER_HOUR / 2);}
                     catch (Exception exception) {}
-                    interjectDownTime = false;
+                    runHour++;
                     t1 += SECS_PER_HOUR / 2;
                 }
                 else
@@ -343,6 +345,7 @@ public class Mift1
                     t1 = 0;
                     t2 = 0;
                     outputs = new String[outputs.length];
+                    runHour = 1;
                     currRun++;
                 }
             }

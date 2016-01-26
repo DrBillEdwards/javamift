@@ -5,18 +5,19 @@ DOA - Dynamic Operational Availability
 
 OPTIONS:
 
-    // OPTIONS
     static long CYCLE_TIME_SECONDS_1 = 54;
     static long CYCLE_TIME_SECONDS_2 = 60;
     static double RUN_SECONDS = 36000;
     static long DOWN_TIME = 6;
     static boolean appendReport = true;
     static boolean appendOutput = true;
-    static boolean interjectDownTime = false;
-    static boolean interjectDownTimes = false;
+    static boolean interjectDownTime = false; // EITHER
+    static boolean interjectDownTimes = true; // OR
     static String REPORT_FILE_NAME = "report1.txt";
     static String OUTPUT_FILE_NAME = "output1.txt";
-    static int NUM_RUNS = 5;
+    static int NUM_RUNS = 2;
+    static String NEW_LINES = "\n";
+    // static String NEW_LINES = "\r\n";
 
     BUFFER_MAX = 5 : for Mift 2 implementation
     r1Limit = .98
@@ -36,15 +37,15 @@ from DOS command line,
 
     change directory to your project directory
     git pull
-    javac Mift1.java
-    java Mift1
+    javac SimpleMift.java
+    java SimpleMift
 OR
     You can always make a new project directory/folder, change directory into that folder and run the following command from the DOS window:
     git clone https://github.com/DrBillEdwards/javamift.git
     This command will download the whole project into the new folder, brand new javamift folder with all my latest changes.
     Then from the current directory you changed to, change directory again into the new javamift, compile, and run.
-    javac Mift1.java
-    java Mift1
+    javac SimpleMift.java
+    java SimpleMift
 OR
     Download the zip file of the project with your browser from github, with Download ZIP button located on the right hand side of https://github.com/DrBillEdwards/javamift
 
