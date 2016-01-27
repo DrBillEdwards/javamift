@@ -12,12 +12,12 @@ public class SimpleMift
     static long DOWN_TIME = 6;
     static boolean appendReport = true;
     static boolean appendOutput = true;
-    static boolean interjectDownTime = true; // EITHER
-    static boolean interjectDownTimes = false; // OR
-    static String REPORT_FILE_NAME = "report1.txt";
-    static String OUTPUT_FILE_NAME = "output1.txt";
-    static int NUM_RUNS = 20;
-    static String NEW_LINES = "\n";
+    static boolean interjectDownTime = false; // EITHER
+    static boolean interjectDownTimes = true; // OR
+    static String REPORT_FILE_NAME = "report1.1.txt";
+    static String OUTPUT_FILE_NAME = "output1.1.txt";
+    static int NUM_RUNS = 101;
+    static String NEW_LINES = "\n"; // Toggle newline types
     // static String NEW_LINES = "\r\n";
 
     // Static Variables
@@ -37,7 +37,7 @@ public class SimpleMift
     static int t = 0;
     static long t1 = 0;
     static long t2 = 0;
-    static String outputs[] = new String[40000];
+    static String outputs[] = new String[2000000]; // RUN_SECONDS * NUM_RUNS
     static int runHour = 1;
     static int currRun = 1;
     static int i = 0;
@@ -47,7 +47,7 @@ public class SimpleMift
     static int staNumFailed = 0;
     static Timer timer1, timer2, timer3;
 
-    public static void writeToOutputFile(String fileName)
+    public static void writeToReportFile(String fileName)
     {
         try
         {
@@ -72,7 +72,7 @@ public class SimpleMift
 
                 fw.flush();
                 fw.close();
-                System.out.println(fileName + " written succesfully");
+                System.out.println(fileName + " written successfully");
             }
             catch (IOException e)
             {
@@ -82,7 +82,7 @@ public class SimpleMift
         catch(Exception exception){}
     }
 
-    public static void writeToReportFile(String fileName)
+    public static void writeToOutputFile(String fileName)
     {
         try
         {
@@ -132,7 +132,7 @@ public class SimpleMift
                     {
                         if((runHour == 1) && t >= SECS_PER_HOUR)
                         {
-                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
+                            displayText = "Deliberate 1/2 hour down time line 1, hour " + runHour;
                             System.out.println(displayText);
                             outputs[i++] = displayText;
                             try {Thread.sleep(SECS_PER_HOUR / 2);}
@@ -238,6 +238,7 @@ public class SimpleMift
                 sta1failed = ((assemblyLine1[0] == 1) && (r1 >= .98));
                 sta2failed = ((assemblyLine1[1] == 1) && (r2 >= .95));
                 sta3failed = ((assemblyLine1[2] == 1) && (r3 >= .99));
+                // if((((assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2]) > 0) && !(sta1failed || sta2failed || sta3failed)) || ())
                 if (!(sta1failed || sta2failed || sta3failed))
                 {
                     if (buffer1 < 2)
@@ -331,8 +332,9 @@ public class SimpleMift
                 t += 1;
                 if(t > RUN_SECONDS)
                 {
-                    writeToOutputFile(REPORT_FILE_NAME);
-                    writeToReportFile(OUTPUT_FILE_NAME);
+                    t = 0;
+                    writeToOutputFile(OUTPUT_FILE_NAME);
+                    writeToReportFile(REPORT_FILE_NAME);
                     if(currRun >= NUM_RUNS)
                     {
                         System.exit(0);
@@ -341,7 +343,6 @@ public class SimpleMift
                     buffer1 = 0;
                     assemblyLine2 = new int[assemblyLine2.length];
                     output = 0;
-                    t = 0;
                     t1 = 0;
                     t2 = 0;
                     outputs = new String[outputs.length];
