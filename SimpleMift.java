@@ -225,7 +225,6 @@ public class SimpleMift
                         }
                     }
                 }
-                Random rand = new Random();
                 r1 = new Random().nextDouble();
                 r2 = new Random().nextDouble();
                 r3 = new Random().nextDouble();
@@ -287,7 +286,6 @@ public class SimpleMift
             @Override
             public void run()
             {
-                Random rand = new Random();
                 r4 = new Random().nextDouble();
                 r5 = new Random().nextDouble();
                 r6 = new Random().nextDouble();
