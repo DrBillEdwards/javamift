@@ -7,18 +7,20 @@ OPTIONS:
 
     static long CYCLE_TIME_SECONDS_1 = 54;
     static long CYCLE_TIME_SECONDS_2 = 60;
-    static double RUN_SECONDS = 36000;
+    static double RUN_SECONDS = 4000;
     static long DOWN_TIME = 6;
-    static boolean appendReport = true;
-    static boolean appendOutput = true;
+    static int NUM_RUNS = 1;
     static boolean interjectDownTime = false; // EITHER
     static boolean interjectDownTimes = false; // OR
+    static boolean infOceanDownTimes = false; // Either
+    static boolean run20Down20InfOcn = true; // OR
+    static boolean run20Down20Line1 = false; // Either
     static String REPORT_FILE_NAME = "report1.txt";
     static String OUTPUT_FILE_NAME = "output1.txt";
-    static int NUM_RUNS = 101;
+    static boolean appendReport = true;
+    static boolean appendOutput = true;
     static String NEW_LINES = "\n"; // Toggle newline types
     // static String NEW_LINES = "\r\n";
-    static boolean INF_OCN_DOWNTIMES = true;
 
     BUFFER_MAX = 5 : for Mift 2 implementation
     r1Limit = .98
