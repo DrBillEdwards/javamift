@@ -8,21 +8,23 @@ public class SimpleMift
     // OPTIONS
     static long CYCLE_TIME_SECONDS_1 = 54;
     static long CYCLE_TIME_SECONDS_2 = 60;
-    static double RUN_SECONDS = 36000;
+    static double RUN_SECONDS = 4000;
     static long DOWN_TIME = 6;
-    static boolean appendReport = true;
-    static boolean appendOutput = true;
+    static int NUM_RUNS = 1;
     static boolean interjectDownTime = false; // EITHER
     static boolean interjectDownTimes = false; // OR
+    static boolean infOceanDownTimes = false; // Either
+    static boolean run20Down20InfOcn = true; // OR
+    static boolean run20Down20Line1 = false; // Either
     static String REPORT_FILE_NAME = "report1.txt";
     static String OUTPUT_FILE_NAME = "output1.txt";
-    static int NUM_RUNS = 101;
+    static boolean appendReport = true;
+    static boolean appendOutput = true;
     static String NEW_LINES = "\n"; // Toggle newline types
     // static String NEW_LINES = "\r\n";
-    static boolean INF_OCN_DOWNTIMES = true;
 
     // Static Variables
-    static int infiniteOcean = 1;
+    static int infOcn = 1;
     static int assemblyLine1[] = {1, 1, 1};
     static int buffer1 = 2;
     static int assemblyLine2[] = {1, 1, 1};
@@ -35,7 +37,9 @@ public class SimpleMift
     static double r6 = 0;
     static String displayText = "";
     static long SECS_PER_HOUR = 3600;
+    static long SECS_PER_MIN = 60;
     static int t = 0;
+    static int tInfOcn = 0;
     static long t1 = 0;
     static long t2 = 0;
     static String outputs[] = new String[2000000]; // RUN_SECONDS * NUM_RUNS
@@ -49,69 +53,7 @@ public class SimpleMift
     static boolean sta5failed = false;
     static boolean sta6failed = false;
     static int staNumFailed = 0;
-    static Timer timer1, timer2, timer3;
-
-    public static void writeToReportFile(String fileName)
-    {
-        try
-        {
-            FileWriter fw = null;
-            File file = null;
-            try
-            {
-                file = new File(fileName);
-                if(!file.exists())
-                {
-                    file.createNewFile();
-                }
-                fw = new FileWriter(file, appendReport);
-
-                for(int i = 0; i < outputs.length; i++)
-                {
-                    if(outputs[i] != null)
-                    {
-                        fw.write(outputs[i] + NEW_LINES);
-                    }
-                }
-
-                fw.flush();
-                fw.close();
-                System.out.println(fileName + " written successfully");
-            }
-            catch (IOException e)
-            {
-                e.printStackTrace();
-            }
-        }
-        catch(Exception exception){}
-    }
-
-    public static void writeToOutputFile(String fileName)
-    {
-        try
-        {
-            FileWriter fw = null;
-            File file = null;
-            try
-            {
-                file = new File(fileName);
-                if(!file.exists())
-                {
-                    file.createNewFile();
-                }
-                fw = new FileWriter(file, appendOutput);
-                fw.write(String.valueOf(output) + NEW_LINES);
-                fw.flush();
-                fw.close();
-                System.out.println(fileName + " written succesfully");
-            }
-            catch (IOException e)
-            {
-                e.printStackTrace();
-            }
-        }
-        catch(Exception exception){}
-    }
+    static Timer timer1, infOcnTimer, timer2, timer3;
 
     public static void main(String[] args)
     {
@@ -134,7 +76,11 @@ public class SimpleMift
                 {
                     if(interjectDownTimes)
                     {
-                        if((runHour == 1) && t >= SECS_PER_HOUR)
+                        if(((runHour == 1) && (t >= SECS_PER_HOUR)) || ((runHour == 2) && (t >= (SECS_PER_HOUR * 2))) ||
+                                ((runHour == 3) && (t >= (SECS_PER_HOUR * 3))) || ((runHour == 4) && (t >= (SECS_PER_HOUR * 4))) ||
+                                ((runHour == 5) && (t >= (SECS_PER_HOUR * 5))) || ((runHour == 6) && (t >= (SECS_PER_HOUR * 6))) ||
+                                ((runHour == 7) && (t >= (SECS_PER_HOUR * 7))) || ((runHour == 8) && (t >= (SECS_PER_HOUR * 8))) ||
+                                ((runHour == 9) && (t >= (SECS_PER_HOUR * 9))))
                         {
                             displayText = "Deliberate 1/2 hour down time line 1, hour " + runHour;
                             System.out.println(displayText);
@@ -144,170 +90,35 @@ public class SimpleMift
                             runHour++;
                             t1 += SECS_PER_HOUR / 2;
                         }
-                        else if((runHour == 2) && (t >= (SECS_PER_HOUR * 2)))
+                    }
+                    else if(infOceanDownTimes)
+                    {
+                        if(((runHour == 1) && (t >= SECS_PER_HOUR)) || ((runHour == 2) && (t >= (SECS_PER_HOUR * 2))) ||
+                            ((runHour == 3) && (t >= (SECS_PER_HOUR * 3))) || ((runHour == 4) && (t >= (SECS_PER_HOUR * 4))) ||
+                            ((runHour == 5) && (t >= (SECS_PER_HOUR * 5))) || ((runHour == 6) && (t >= (SECS_PER_HOUR * 6))) ||
+                            ((runHour == 7) && (t >= (SECS_PER_HOUR * 7))) || ((runHour == 8) && (t >= (SECS_PER_HOUR * 8))) ||
+                            ((runHour == 9) && (t >= (SECS_PER_HOUR * 9))))
                         {
-                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
+                            displayText = "FAILED INFINITE OCEAN " + runHour;
                             System.out.println(displayText);
                             outputs[i++] = displayText;
-                            try {Thread.sleep(SECS_PER_HOUR / 2);}
-                            catch (Exception exception) {}
-                            runHour++;
-                            t1 += SECS_PER_HOUR / 2;
-                        }
-                        else if((runHour == 3) && (t >= (SECS_PER_HOUR * 3)))
-                        {
-                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
-                            System.out.println(displayText);
-                            outputs[i++] = displayText;
-                            try {Thread.sleep(SECS_PER_HOUR / 2);}
-                            catch (Exception exception) {}
-                            runHour++;
-                            t1 += SECS_PER_HOUR / 2;
-                        }
-                        else if((runHour == 4) && (t >= (SECS_PER_HOUR * 4)))
-                        {
-                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
-                            System.out.println(displayText);
-                            outputs[i++] = displayText;
-                            try {Thread.sleep(SECS_PER_HOUR / 2);}
-                            catch (Exception exception) {}
-                            runHour++;
-                            t1 += SECS_PER_HOUR / 2;
-                        }
-                        else if((runHour == 5) && (t >= (SECS_PER_HOUR * 5)))
-                        {
-                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
-                            System.out.println(displayText);
-                            outputs[i++] = displayText;
-                            try {Thread.sleep(SECS_PER_HOUR / 2);}
-                            catch (Exception exception) {}
-                            runHour++;
-                            t1 += SECS_PER_HOUR / 2;
-                        }
-                        else if((runHour == 6) && (t >= (SECS_PER_HOUR * 6)))
-                        {
-                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
-                            System.out.println(displayText);
-                            outputs[i++] = displayText;
-                            try {Thread.sleep(SECS_PER_HOUR / 2);}
-                            catch (Exception exception) {}
-                            runHour++;
-                            t1 += SECS_PER_HOUR / 2;
-                        }
-                        else if((runHour == 7) && (t >= (SECS_PER_HOUR * 7)))
-                        {
-                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
-                            System.out.println(displayText);
-                            outputs[i++] = displayText;
-                            try {Thread.sleep(SECS_PER_HOUR / 2);}
-                            catch (Exception exception) {}
-                            runHour++;
-                            t1 += SECS_PER_HOUR / 2;
-                        }
-                        else if((runHour == 8) && (t >= (SECS_PER_HOUR * 8)))
-                        {
-                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
-                            System.out.println(displayText);
-                            outputs[i++] = displayText;
-                            try {Thread.sleep(SECS_PER_HOUR / 2);}
-                            catch (Exception exception) {}
-                            runHour++;
-                            t1 += SECS_PER_HOUR / 2;
-                        }
-                        else if((runHour == 9) && (t >= (SECS_PER_HOUR * 9)))
-                        {
-                            displayText = "Deliberate 1/2 hour down time, hour " + runHour;
-                            System.out.println(displayText);
-                            outputs[i++] = displayText;
-                            try {Thread.sleep(SECS_PER_HOUR / 2);}
-                            catch (Exception exception) {}
+                            infOcn = 0;
+                            try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
+                            infOcn = 1;
                             runHour++;
                             t1 += SECS_PER_HOUR / 2;
                         }
                     }
-                }
-                if(INF_OCN_DOWNTIMES) {
-                    if ((runHour == 1) && t >= SECS_PER_HOUR) {
-                        displayText = "FAILED INFINITE OCEAN " + runHour;
-                        System.out.println(displayText);
-                        outputs[i++] = displayText;
-                        infiniteOcean = 0;
-                        try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
-                        infiniteOcean = 1;
-                        runHour++;
-                        t1 += SECS_PER_HOUR / 2;
-                    } else if ((runHour == 2) && (t >= (SECS_PER_HOUR * 2))) {
-                        displayText = "FAILED INFINITE OCEAN " + runHour;
-                        System.out.println(displayText);
-                        outputs[i++] = displayText;
-                        infiniteOcean = 0;
-                        try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
-                        infiniteOcean = 1;
-                        runHour++;
-                        t1 += SECS_PER_HOUR / 2;
-                    } else if ((runHour == 3) && (t >= (SECS_PER_HOUR * 3))) {
-                        displayText = "FAILED INFINITE OCEAN " + runHour;
-                        System.out.println(displayText);
-                        outputs[i++] = displayText;
-                        infiniteOcean = 0;
-                        try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
-                        infiniteOcean = 1;
-                        runHour++;
-                        t1 += SECS_PER_HOUR / 2;
-                    } else if ((runHour == 4) && (t >= (SECS_PER_HOUR * 4))) {
-                        displayText = "FAILED INFINITE OCEAN " + runHour;
-                        System.out.println(displayText);
-                        outputs[i++] = displayText;
-                        infiniteOcean = 0;
-                        try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
-                        infiniteOcean = 1;
-                        runHour++;
-                        t1 += SECS_PER_HOUR / 2;
-                    } else if ((runHour == 5) && (t >= (SECS_PER_HOUR * 5))) {
-                        displayText = "FAILED INFINITE OCEAN " + runHour;
-                        System.out.println(displayText);
-                        outputs[i++] = displayText;
-                        infiniteOcean = 0;
-                        try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
-                        infiniteOcean = 1;
-                        runHour++;
-                        t1 += SECS_PER_HOUR / 2;
-                    } else if ((runHour == 6) && (t >= (SECS_PER_HOUR * 6))) {
-                        displayText = "FAILED INFINITE OCEAN " + runHour;
-                        System.out.println(displayText);
-                        outputs[i++] = displayText;
-                        infiniteOcean = 0;
-                        try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
-                        infiniteOcean = 1;
-                        runHour++;
-                        t1 += SECS_PER_HOUR / 2;
-                    } else if ((runHour == 7) && (t >= (SECS_PER_HOUR * 7))) {
-                        displayText = "FAILED INFINITE OCEAN " + runHour;
-                        System.out.println(displayText);
-                        outputs[i++] = displayText;
-                        infiniteOcean = 0;
-                        try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
-                        infiniteOcean = 1;
-                        runHour++;
-                        t1 += SECS_PER_HOUR / 2;
-                    } else if ((runHour == 8) && (t >= (SECS_PER_HOUR * 8))) {
-                        displayText = "FAILED INFINITE OCEAN " + runHour;
-                        System.out.println(displayText);
-                        outputs[i++] = displayText;
-                        infiniteOcean = 0;
-                        try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
-                        infiniteOcean = 1;
-                        runHour++;
-                        t1 += SECS_PER_HOUR / 2;
-                    } else if ((runHour == 9) && (t >= (SECS_PER_HOUR * 9))) {
-                        displayText = "FAILED INFINITE OCEAN " + runHour;
-                        System.out.println(displayText);
-                        outputs[i++] = displayText;
-                        infiniteOcean = 0;
-                        try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
-                        infiniteOcean = 1;
-                        runHour++;
-                        t1 += SECS_PER_HOUR / 2;
+                    else if(run20Down20Line1)
+                    {
+                        if((tInfOcn >= (SECS_PER_MIN * 20)) && (tInfOcn < ((SECS_PER_MIN * 20) * 2)))
+                        {
+                            displayText = "FAILED INFINITE OCEAN tInfOcn: " + tInfOcn + " DOWN LINE 1";
+                            System.out.println(displayText);
+                            outputs[i++] = displayText;
+                            try {Thread.sleep(SECS_PER_MIN * 20);} catch (Exception exception) {}
+                            t1 += SECS_PER_MIN * 20;
+                        }
                     }
                 }
                 r1 = new Random().nextDouble();
@@ -323,7 +134,7 @@ public class SimpleMift
                         buffer1 += assemblyLine1[2];
                         assemblyLine1[2] = assemblyLine1[1];
                         assemblyLine1[1] = assemblyLine1[0];
-                        assemblyLine1[0] = infiniteOcean;
+                        assemblyLine1[0] = infOcn;
                     }
                     t1 += CYCLE_TIME_SECONDS_1;
                     displayText = "t1: " + t1 + " ";
@@ -438,13 +249,16 @@ public class SimpleMift
                 t += 1;
                 if(t > RUN_SECONDS)
                 {
-                    t = 0;
                     writeToOutputFile(OUTPUT_FILE_NAME);
                     writeToReportFile(REPORT_FILE_NAME);
                     if(currRun >= NUM_RUNS)
                     {
+                        displayText += NEW_LINES + "t: " + t;
+                        System.out.println(displayText);
+                        outputs[i++] = displayText;
                         System.exit(0);
                     }
+                    t = 0;
                     assemblyLine1 = new int[assemblyLine1.length];
                     buffer1 = 0;
                     assemblyLine2 = new int[assemblyLine2.length];
@@ -458,13 +272,110 @@ public class SimpleMift
             }
         };
 
+        TimerTask infOcnTimerTask = new TimerTask()
+        {
+            @Override
+            public void run() // Master time
+            {
+                tInfOcn += 1;
+                if(run20Down20InfOcn)
+                {
+                    if((tInfOcn >= (SECS_PER_MIN * 20)) && (tInfOcn < ((SECS_PER_MIN * 20) * 2)))
+                    {
+                        displayText = "FAILED INFINITE OCEAN tInfOcn: " + tInfOcn;
+                        System.out.println(displayText);
+                        outputs[i++] = displayText;
+                        infOcn = 0;
+                        try {Thread.sleep(SECS_PER_MIN * 20);} catch (Exception exception) {}
+                        infOcn = 1;
+                        tInfOcn += SECS_PER_MIN * 20;
+                    }
+                }
+            }
+        };
+
         timer3 = new Timer("MyTimer3");
         timer3.scheduleAtFixedRate(timerTask3, 0, 1);
+
+        infOcnTimer = new Timer("InfOcnTimer");
+        infOcnTimer.scheduleAtFixedRate(infOcnTimerTask, 0, 1);
 
         timer1 = new Timer("MyTimer1");
         timer1.scheduleAtFixedRate(timerTask1, 0, CYCLE_TIME_SECONDS_1);
 
         timer2 = new Timer("MyTimer2");
         timer2.scheduleAtFixedRate(timerTask2, 0, CYCLE_TIME_SECONDS_2);
+    }
+
+    public static void writeToReportFile(String fileName)
+    {
+        try
+        {
+            FileWriter fw = null;
+            File file = null;
+            try
+            {
+                file = new File(fileName);
+                if(file.exists())
+                {
+                    file.delete();
+                    file.createNewFile();
+                }
+                else
+                {
+                    file.createNewFile();
+                }
+                fw = new FileWriter(file, appendReport);
+
+                for(int i = 0; i < outputs.length; i++)
+                {
+                    if(outputs[i] != null)
+                    {
+                        fw.write(outputs[i] + NEW_LINES);
+                    }
+                }
+
+                fw.flush();
+                fw.close();
+                System.out.println(fileName + " written successfully");
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch(Exception exception){}
+    }
+
+    public static void writeToOutputFile(String fileName)
+    {
+        try
+        {
+            FileWriter fw = null;
+            File file = null;
+            try
+            {
+                file = new File(fileName);
+                if(file.exists())
+                {
+                    file.delete();
+                    file.createNewFile();
+                }
+                else
+                {
+                    file.createNewFile();
+                }
+                fw = new FileWriter(file, appendOutput);
+                fw.write(String.valueOf(output) + NEW_LINES);
+                fw.flush();
+                fw.close();
+                System.out.println(fileName + " written succesfully");
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch(Exception exception){}
     }
 }

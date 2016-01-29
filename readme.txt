@@ -12,12 +12,13 @@ OPTIONS:
     static boolean appendReport = true;
     static boolean appendOutput = true;
     static boolean interjectDownTime = false; // EITHER
-    static boolean interjectDownTimes = true; // OR
+    static boolean interjectDownTimes = false; // OR
     static String REPORT_FILE_NAME = "report1.txt";
     static String OUTPUT_FILE_NAME = "output1.txt";
-    static int NUM_RUNS = 2;
-    static String NEW_LINES = "\n";
+    static int NUM_RUNS = 101;
+    static String NEW_LINES = "\n"; // Toggle newline types
     // static String NEW_LINES = "\r\n";
+    static boolean INF_OCN_DOWNTIMES = true;
 
     BUFFER_MAX = 5 : for Mift 2 implementation
     r1Limit = .98
@@ -29,7 +30,6 @@ OPTIONS:
     r7Limit = .75
     r8Limit = .50
     r9Limit = .90
-
 
 To compile changes and run:
 
