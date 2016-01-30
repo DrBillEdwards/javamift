@@ -2,6 +2,8 @@
 
 MIFT - Move It Forward Theory
 DOA - Dynamic Operational Availability
+GLAP - Great Lakes Assembly Plant
+EP = Engine Plant
 
 OPTIONS:
 

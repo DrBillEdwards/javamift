@@ -25,7 +25,7 @@ public class Mift2
     static double r8Limit = .50;
     static double r9Limit = .90;
     static String REPORT_FILE_NAME = "report2.txt";
-    static String OUTPUT_FILE_NAME = "output2.txt";
+    static String OUTPUT_FILE_NAME = "outputjames.txt";
     static int infiniteOcean = 1;
     static int assemblyLine1[] = {0, 0, 0};
     static int buffer1 = 0;

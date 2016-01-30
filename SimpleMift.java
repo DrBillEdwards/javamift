@@ -8,7 +8,7 @@ public class SimpleMift
     // OPTIONS
     static long CYCLE_TIME_SECONDS_1 = 54;
     static long CYCLE_TIME_SECONDS_2 = 60;
-    static double RUN_SECONDS = 4000;
+    static double RUN_SECONDS = 3800;
     static long DOWN_TIME = 6;
     static int NUM_RUNS = 1;
     static boolean interjectDownTime = false; // EITHER
@@ -18,7 +18,7 @@ public class SimpleMift
     static boolean run20Down20Line1 = false; // Either
     static String REPORT_FILE_NAME = "report1.txt";
     static String OUTPUT_FILE_NAME = "output1.txt";
-    static boolean appendReport = true;
+    static boolean appendReport = false;
     static boolean appendOutput = true;
     static String NEW_LINES = "\n"; // Toggle newline types
     // static String NEW_LINES = "\r\n";
@@ -68,7 +68,7 @@ public class SimpleMift
                     System.out.println(displayText);
                     outputs[i++] = displayText;
                     try {Thread.sleep(SECS_PER_HOUR / 2);}
-                    catch (Exception exception) {}
+                    catch(Exception exception) {}
                     runHour++;
                     t1 += SECS_PER_HOUR / 2;
                 }
@@ -85,8 +85,7 @@ public class SimpleMift
                             displayText = "Deliberate 1/2 hour down time line 1, hour " + runHour;
                             System.out.println(displayText);
                             outputs[i++] = displayText;
-                            try {Thread.sleep(SECS_PER_HOUR / 2);}
-                            catch (Exception exception) {}
+                            try {Thread.sleep(SECS_PER_HOUR / 2);} catch(Exception exception) {}
                             runHour++;
                             t1 += SECS_PER_HOUR / 2;
                         }
@@ -103,7 +102,7 @@ public class SimpleMift
                             System.out.println(displayText);
                             outputs[i++] = displayText;
                             infOcn = 0;
-                            try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
+                            try {Thread.sleep(SECS_PER_HOUR / 2);} catch(Exception exception) {}
                             infOcn = 1;
                             runHour++;
                             t1 += SECS_PER_HOUR / 2;
@@ -116,7 +115,7 @@ public class SimpleMift
                             displayText = "FAILED INFINITE OCEAN tInfOcn: " + tInfOcn + " DOWN LINE 1";
                             System.out.println(displayText);
                             outputs[i++] = displayText;
-                            try {Thread.sleep(SECS_PER_MIN * 20);} catch (Exception exception) {}
+                            try {Thread.sleep(SECS_PER_MIN * 20);} catch(Exception exception) {}
                             t1 += SECS_PER_MIN * 20;
                         }
                     }
@@ -139,7 +138,8 @@ public class SimpleMift
                     t1 += CYCLE_TIME_SECONDS_1;
                     displayText = "t1: " + t1 + " ";
                     displayText += "assembly line 1: " + assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2] + " ";
-                    displayText += "buffer1: " + buffer1;
+                    displayText += "buffer1: " + buffer1 + " ";
+                    displayText += "output: " + output + " ";
                     System.out.println(displayText);
                     outputs[i++] = displayText;
                 }
@@ -170,7 +170,8 @@ public class SimpleMift
                     }
                     displayText = "t1: " + Math.round(t1) + " ";
                     displayText += "assembly line 1: " + assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2] + " ";
-                    displayText += "buffer1: " + buffer1;
+                    displayText += "buffer1: " + buffer1 + " ";
+                    displayText += "output: " + output + " ";
                     System.out.println(displayText);
                     outputs[i++] = displayText;
                 }
@@ -202,8 +203,8 @@ public class SimpleMift
                     t2 += CYCLE_TIME_SECONDS_2;
                     displayText = "t2: " + t2 + " ";
                     displayText += "assembly line 2: " + assemblyLine2[0] + assemblyLine2[1] + assemblyLine2[2] + " ";
+                    displayText += "buffer1: " + buffer1 + " ";
                     displayText += "output: " + output + " ";
-                    displayText += "buffer1: " + buffer1;
                     System.out.println(displayText);
                     outputs[i++] = displayText;
                 }
@@ -234,7 +235,8 @@ public class SimpleMift
                     }
                     displayText = "t2: " + t2 + " ";
                     displayText += "assembly line 2: " + assemblyLine2[0] + assemblyLine2[1] + assemblyLine2[2] + " ";
-                    displayText += "buffer1: " + buffer1;
+                    displayText += "buffer1: " + buffer1 + " ";
+                    displayText += "output: " + output + " ";
                     System.out.println(displayText);
                     outputs[i++] = displayText;
                 }
@@ -286,7 +288,7 @@ public class SimpleMift
                         System.out.println(displayText);
                         outputs[i++] = displayText;
                         infOcn = 0;
-                        try {Thread.sleep(SECS_PER_MIN * 20);} catch (Exception exception) {}
+                        try {Thread.sleep(SECS_PER_MIN * 20);} catch(Exception exception) {}
                         infOcn = 1;
                         tInfOcn += SECS_PER_MIN * 20;
                     }
