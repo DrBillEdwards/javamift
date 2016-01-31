@@ -9,31 +9,20 @@ OPTIONS:
 
     static long CYCLE_TIME_SECONDS_1 = 54;
     static long CYCLE_TIME_SECONDS_2 = 60;
-    static double RUN_SECONDS = 4000;
+    static double RUN_SECONDS = 3600;
     static long DOWN_TIME = 6;
     static int NUM_RUNS = 1;
     static boolean interjectDownTime = false; // EITHER
     static boolean interjectDownTimes = false; // OR
-    static boolean infOceanDownTimes = false; // Either
+    static boolean infOceanDownTimes = false; // EITHER
     static boolean run20Down20InfOcn = true; // OR
-    static boolean run20Down20Line1 = false; // Either
+    static boolean run20Down20Line1 = false; // EITHER
     static String REPORT_FILE_NAME = "report1.txt";
     static String OUTPUT_FILE_NAME = "output1.txt";
     static boolean appendReport = true;
     static boolean appendOutput = true;
-    static String NEW_LINES = "\n"; // Toggle newline types
+    static String NEW_LINES = "\n"; // toggle newline types
     // static String NEW_LINES = "\r\n";
-
-    BUFFER_MAX = 5 : for Mift 2 implementation
-    r1Limit = .98
-    r2Limit = .95
-    r3Limit = .99
-    r4Limit = .98
-    r5Limit = .90
-    r6Limit = .92
-    r7Limit = .75
-    r8Limit = .50
-    r9Limit = .90
 
 To compile changes and run:
 
