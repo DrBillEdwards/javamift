@@ -10,7 +10,7 @@ public class SimpleMift
     static long CYCLE_TIME_SECONDS_2 = 60;
     static double RUN_SECONDS = 3600;
     static long DOWN_TIME = 6;
-    static int NUM_RUNS = 1;
+    static int NUM_RUNS = 2;
     static boolean interjectDownTime = false; // EITHER
     static boolean interjectDownTimes = false; // OR
     static boolean infOceanDownTimes = false; // EITHER
@@ -18,8 +18,6 @@ public class SimpleMift
     static boolean run20Down20Line1 = false; // EITHER
     static String REPORT_FILE_NAME = "report1.txt";
     static String OUTPUT_FILE_NAME = "output1.txt";
-    static boolean appendReport = true;
-    static boolean appendOutput = true;
     static String NEW_LINES = "\n"; // toggle newline types
     // static String NEW_LINES = "\r\n";
 
@@ -48,6 +46,8 @@ public class SimpleMift
     static int runHour = 1;
     static int currRun = 1;
     static int i = 0;
+    static boolean appendReport = false;
+    static boolean appendOutput = false;
     static boolean sta1failed = false;
     static boolean sta2failed = false;
     static boolean sta3failed = false;
@@ -59,6 +59,14 @@ public class SimpleMift
 
     public static void main(String[] args)
     {
+        createFile(REPORT_FILE_NAME);
+        createFile(OUTPUT_FILE_NAME);
+        if(NUM_RUNS > 1)
+        {
+            appendReport = true;
+            appendOutput = true;
+        }
+
         TimerTask masterTimerTask = new TimerTask()
         {
             @Override
@@ -298,7 +306,7 @@ public class SimpleMift
         line2Timer.scheduleAtFixedRate(line2TimerTask, 0, 1);
     }
 
-    public static void writeToReportFile(String fileName)
+    public static void createFile(String fileName)
     {
         try
         {
@@ -316,6 +324,25 @@ public class SimpleMift
                 {
                     file.createNewFile();
                 }
+                fw.close();
+            }
+            catch(IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch(Exception exception){}
+    }
+
+    public static void writeToReportFile(String fileName)
+    {
+        try
+        {
+            FileWriter fw = null;
+            File file = null;
+            try
+            {
+                file = new File(fileName);
                 fw = new FileWriter(file, appendReport);
 
                 for(int i = 0; i < outputs.length; i++)
@@ -330,7 +357,7 @@ public class SimpleMift
                 fw.close();
                 System.out.println(fileName + " written successfully");
             }
-            catch (IOException e)
+            catch(IOException e)
             {
                 e.printStackTrace();
             }
@@ -347,22 +374,13 @@ public class SimpleMift
             try
             {
                 file = new File(fileName);
-                if(file.exists())
-                {
-                    file.delete();
-                    file.createNewFile();
-                }
-                else
-                {
-                    file.createNewFile();
-                }
                 fw = new FileWriter(file, appendOutput);
                 fw.write(String.valueOf(output) + NEW_LINES);
                 fw.flush();
                 fw.close();
                 System.out.println(fileName + " written succesfully");
             }
-            catch (IOException e)
+            catch(IOException e)
             {
                 e.printStackTrace();
             }

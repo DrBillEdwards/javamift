@@ -19,8 +19,6 @@ OPTIONS:
     static boolean run20Down20Line1 = false; // EITHER
     static String REPORT_FILE_NAME = "report1.txt";
     static String OUTPUT_FILE_NAME = "output1.txt";
-    static boolean appendReport = true;
-    static boolean appendOutput = true;
     static String NEW_LINES = "\n"; // toggle newline types
     // static String NEW_LINES = "\r\n";
 
