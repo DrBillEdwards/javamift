@@ -10,7 +10,7 @@ public class SimpleMift
     static long CYCLE_TIME_SECONDS_2 = 60;
     static double RUN_SECONDS = 3600;
     static long DOWN_TIME = 6;
-    static int NUM_RUNS = 2;
+    static int NUM_RUNS = 10;
     static boolean interjectDownTime = false; // EITHER
     static boolean interjectDownTimes = false; // OR
     static boolean infOceanDownTimes = false; // EITHER
@@ -85,9 +85,14 @@ public class SimpleMift
                         System.exit(0);
                     }
                     t = 0;
+                    infOcn = 1;
                     assemblyLine1 = new int[assemblyLine1.length];
-                    buffer1 = 0;
+                    assemblyLine1[0] = 1; assemblyLine1[1] = 1; assemblyLine1[2] = 1;
+                    buffer1 = 2;
                     assemblyLine2 = new int[assemblyLine2.length];
+                    assemblyLine2[0] = 1; assemblyLine2[1] = 1; assemblyLine2[2] = 1;
+                    t1Prev = 0;
+                    t2Prev = 0;
                     output = 0;
                     outputs = new String[outputs.length];
                     runHour = 1;
@@ -224,6 +229,10 @@ public class SimpleMift
                             displayText += "output: " + output + " ";
                             System.out.println(displayText);
                             outputs[i++] = displayText;
+                            sta1failed = false;
+                            sta2failed = false;
+                            sta3failed = false;
+                            staNumFailed = 0;
                         }
                     }
                 }
@@ -288,6 +297,10 @@ public class SimpleMift
                         displayText += "output: " + output + " ";
                         System.out.println(displayText);
                         outputs[i++] = displayText;
+                        sta4failed = false;
+                        sta5failed = false;
+                        sta6failed = false;
+                        staNumFailed = 0;
                     }
                 }
             }
