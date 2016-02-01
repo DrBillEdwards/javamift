@@ -41,7 +41,7 @@ public class SimpleMift
     static boolean sta6failed = false;
     static int staNumFailed = 0;
     static Timer masterTimer, infOcnTimer, line1Timer, line2Timer;
-    static int totalOutputs = 1000;
+    static int totalOutputs = 0;
 
     public static void main(String[] args)
     {
