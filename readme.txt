@@ -28,15 +28,15 @@ from DOS command line,
 
     change directory to your project directory
     git pull
-    javac SimpleMift.java
-    java SimpleMift
+    javac mift.SimpleMift.java
+    java mift.SimpleMift
 OR
     You can always make a new project directory/folder, change directory into that folder and run the following command from the DOS window:
     git clone https://github.com/DrBillEdwards/javamift.git
     This command will download the whole project into the new folder, brand new javamift folder with all my latest changes.
     Then from the current directory you changed to, change directory again into the new javamift, compile, and run.
-    javac SimpleMift.java
-    java SimpleMift
+    javac mift.SimpleMift.java
+    java mift.SimpleMift
 OR
     Download the zip file of the project with your browser from github, with Download ZIP button located on the right hand side of https://github.com/DrBillEdwards/javamift
 
