@@ -56,6 +56,7 @@ public class SimpleMift
     static boolean sta6failed = false;
     static int staNumFailed = 0;
     static Timer masterTimer, infOcnTimer, line1Timer, line2Timer;
+    static int totalOutputs = 0;
 
     public static void main(String[] args)
     {
@@ -75,12 +76,14 @@ public class SimpleMift
                 t += 1;
                 if(t > RUN_SECONDS)
                 {
+                    totalOutputs += output;
                     writeToOutputFile(OUTPUT_FILE_NAME);
                     writeToReportFile(REPORT_FILE_NAME);
                     if(currRun >= NUM_RUNS)
                     {
                         displayText += NEW_LINES + "t: " + t;
                         System.out.println(displayText);
+                        System.out.println("avg output: " + totalOutputs / NUM_RUNS);
                         outputs[i++] = displayText;
                         System.exit(0);
                     }
