@@ -166,61 +166,69 @@ public class SimpleMift
                             try {Thread.sleep(SECS_PER_MIN * 20);} catch (Exception exception) {}
                         }
                     }
-                    numOfPartsInLine1 = assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2];
-                    if(((numOfPartsInLine1 == 0) && (infOcn > 0)) || ((t > (t1Prev + Options.CYCLE_TIME_SECONDS_1))))
+                    if(buffer1 < 2 && assemblyLine1[2] == 1)
                     {
-                        t1Prev = t;
-                        r1 = new Random().nextDouble();
-                        r2 = new Random().nextDouble();
-                        r3 = new Random().nextDouble();
-                        sta1failed = ((assemblyLine1[0] == 1) && (r1 > .98));
-                        sta2failed = ((assemblyLine1[1] == 1) && (r2 > .95));
-                        sta3failed = ((assemblyLine1[2] == 1) && (r3 > .99));
-                        if(!(sta1failed || sta2failed || sta3failed))
+                        assemblyLine1[2] = 0;
+                        buffer1++;
+                    }
+                    else
+                    {
+                        numOfPartsInLine1 = assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2];
+                        if (((numOfPartsInLine1 == 0) && (infOcn > 0)) || ((t > (t1Prev + Options.CYCLE_TIME_SECONDS_1))))
                         {
-                            if(buffer1 < 2)
+                            t1Prev = t;
+                            r1 = new Random().nextDouble();
+                            r2 = new Random().nextDouble();
+                            r3 = new Random().nextDouble();
+                            sta1failed = ((assemblyLine1[0] == 1) && (r1 > .98));
+                            sta2failed = ((assemblyLine1[1] == 1) && (r2 > .95));
+                            sta3failed = ((assemblyLine1[2] == 1) && (r3 > .99));
+                            if (!(sta1failed || sta2failed || sta3failed))
                             {
-                                buffer1 += assemblyLine1[2];
-                                assemblyLine1[2] = assemblyLine1[1];
-                                assemblyLine1[1] = assemblyLine1[0];
-                                assemblyLine1[0] = infOcn;
-                            }
-                            displayText = "t: " + t1Prev + " ";
-                            displayText += "assembly line 1: " + assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2] + " ";
-                            displayText += "buffer1: " + buffer1 + " ";
-                            displayText += "output: " + output + " ";
-                            System.out.println(displayText);
-                            outputs[i++] = displayText;
-                        }
-                        else
-                        {
-                            if(sta1failed) {staNumFailed = 1;}
-                            else if(sta2failed) {staNumFailed = 2;}
-                            else if(sta3failed) {staNumFailed = 3;}
-                            System.out.println("FAILED LINE 1, STATION: " + staNumFailed);
-                            outputs[i++] = "FAILED LINE 1, STATION: " + staNumFailed;
-                            if(sta1failed)
+                                if (buffer1 < 2)
+                                {
+                                    buffer1 += assemblyLine1[2];
+                                    assemblyLine1[2] = assemblyLine1[1];
+                                    assemblyLine1[1] = assemblyLine1[0];
+                                    assemblyLine1[0] = infOcn;
+                                }
+                                displayText = "t: " + t1Prev + " ";
+                                displayText += "assembly line 1: " + assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2] + " ";
+                                displayText += "buffer1: " + buffer1 + " ";
+                                displayText += "output: " + output + " ";
+                                System.out.println(displayText);
+                                outputs[i++] = displayText;
+                            } else
                             {
-                                try {Thread.sleep(Options.DOWN_TIME);} catch (Exception exception) {}
+                                if (sta1failed) {staNumFailed = 1;} else if (sta2failed)
+                                {
+                                    staNumFailed = 2;
+                                } else if (sta3failed) {staNumFailed = 3;}
+                                System.out.println("FAILED LINE 1, STATION: " + staNumFailed);
+                                outputs[i++] = "FAILED LINE 1, STATION: " + staNumFailed;
+                                if (sta1failed)
+                                {
+                                    try {Thread.sleep(Options.DOWN_TIME);} catch (Exception exception) {}
+                                }
+                                if (sta2failed)
+                                {
+                                    try {Thread.sleep(Options.DOWN_TIME);} catch (Exception exception) {}
+                                }
+                                if (sta3failed)
+                                {
+                                    try {Thread.sleep(Options.DOWN_TIME);} catch (Exception exception) {}
+                                }
+                                displayText = "t: " + t1Prev + " ";
+                                displayText += "assembly line 1: " + assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2] + " ";
+                                displayText += "buffer1: " + buffer1 + " ";
+                                displayText += "output: " + output + " ";
+                                System.out.println(displayText);
+                                outputs[i++] = displayText;
+                                sta1failed = false;
+                                sta2failed = false;
+                                sta3failed = false;
+                                staNumFailed = 0;
                             }
-                            if(sta2failed)
-                            {
-                                try {Thread.sleep(Options.DOWN_TIME);} catch (Exception exception) {}
-                            }
-                            if(sta3failed)
-                            {
-                                try {Thread.sleep(Options.DOWN_TIME);} catch (Exception exception) {}
-                            }
-                            displayText = "t: " + t1Prev + " ";
-                            displayText += "assembly line 1: " + assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2] + " ";
-                            displayText += "buffer1: " + buffer1 + " ";
-                            displayText += "output: " + output + " ";
-                            System.out.println(displayText);
-                            outputs[i++] = displayText;
-                            sta1failed = false;
-                            sta2failed = false;
-                            sta3failed = false;
-                            staNumFailed = 0;
                         }
                     }
                 }
@@ -303,7 +311,7 @@ public class SimpleMift
         line1Timer = new Timer("Line1Timer");
         line1Timer.scheduleAtFixedRate(line1TimerTask, 0, 1);
 
-        line2Timer = new Timer("MyTimer2");
+        line2Timer = new Timer("Line2Timer");
         line2Timer.scheduleAtFixedRate(line2TimerTask, 0, 1);
     }
 
