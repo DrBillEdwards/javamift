@@ -20,8 +20,6 @@ public class SimpleMift
     static double r4 = 0;
     static double r5 = 0;
     static double r6 = 0;
-    static long SECS_PER_HOUR = 3600;
-    static long SECS_PER_MIN = 60;
     static int t = 0;
     static int t1Prev = 0;
     static int t2Prev = 0;
@@ -38,15 +36,15 @@ public class SimpleMift
     static Timer masterTimer, infOcnTimer, line1Timer, line2Timer;
     static int totalOutputs = 0;
     static String displayText = "";
-    static String outputs[] = new String[2000000]; // Options.RUN_SECONDS * Options.NUM_RUNS
+    static String outputs[] = new String[2000000]; // SimpleMiftOptions.RUN_SECONDS * SimpleMiftOptions.NUM_RUNS
     static boolean appendReport = false;
     static boolean appendOutput = false;
 
     public static void main(String[] args)
     {
-        FileOps.createFile(Options.REPORT_FILE_NAME);
-        FileOps.createFile(Options.OUTPUT_FILE_NAME);
-        if(Options.NUM_RUNS > 1)
+        FileOps.createFile(SimpleMiftOptions.REPORT_FILE_NAME);
+        FileOps.createFile(SimpleMiftOptions.OUTPUT_FILE_NAME);
+        if(SimpleMiftOptions.NUM_RUNS > 1)
         {
             appendReport = true;
             appendOutput = true;
@@ -58,18 +56,18 @@ public class SimpleMift
             public void run()
             {
                 t += 1;
-                if(t > Options.RUN_SECONDS)
+                if(t > SimpleMiftOptions.RUN_SECONDS)
                 {
                     totalOutputs += output;
-                    FileOps.writeToReportFile(Options.REPORT_FILE_NAME, outputs, appendReport);
-                    FileOps.writeToOutputFile(Options.OUTPUT_FILE_NAME, output, appendOutput);
-                    if(currRun >= Options.NUM_RUNS)
+                    FileOps.writeToReportFile(SimpleMiftOptions.REPORT_FILE_NAME, outputs, appendReport);
+                    FileOps.writeToOutputFile(SimpleMiftOptions.OUTPUT_FILE_NAME, output, appendOutput);
+                    if(currRun >= SimpleMiftOptions.NUM_RUNS)
                     {
-                        displayText += Options.NEW_LINES + "t: " + t;
+                        displayText += SimpleMiftOptions.NEW_LINES + "t: " + t;
                         System.out.println(displayText);
-                        int avgOutput = Math.round(totalOutputs / Options.NUM_RUNS);
-                        System.out.println("avg output: " + totalOutputs / Options.NUM_RUNS);
-                        FileOps.writeToOutputFile(Options.OUTPUT_FILE_NAME, "avg output: " + avgOutput, true);
+                        int avgOutput = Math.round(totalOutputs / SimpleMiftOptions.NUM_RUNS);
+                        System.out.println("avg output: " + totalOutputs / SimpleMiftOptions.NUM_RUNS);
+                        FileOps.writeToOutputFile(SimpleMiftOptions.OUTPUT_FILE_NAME, "avg output: " + avgOutput, true);
                         outputs[i++] = displayText;
                         System.exit(0);
                     }
@@ -95,15 +93,15 @@ public class SimpleMift
             @Override
             public void run()
             {
-                if(Options.run20Down20InfOcn)
+                if(SimpleMiftOptions.run20Down20InfOcn)
                 {
-                    if((t > (SECS_PER_MIN * 20)) && (t < ((SECS_PER_MIN * 20) * 2)))
+                    if((t > (Constants.SECS_PER_MIN * 20)) && (t < ((Constants.SECS_PER_MIN * 20) * 2)))
                     {
                         displayText = "FAILED INFINITE OCEAN t: " + t;
                         System.out.println(displayText);
                         outputs[i++] = displayText;
                         infOcn = 0;
-                        try {Thread.sleep(SECS_PER_MIN * 20);} catch(Exception exception) {}
+                        try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch(Exception exception) {}
                         infOcn = 1;
                     }
                 }
@@ -115,56 +113,56 @@ public class SimpleMift
             @Override
             public void run()
             {
-                if(Options.interjectDownTime && (t >= SECS_PER_HOUR) && runHour == 1)
+                if(SimpleMiftOptions.interjectDownTime && (t >= Constants.SECS_PER_HOUR) && runHour == 1)
                 {
                     displayText = "Deliberate 1/2 hour down time line 1";
                     System.out.println(displayText);
                     outputs[i++] = displayText;
-                    try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
+                    try {Thread.sleep(Constants.SECS_PER_HOUR / 2);} catch (Exception exception) {}
                     runHour++;
                 }
                 else
                 {
-                    if(Options.interjectDownTimes)
+                    if(SimpleMiftOptions.interjectDownTimes)
                     {
-                        if(((runHour == 1) && (t >= SECS_PER_HOUR)) || ((runHour == 2) && (t >= (SECS_PER_HOUR * 2))) ||
-                            ((runHour == 3) && (t >= (SECS_PER_HOUR * 3))) || ((runHour == 4) && (t >= (SECS_PER_HOUR * 4))) ||
-                            ((runHour == 5) && (t >= (SECS_PER_HOUR * 5))) || ((runHour == 6) && (t >= (SECS_PER_HOUR * 6))) ||
-                            ((runHour == 7) && (t >= (SECS_PER_HOUR * 7))) || ((runHour == 8) && (t >= (SECS_PER_HOUR * 8))) ||
-                            ((runHour == 9) && (t >= (SECS_PER_HOUR * 9))))
+                        if(((runHour == 1) && (t >= Constants.SECS_PER_HOUR)) || ((runHour == 2) && (t >= (Constants.SECS_PER_HOUR * 2))) ||
+                            ((runHour == 3) && (t >= (Constants.SECS_PER_HOUR * 3))) || ((runHour == 4) && (t >= (Constants.SECS_PER_HOUR * 4))) ||
+                            ((runHour == 5) && (t >= (Constants.SECS_PER_HOUR * 5))) || ((runHour == 6) && (t >= (Constants.SECS_PER_HOUR * 6))) ||
+                            ((runHour == 7) && (t >= (Constants.SECS_PER_HOUR * 7))) || ((runHour == 8) && (t >= (Constants.SECS_PER_HOUR * 8))) ||
+                            ((runHour == 9) && (t >= (Constants.SECS_PER_HOUR * 9))))
                         {
                             displayText = "Deliberate 1/2 hour down time line 1, hour " + runHour;
                             System.out.println(displayText);
                             outputs[i++] = displayText;
-                            try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
+                            try {Thread.sleep(Constants.SECS_PER_HOUR / 2);} catch (Exception exception) {}
                             runHour++;
                         }
                     }
-                    else if(Options.infOceanDownTimes)
+                    else if(SimpleMiftOptions.infOceanDownTimes)
                     {
-                        if(((runHour == 1) && (t >= SECS_PER_HOUR)) || ((runHour == 2) && (t >= (SECS_PER_HOUR * 2))) ||
-                            ((runHour == 3) && (t >= (SECS_PER_HOUR * 3))) || ((runHour == 4) && (t >= (SECS_PER_HOUR * 4))) ||
-                            ((runHour == 5) && (t >= (SECS_PER_HOUR * 5))) || ((runHour == 6) && (t >= (SECS_PER_HOUR * 6))) ||
-                            ((runHour == 7) && (t >= (SECS_PER_HOUR * 7))) || ((runHour == 8) && (t >= (SECS_PER_HOUR * 8))) ||
-                            ((runHour == 9) && (t >= (SECS_PER_HOUR * 9))))
+                        if(((runHour == 1) && (t >= Constants.SECS_PER_HOUR)) || ((runHour == 2) && (t >= (Constants.SECS_PER_HOUR * 2))) ||
+                            ((runHour == 3) && (t >= (Constants.SECS_PER_HOUR * 3))) || ((runHour == 4) && (t >= (Constants.SECS_PER_HOUR * 4))) ||
+                            ((runHour == 5) && (t >= (Constants.SECS_PER_HOUR * 5))) || ((runHour == 6) && (t >= (Constants.SECS_PER_HOUR * 6))) ||
+                            ((runHour == 7) && (t >= (Constants.SECS_PER_HOUR * 7))) || ((runHour == 8) && (t >= (Constants.SECS_PER_HOUR * 8))) ||
+                            ((runHour == 9) && (t >= (Constants.SECS_PER_HOUR * 9))))
                         {
                             displayText = "FAILED INFINITE OCEAN " + runHour;
                             System.out.println(displayText);
                             outputs[i++] = displayText;
                             infOcn = 0;
-                            try {Thread.sleep(SECS_PER_HOUR / 2);} catch (Exception exception) {}
+                            try {Thread.sleep(Constants.SECS_PER_HOUR / 2);} catch (Exception exception) {}
                             infOcn = 1;
                             runHour++;
                         }
                     }
-                    else if(Options.run20Down20Line1)
+                    else if(SimpleMiftOptions.run20Down20Line1)
                     {
-                        if((t >= (SECS_PER_MIN * 20)) && (t < ((SECS_PER_MIN * 20) * 2)))
+                        if((t >= (Constants.SECS_PER_MIN * 20)) && (t < ((Constants.SECS_PER_MIN * 20) * 2)))
                         {
                             displayText = "FAILED INFINITE OCEAN t: " + t + " DOWN LINE 1";
                             System.out.println(displayText);
                             outputs[i++] = displayText;
-                            try {Thread.sleep(SECS_PER_MIN * 20);} catch (Exception exception) {}
+                            try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch (Exception exception) {}
                         }
                     }
                     if(buffer1 < 2 && assemblyLine1[2] == 1)
@@ -175,7 +173,7 @@ public class SimpleMift
                     else
                     {
                         numOfPartsInLine1 = assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2];
-                        if (((numOfPartsInLine1 == 0) && (infOcn > 0)) || ((t > (t1Prev + Options.CYCLE_TIME_SECONDS_1))))
+                        if (((numOfPartsInLine1 == 0) && (infOcn > 0)) || ((t > (t1Prev + SimpleMiftOptions.CYCLE_TIME_SECONDS_1))))
                         {
                             t1Prev = t;
                             r1 = new Random().nextDouble();
@@ -209,15 +207,15 @@ public class SimpleMift
                                 outputs[i++] = "FAILED LINE 1, STATION: " + staNumFailed;
                                 if (sta1failed)
                                 {
-                                    try {Thread.sleep(Options.DOWN_TIME);} catch (Exception exception) {}
+                                    try {Thread.sleep(SimpleMiftOptions.DOWN_TIME);} catch (Exception exception) {}
                                 }
                                 if (sta2failed)
                                 {
-                                    try {Thread.sleep(Options.DOWN_TIME);} catch (Exception exception) {}
+                                    try {Thread.sleep(SimpleMiftOptions.DOWN_TIME);} catch (Exception exception) {}
                                 }
                                 if (sta3failed)
                                 {
-                                    try {Thread.sleep(Options.DOWN_TIME);} catch (Exception exception) {}
+                                    try {Thread.sleep(SimpleMiftOptions.DOWN_TIME);} catch (Exception exception) {}
                                 }
                                 displayText = "t: " + t1Prev + " ";
                                 displayText += "assembly line 1: " + assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2] + " ";
@@ -242,7 +240,7 @@ public class SimpleMift
             public void run()
             {
                 numOfPartsInLine2 = assemblyLine2[0] + assemblyLine2[1] + assemblyLine2[2];
-                if(((numOfPartsInLine2 == 0) && (buffer1 > 0)) || ((t >= (t2Prev + Options.CYCLE_TIME_SECONDS_2))))
+                if(((numOfPartsInLine2 == 0) && (buffer1 > 0)) || ((t >= (t2Prev + SimpleMiftOptions.CYCLE_TIME_SECONDS_2))))
                 {
                     t2Prev = t;
                     r4 = new Random().nextDouble();
@@ -278,15 +276,15 @@ public class SimpleMift
                         outputs[i++] = "FAILED LINE 2, STATION: " + staNumFailed;
                         if(sta4failed)
                         {
-                            try {Thread.sleep(Options.DOWN_TIME);} catch (Exception exception) {}
+                            try {Thread.sleep(SimpleMiftOptions.DOWN_TIME);} catch (Exception exception) {}
                         }
                         if(sta5failed)
                         {
-                            try {Thread.sleep(Options.DOWN_TIME);} catch (Exception exception) {}
+                            try {Thread.sleep(SimpleMiftOptions.DOWN_TIME);} catch (Exception exception) {}
                         }
                         if(sta6failed)
                         {
-                            try {Thread.sleep(Options.DOWN_TIME);} catch (Exception exception) {}
+                            try {Thread.sleep(SimpleMiftOptions.DOWN_TIME);} catch (Exception exception) {}
                         }
                         displayText = "t: " + t2Prev + " ";
                         displayText += "assembly line 2: " + assemblyLine2[0] + assemblyLine2[1] + assemblyLine2[2] + " ";

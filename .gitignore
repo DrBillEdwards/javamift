@@ -16,7 +16,10 @@ hs_err_pid*
 
 /out
 
-output*.txt
-report*.txt
+*output*.txt
+*Output*.txt
+*report*.txt
+*Report*.txt
 
-/mift/Options.java
+/mift/SimpleMiftOptions.java
+/mift/GLAPOptions.java

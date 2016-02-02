@@ -49,7 +49,7 @@ public class FileOps
                 {
                     if(outputs[i] != null)
                     {
-                        fw.write(outputs[i] + Options.NEW_LINES);
+                        fw.write(outputs[i] + SimpleMiftOptions.NEW_LINES);
                     }
                 }
 
@@ -75,7 +75,7 @@ public class FileOps
             {
                 file = new File(fileName);
                 fw = new FileWriter(file, appendOutput);
-                fw.write(String.valueOf(output) + Options.NEW_LINES);
+                fw.write(String.valueOf(output) + SimpleMiftOptions.NEW_LINES);
                 fw.flush();
                 fw.close();
                 System.out.println(fileName + " written succesfully");
@@ -98,7 +98,7 @@ public class FileOps
             {
                 file = new File(fileName);
                 fw = new FileWriter(file, appendOutput);
-                fw.write(String.valueOf(output) + Options.NEW_LINES);
+                fw.write(String.valueOf(output) + SimpleMiftOptions.NEW_LINES);
                 fw.flush();
                 fw.close();
                 System.out.println(fileName + " written succesfully");
