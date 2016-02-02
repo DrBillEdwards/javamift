@@ -55,6 +55,7 @@ public class GLAP
             public void run()
             {
                 t += 1;
+                System.out.println(t);
                 if(t > GLAPOptions.RUN_SECONDS)
                 {
                     totalOutputs += output;
@@ -82,6 +83,7 @@ public class GLAP
             }
         };
 
-        System.out.println("hello Glap world");
+        masterTimer = new Timer("MasterTimer");
+        masterTimer.scheduleAtFixedRate(masterTimerTask, 0, 1);
     }
 }
