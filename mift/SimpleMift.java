@@ -43,6 +43,8 @@ public class SimpleMift
     static Timer masterTimer, infOcnTimer, line1Timer, line2Timer;
     static int totalOutputs = 0;
 
+    static double aaa[] = new double[10];
+
     public static void main(String[] args)
     {
         createFile(Options.REPORT_FILE_NAME);
