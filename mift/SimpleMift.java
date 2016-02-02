@@ -2,7 +2,6 @@ package mift;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.io.*;
 
 public class SimpleMift
 {
@@ -21,8 +20,6 @@ public class SimpleMift
     static double r4 = 0;
     static double r5 = 0;
     static double r6 = 0;
-    static String displayText = "";
-    static String outputs[] = new String[2000000]; // Options.RUN_SECONDS * Options.NUM_RUNS
     static long SECS_PER_HOUR = 3600;
     static long SECS_PER_MIN = 60;
     static int t = 0;
@@ -31,8 +28,6 @@ public class SimpleMift
     static int runHour = 1;
     static int currRun = 1;
     static int i = 0;
-    static boolean appendReport = false;
-    static boolean appendOutput = false;
     static boolean sta1failed = false;
     static boolean sta2failed = false;
     static boolean sta3failed = false;
@@ -42,13 +37,15 @@ public class SimpleMift
     static int staNumFailed = 0;
     static Timer masterTimer, infOcnTimer, line1Timer, line2Timer;
     static int totalOutputs = 0;
-
-    static double aaa[] = new double[10];
+    static String displayText = "";
+    static String outputs[] = new String[2000000]; // Options.RUN_SECONDS * Options.NUM_RUNS
+    static boolean appendReport = false;
+    static boolean appendOutput = false;
 
     public static void main(String[] args)
     {
-        createFile(Options.REPORT_FILE_NAME);
-        createFile(Options.OUTPUT_FILE_NAME);
+        FileOps.createFile(Options.REPORT_FILE_NAME);
+        FileOps.createFile(Options.OUTPUT_FILE_NAME);
         if(Options.NUM_RUNS > 1)
         {
             appendReport = true;
@@ -64,13 +61,15 @@ public class SimpleMift
                 if(t > Options.RUN_SECONDS)
                 {
                     totalOutputs += output;
-                    writeToOutputFile(Options.OUTPUT_FILE_NAME);
-                    writeToReportFile(Options.REPORT_FILE_NAME);
+                    FileOps.writeToReportFile(Options.REPORT_FILE_NAME, outputs, appendReport);
+                    FileOps.writeToOutputFile(Options.OUTPUT_FILE_NAME, output, appendOutput);
                     if(currRun >= Options.NUM_RUNS)
                     {
                         displayText += Options.NEW_LINES + "t: " + t;
                         System.out.println(displayText);
+                        int avgOutput = Math.round(totalOutputs / Options.NUM_RUNS);
                         System.out.println("avg output: " + totalOutputs / Options.NUM_RUNS);
+                        FileOps.writeToOutputFile(Options.OUTPUT_FILE_NAME, "avg output: " + avgOutput, true);
                         outputs[i++] = displayText;
                         System.exit(0);
                     }
@@ -315,87 +314,5 @@ public class SimpleMift
 
         line2Timer = new Timer("Line2Timer");
         line2Timer.scheduleAtFixedRate(line2TimerTask, 0, 1);
-    }
-
-    public static void createFile(String fileName)
-    {
-        try
-        {
-            FileWriter fw = null;
-            File file = null;
-            try
-            {
-                file = new File(fileName);
-                if(file.exists())
-                {
-                    file.delete();
-                    file.createNewFile();
-                }
-                else
-                {
-                    file.createNewFile();
-                }
-                fw.close();
-            }
-            catch(IOException e)
-            {
-                e.printStackTrace();
-            }
-        }
-        catch(Exception exception){}
-    }
-
-    public static void writeToReportFile(String fileName)
-    {
-        try
-        {
-            FileWriter fw = null;
-            File file = null;
-            try
-            {
-                file = new File(fileName);
-                fw = new FileWriter(file, appendReport);
-
-                for(int i = 0; i < outputs.length; i++)
-                {
-                    if(outputs[i] != null)
-                    {
-                        fw.write(outputs[i] + Options.NEW_LINES);
-                    }
-                }
-
-                fw.flush();
-                fw.close();
-                System.out.println(fileName + " written successfully");
-            }
-            catch(IOException e)
-            {
-                e.printStackTrace();
-            }
-        }
-        catch(Exception exception){}
-    }
-
-    public static void writeToOutputFile(String fileName)
-    {
-        try
-        {
-            FileWriter fw = null;
-            File file = null;
-            try
-            {
-                file = new File(fileName);
-                fw = new FileWriter(file, appendOutput);
-                fw.write(String.valueOf(output) + Options.NEW_LINES);
-                fw.flush();
-                fw.close();
-                System.out.println(fileName + " written succesfully");
-            }
-            catch(IOException e)
-            {
-                e.printStackTrace();
-            }
-        }
-        catch(Exception exception){}
     }
 }
