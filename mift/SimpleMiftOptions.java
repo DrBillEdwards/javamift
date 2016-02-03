@@ -20,16 +20,4 @@ public class SimpleMiftOptions
     public static String OUTPUT_FILE_NAME = "output1.txt";
     public static String NEW_LINES = "\n"; // toggle newline types
     // static String NEW_LINES = "\r\n";
-
-    // GLAP
-    static int BUFFER_MAX[] = {20, 20, 20, 20, 20};
-    public static double rLimits[] =
-    {
-        .90, .90, .90, .90, .90,
-        .90, .90, .90, .90, .90,
-        .90, .90, .90, .90, .90,
-        .90, .90, .90, .90, .90,
-        .90, .90, .90, .90, .90,
-        .90, .90, .90, .90, .90,
-    };
 }
