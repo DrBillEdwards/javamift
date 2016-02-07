@@ -7,7 +7,7 @@ public class GLAPOptions
     public static double RUN_SECONDS = 3600;
     public static long DOWN_TIME = 6;
     public static int NUM_RUNS = 1;
-    public static boolean lineNumDownTimes[] = {true, true, true, false, false};
+    public static boolean lineNumDownTimes[] = {true, false, false, false, false};
     public static boolean half_1_6AndAHalf = false;
     public static boolean interjectDownTime = false; // EITHER
     public static boolean interjectDownTimes = false; // OR
@@ -23,7 +23,7 @@ public class GLAPOptions
     static int BUFFER_MAX[] = {10, 10, 10, 10, 10};
     public static double rLimits[] =
     {
-        0.990000, 0.998333, 0.996667, 0.999167, 0.999167, 0.996667,
+        0.000000, 0.998333, 0.996667, 0.999167, 0.999167, 0.996667,
         1.000000, 0.999444, 1.000000, 0.951389, 0.999167, 0.953889,
         0.957222, 0.956667, 0.956111, 0.959444, 0.956667, 0.953889,
         1.000000, 0.990000, 0.993330, 0.981667, 0.980000, 0.945833,
