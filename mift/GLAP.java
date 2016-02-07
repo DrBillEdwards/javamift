@@ -55,38 +55,38 @@ public class GLAP
             @Override
             public void run()
             {
-                t += 1;
-                if(t > GLAPOptions.RUN_SECONDS)
+            t += 1;
+            if(t > GLAPOptions.RUN_SECONDS)
+            {
+                totalOutputs += output;
+                FileOps.writeToReportFile(GLAPOptions.REPORT_FILE_NAME, outputs, appendReport);
+                FileOps.writeToOutputFile(GLAPOptions.OUTPUT_FILE_NAME, output, appendOutput);
+                if(currRun >= GLAPOptions.NUM_RUNS)
                 {
-                    totalOutputs += output;
-                    FileOps.writeToReportFile(GLAPOptions.REPORT_FILE_NAME, outputs, appendReport);
-                    FileOps.writeToOutputFile(GLAPOptions.OUTPUT_FILE_NAME, output, appendOutput);
-                    if(currRun >= GLAPOptions.NUM_RUNS)
-                    {
-                        displayText += GLAPOptions.NEW_LINES + "t: " + t;
-                        System.out.println(displayText);
-                        double avgOutput = totalOutputs / GLAPOptions.NUM_RUNS;
-                        DecimalFormat decimalFormat = new DecimalFormat("0.00");
-                        System.out.println("avg output: " + decimalFormat.format(avgOutput));
-                        FileOps.writeToOutputFile(GLAPOptions.OUTPUT_FILE_NAME, "avg output: " + avgOutput, true);
-                        outputs[i++] = displayText;
-                        System.exit(0);
-                    }
-                    t = 0;
-                    infOcn = 1;
-                    assemblyLines = new int[5][6];
-                    assemblyLines[0][0] = 1; assemblyLines[0][1] = 1; assemblyLines[0][2] = 1; assemblyLines[0][3] = 1; assemblyLines[0][4] = 1; assemblyLines[0][5] = 1;
-                    assemblyLines[1][0] = 1; assemblyLines[1][1] = 1; assemblyLines[1][2] = 1; assemblyLines[1][3] = 1; assemblyLines[1][4] = 1; assemblyLines[1][5] = 1;
-                    assemblyLines[2][0] = 1; assemblyLines[2][1] = 1; assemblyLines[2][2] = 1; assemblyLines[2][3] = 1; assemblyLines[2][4] = 1; assemblyLines[2][5] = 1;
-                    assemblyLines[3][0] = 1; assemblyLines[3][1] = 1; assemblyLines[3][2] = 1; assemblyLines[3][3] = 1; assemblyLines[3][4] = 1; assemblyLines[3][5] = 1;
-                    assemblyLines[4][0] = 1; assemblyLines[4][1] = 1; assemblyLines[4][2] = 1; assemblyLines[4][3] = 1; assemblyLines[4][4] = 1; assemblyLines[4][5] = 1;
-                    buffers = new int[4];
-                    buffers[0] = 10; buffers[1] = 10; buffers[2] = 0; buffers[3] = 0;
-                    tPrevs = new int[5];
-                    output = 0;
-                    outputs = new String[outputs.length];
-                    currRun++;
+                    displayText += GLAPOptions.NEW_LINES + "t: " + t;
+                    System.out.println(displayText);
+                    double avgOutput = totalOutputs / GLAPOptions.NUM_RUNS;
+                    DecimalFormat decimalFormat = new DecimalFormat("0.00");
+                    System.out.println("avg output: " + decimalFormat.format(avgOutput));
+                    FileOps.writeToOutputFile(GLAPOptions.OUTPUT_FILE_NAME, "avg output: " + avgOutput, true);
+                    outputs[i++] = displayText;
+                    System.exit(0);
                 }
+                t = 0;
+                infOcn = 1;
+                assemblyLines = new int[5][6];
+                assemblyLines[0][0] = 1; assemblyLines[0][1] = 1; assemblyLines[0][2] = 1; assemblyLines[0][3] = 1; assemblyLines[0][4] = 1; assemblyLines[0][5] = 1;
+                assemblyLines[1][0] = 1; assemblyLines[1][1] = 1; assemblyLines[1][2] = 1; assemblyLines[1][3] = 1; assemblyLines[1][4] = 1; assemblyLines[1][5] = 1;
+                assemblyLines[2][0] = 1; assemblyLines[2][1] = 1; assemblyLines[2][2] = 1; assemblyLines[2][3] = 1; assemblyLines[2][4] = 1; assemblyLines[2][5] = 1;
+                assemblyLines[3][0] = 1; assemblyLines[3][1] = 1; assemblyLines[3][2] = 1; assemblyLines[3][3] = 1; assemblyLines[3][4] = 1; assemblyLines[3][5] = 1;
+                assemblyLines[4][0] = 1; assemblyLines[4][1] = 1; assemblyLines[4][2] = 1; assemblyLines[4][3] = 1; assemblyLines[4][4] = 1; assemblyLines[4][5] = 1;
+                buffers = new int[4];
+                buffers[0] = 10; buffers[1] = 10; buffers[2] = 0; buffers[3] = 0;
+                tPrevs = new int[5];
+                output = 0;
+                outputs = new String[outputs.length];
+                currRun++;
+            }
             }
         };
 
@@ -161,7 +161,21 @@ public class GLAP
                     {
                         if((t >= (Constants.SECS_PER_MIN * 20)) && (t < ((Constants.SECS_PER_MIN * 20) * 2)))
                         {
-                            displayText = "FAILED INFINITE OCEAN t: " + t + " DOWN LINE 1";
+                            System.out.println("FAILED LINE 1, t: " + t);
+                            outputs[i++] = "FAILED LINE 1, t: " + t;
+                            displayText = "line1 ";
+                            displayText += "infOcn:" + infOcn + " ";
+                            displayText += "t:" + t + " ";
+                            displayText += "line1:" + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
+                            displayText += "buf1:" + buffers[0] + " ";
+                            displayText += "line2:" + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
+                            displayText += "buf2:" + buffers[1] + " ";
+                            displayText += "line3:" + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
+                            displayText += "buf3:" + buffers[2] + " ";
+                            displayText += "line4:" + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
+                            displayText += "buf4:" + buffers[3] + " ";
+                            displayText += "line5:" + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
+                            displayText += "output:" + output + " ";
                             System.out.println(displayText);
                             outputs[i++] = displayText;
                             try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch (Exception exception) {}
@@ -190,7 +204,7 @@ public class GLAP
                             stasFailed[3] = ((assemblyLines[0][3] == 1) && (rs[3] > GLAPOptions.rLimits[3]));
                             stasFailed[4] = ((assemblyLines[0][4] == 1) && (rs[4] > GLAPOptions.rLimits[4]));
                             stasFailed[5] = ((assemblyLines[0][5] == 1) && (rs[5] > GLAPOptions.rLimits[5]));
-                            if(!(stasFailed[0] || stasFailed[1] || stasFailed[2] || stasFailed[3] || stasFailed[4] || stasFailed[5]))
+                            if(!GLAPOptions.lineNumDownTimes[0] || (GLAPOptions.lineNumDownTimes[0] && !(stasFailed[0] || stasFailed[1] || stasFailed[2] || stasFailed[3] || stasFailed[4] || stasFailed[5])))
                             {
                                 if(buffers[0] < GLAPOptions.BUFFER_MAX[0])
                                 {
@@ -226,32 +240,8 @@ public class GLAP
                                 else if(stasFailed[3]) {staNumFailed = 4;}
                                 else if(stasFailed[4]) {staNumFailed = 5;}
                                 else if(stasFailed[5]) {staNumFailed = 6;}
-                                System.out.println("FAILED LINE 1, STATION: " + staNumFailed + " t:" + t);
-                                outputs[i++] = "FAILED LINE 1, STATION: " + staNumFailed + " t:" + t;
-                                if (stasFailed[0])
-                                {
-                                    try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
-                                }
-                                if (stasFailed[1])
-                                {
-                                    try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
-                                }
-                                if (stasFailed[2])
-                                {
-                                    try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
-                                }
-                                if (stasFailed[3])
-                                {
-                                    try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
-                                }
-                                if (stasFailed[4])
-                                {
-                                    try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
-                                }
-                                if (stasFailed[5])
-                                {
-                                    try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
-                                }
+                                System.out.println("FAILED LINE 1, STATION: " + staNumFailed + " t:" + tPrevs[0]);
+                                outputs[i++] = "FAILED LINE 1, STATION: " + staNumFailed + " t:" + tPrevs[0];
                                 displayText = "line1 ";
                                 displayText += "infOcn:" + infOcn + " ";
                                 displayText += "t:" + tPrevs[0] + " ";
@@ -267,6 +257,30 @@ public class GLAP
                                 displayText += "output:" + output + " ";
                                 System.out.println(displayText);
                                 outputs[i++] = displayText;
+                                if(staNumFailed == 1)
+                                {
+                                    try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
+                                }
+                                if(staNumFailed == 2)
+                                {
+                                    try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
+                                }
+                                if(staNumFailed == 3)
+                                {
+                                    try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
+                                }
+                                if(staNumFailed == 4)
+                                {
+                                    try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
+                                }
+                                if(staNumFailed == 5)
+                                {
+                                    try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
+                                }
+                                if(staNumFailed == 6)
+                                {
+                                    try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
+                                }
                                 stasFailed[0] = false;
                                 stasFailed[1] = false;
                                 stasFailed[2] = false;
@@ -302,7 +316,7 @@ public class GLAP
                     stasFailed[9] = ((assemblyLines[1][3] == 1) && (rs[9] > GLAPOptions.rLimits[9]));
                     stasFailed[10] = ((assemblyLines[1][4] == 1) && (rs[10] > GLAPOptions.rLimits[10]));
                     stasFailed[11] = ((assemblyLines[1][5] == 1) && (rs[11] > GLAPOptions.rLimits[11]));
-                    if(!(stasFailed[6] || stasFailed[7] || stasFailed[8] || stasFailed[9] || stasFailed[10] || stasFailed[11]))
+                    if(!GLAPOptions.lineNumDownTimes[1] || (GLAPOptions.lineNumDownTimes[1] && !(stasFailed[6] || stasFailed[7] || stasFailed[8] || stasFailed[9] || stasFailed[10] || stasFailed[11])))
                     {
                         buffers[1] += assemblyLines[1][5];
                         assemblyLines[1][5] = assemblyLines[1][4];
@@ -339,32 +353,8 @@ public class GLAP
                         else if(stasFailed[9]) {staNumFailed = 10;}
                         else if(stasFailed[10]) {staNumFailed = 11;}
                         else if(stasFailed[11]) {staNumFailed = 12;}
-                        System.out.println("FAILED LINE 2, STATION: " + staNumFailed + " t:" + t);
-                        outputs[i++] = "FAILED LINE 2, STATION: " + staNumFailed + " t:" + t;
-                        if(stasFailed[6])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[7])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[8])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[9])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[10])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[11])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
+                        System.out.println("FAILED LINE 2, STATION: " + staNumFailed + " t:" + tPrevs[1]);
+                        outputs[i++] = "FAILED LINE 2, STATION: " + staNumFailed + " t:" + tPrevs[1];
                         displayText = "line2 ";
                         displayText += "infOcn:" + infOcn + " ";
                         displayText += "t:" + tPrevs[1] + " ";
@@ -380,6 +370,30 @@ public class GLAP
                         displayText += "output:" + output + " ";
                         System.out.println(displayText);
                         outputs[i++] = displayText;
+                        if(staNumFailed == 7)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 8)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 9)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 10)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 11)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 12)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
                         stasFailed[6] = false;
                         stasFailed[7] = false;
                         stasFailed[8] = false;
@@ -413,7 +427,7 @@ public class GLAP
                     stasFailed[15] = ((assemblyLines[2][3] == 1) && (rs[15] > GLAPOptions.rLimits[15]));
                     stasFailed[16] = ((assemblyLines[2][4] == 1) && (rs[16] > GLAPOptions.rLimits[16]));
                     stasFailed[17] = ((assemblyLines[2][5] == 1) && (rs[17] > GLAPOptions.rLimits[17]));
-                    if(!(stasFailed[12] || stasFailed[13] || stasFailed[14] || stasFailed[15] || stasFailed[16] || stasFailed[17]))
+                    if(!GLAPOptions.lineNumDownTimes[2] || (GLAPOptions.lineNumDownTimes[2] && !(stasFailed[12] || stasFailed[13] || stasFailed[14] || stasFailed[15] || stasFailed[16] || stasFailed[17])))
                     {
                         buffers[2] += assemblyLines[2][5];
                         assemblyLines[2][5] = assemblyLines[2][4];
@@ -450,32 +464,8 @@ public class GLAP
                         else if(stasFailed[15]) {staNumFailed = 16;}
                         else if(stasFailed[16]) {staNumFailed = 17;}
                         else if(stasFailed[17]) {staNumFailed = 18;}
-                        System.out.println("FAILED LINE 3, STATION: " + staNumFailed + " t:" + t);
-                        outputs[i++] = "FAILED LINE 3, STATION: " + staNumFailed + " t:" + t;
-                        if(stasFailed[12])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[13])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[14])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[15])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[16])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[17])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
+                        System.out.println("FAILED LINE 3, STATION: " + staNumFailed + " t:" + tPrevs[2]);
+                        outputs[i++] = "FAILED LINE 3, STATION: " + staNumFailed + " t:" + tPrevs[2];
                         displayText = "line3 ";
                         displayText += "infOcn:" + infOcn + " ";
                         displayText += "t:" + tPrevs[2] + " ";
@@ -491,6 +481,30 @@ public class GLAP
                         displayText += "output:" + output + " ";
                         System.out.println(displayText);
                         outputs[i++] = displayText;
+                        if(staNumFailed == 13)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 14)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 15)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 16)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 17)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 18)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
                         stasFailed[12] = false;
                         stasFailed[13] = false;
                         stasFailed[14] = false;
@@ -524,7 +538,7 @@ public class GLAP
                     stasFailed[21] = ((assemblyLines[3][3] == 1) && (rs[21] > GLAPOptions.rLimits[21]));
                     stasFailed[22] = ((assemblyLines[3][4] == 1) && (rs[22] > GLAPOptions.rLimits[22]));
                     stasFailed[23] = ((assemblyLines[3][5] == 1) && (rs[23] > GLAPOptions.rLimits[23]));
-                    if(!(stasFailed[18] || stasFailed[19] || stasFailed[20] || stasFailed[21] || stasFailed[22] || stasFailed[23]))
+                    if(!GLAPOptions.lineNumDownTimes[3] || (GLAPOptions.lineNumDownTimes[3] && !(stasFailed[18] || stasFailed[19] || stasFailed[20] || stasFailed[21] || stasFailed[22] || stasFailed[23])))
                     {
                         buffers[3] += assemblyLines[3][5];
                         assemblyLines[3][5] = assemblyLines[3][4];
@@ -561,32 +575,8 @@ public class GLAP
                         else if(stasFailed[21]) {staNumFailed = 22;}
                         else if(stasFailed[22]) {staNumFailed = 23;}
                         else if(stasFailed[23]) {staNumFailed = 24;}
-                        System.out.println("FAILED LINE 4, STATION: " + staNumFailed + " t:" + t);
-                        outputs[i++] = "FAILED LINE 4, STATION: " + staNumFailed + " t:" + t;
-                        if(stasFailed[18])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[19])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[20])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[21])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[22])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[23])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
+                        System.out.println("FAILED LINE 4, STATION: " + staNumFailed + " t:" + tPrevs[3]);
+                        outputs[i++] = "FAILED LINE 4, STATION: " + staNumFailed + " t:" + tPrevs[3];
                         displayText = "line4 ";
                         displayText += "infOcn:" + infOcn + " ";
                         displayText += "t:" + tPrevs[3] + " ";
@@ -602,6 +592,30 @@ public class GLAP
                         displayText += "output:" + output + " ";
                         System.out.println(displayText);
                         outputs[i++] = displayText;
+                        if(staNumFailed == 19)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 20)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 21)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 22)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 23)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 24)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
                         stasFailed[18] = false;
                         stasFailed[19] = false;
                         stasFailed[20] = false;
@@ -635,7 +649,7 @@ public class GLAP
                     stasFailed[27] = ((assemblyLines[4][3] == 1) && (rs[27] > GLAPOptions.rLimits[27]));
                     stasFailed[28] = ((assemblyLines[4][4] == 1) && (rs[28] > GLAPOptions.rLimits[28]));
                     stasFailed[29] = ((assemblyLines[4][5] == 1) && (rs[29] > GLAPOptions.rLimits[29]));
-                    if(!(stasFailed[24] || stasFailed[25] || stasFailed[26] || stasFailed[27] || stasFailed[28] || stasFailed[29]))
+                    if(!GLAPOptions.lineNumDownTimes[4] || (GLAPOptions.lineNumDownTimes[4] && !(stasFailed[24] || stasFailed[25] || stasFailed[26] || stasFailed[27] || stasFailed[28] || stasFailed[29])))
                     {
                         output += assemblyLines[4][5];
                         assemblyLines[4][5] = assemblyLines[4][4];
@@ -672,32 +686,8 @@ public class GLAP
                         else if(stasFailed[27]) {staNumFailed = 28;}
                         else if(stasFailed[28]) {staNumFailed = 29;}
                         else if(stasFailed[29]) {staNumFailed = 30;}
-                        System.out.println("FAILED LINE 5, STATION: " + staNumFailed + " t:" + t);
-                        outputs[i++] = "FAILED LINE 5, STATION: " + staNumFailed + " t:" + t;
-                        if(stasFailed[24])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[25])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[26])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[27])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[28])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
-                        if(stasFailed[29])
-                        {
-                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
-                        }
+                        System.out.println("FAILED LINE 5, STATION: " + staNumFailed + " t:" + tPrevs[4]);
+                        outputs[i++] = "FAILED LINE 5, STATION: " + staNumFailed + " t:" + tPrevs[4];
                         displayText = "line5 ";
                         displayText += "t:" + tPrevs[4] + " ";
                         displayText += "line1:" + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
@@ -712,6 +702,30 @@ public class GLAP
                         displayText += "output:" + output + " ";
                         System.out.println(displayText);
                         outputs[i++] = displayText;
+                        if(staNumFailed == 25)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 26)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 27)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 28)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 29)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
+                        if(staNumFailed == 30)
+                        {
+                            try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
+                        }
                         stasFailed[24] = false;
                         stasFailed[25] = false;
                         stasFailed[26] = false;

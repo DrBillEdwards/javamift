@@ -197,12 +197,12 @@ public class SimpleMift
                                 displayText += "output: " + output + " ";
                                 System.out.println(displayText);
                                 outputs[i++] = displayText;
-                            } else
+                            }
+                            else
                             {
-                                if (sta1failed) {staNumFailed = 1;} else if (sta2failed)
-                                {
-                                    staNumFailed = 2;
-                                } else if (sta3failed) {staNumFailed = 3;}
+                                if(sta1failed) {staNumFailed = 1;}
+                                else if(sta2failed) {staNumFailed = 2;}
+                                else if(sta3failed) {staNumFailed = 3;}
                                 System.out.println("FAILED LINE 1, STATION: " + staNumFailed);
                                 outputs[i++] = "FAILED LINE 1, STATION: " + staNumFailed;
                                 if (sta1failed)
