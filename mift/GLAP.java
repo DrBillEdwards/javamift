@@ -181,6 +181,10 @@ public class GLAP
                             try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch (Exception exception) {}
                         }
                     }
+                    else if(GLAPOptions.half_1_6AndAHalf)
+                    {
+
+                    }
                     if(buffers[0] < GLAPOptions.BUFFER_MAX[0] && assemblyLines[0][5] == 1)
                     {
                         assemblyLines[0][5] = 0;
@@ -318,16 +322,20 @@ public class GLAP
                     stasFailed[11] = ((assemblyLines[1][5] == 1) && (rs[11] > GLAPOptions.rLimits[11]));
                     if(!GLAPOptions.lineNumDownTimes[1] || (GLAPOptions.lineNumDownTimes[1] && !(stasFailed[6] || stasFailed[7] || stasFailed[8] || stasFailed[9] || stasFailed[10] || stasFailed[11])))
                     {
-                        buffers[1] += assemblyLines[1][5];
-                        assemblyLines[1][5] = assemblyLines[1][4];
-                        assemblyLines[1][4] = assemblyLines[1][3];
-                        assemblyLines[1][3] = assemblyLines[1][2];
-                        assemblyLines[1][2] = assemblyLines[1][1];
-                        assemblyLines[1][1] = assemblyLines[1][0];
-                        if(buffers[0] > 0)
+                        if(buffers[1] < GLAPOptions.BUFFER_MAX[1])
                         {
-                            buffers[0] -= 1;
-                            assemblyLines[1][0] = 1;
+                            buffers[1] += assemblyLines[1][5];
+                            assemblyLines[1][5] = assemblyLines[1][4];
+                            assemblyLines[1][4] = assemblyLines[1][3];
+                            assemblyLines[1][3] = assemblyLines[1][2];
+                            assemblyLines[1][2] = assemblyLines[1][1];
+                            assemblyLines[1][1] = assemblyLines[1][0];
+                            assemblyLines[1][0] = 0;
+                            if(buffers[0] > 0)
+                            {
+                                buffers[0] -= 1;
+                                assemblyLines[1][0] = 1;
+                            }
                         }
                         displayText = "line2 ";
                         displayText += "infOcn:" + infOcn + " ";
@@ -429,16 +437,20 @@ public class GLAP
                     stasFailed[17] = ((assemblyLines[2][5] == 1) && (rs[17] > GLAPOptions.rLimits[17]));
                     if(!GLAPOptions.lineNumDownTimes[2] || (GLAPOptions.lineNumDownTimes[2] && !(stasFailed[12] || stasFailed[13] || stasFailed[14] || stasFailed[15] || stasFailed[16] || stasFailed[17])))
                     {
-                        buffers[2] += assemblyLines[2][5];
-                        assemblyLines[2][5] = assemblyLines[2][4];
-                        assemblyLines[2][4] = assemblyLines[2][3];
-                        assemblyLines[2][3] = assemblyLines[2][2];
-                        assemblyLines[2][2] = assemblyLines[2][1];
-                        assemblyLines[2][1] = assemblyLines[2][0];
-                        if(buffers[1] > 0)
+                        if(buffers[2] < GLAPOptions.BUFFER_MAX[2])
                         {
-                            buffers[1] -= 1;
-                            assemblyLines[2][0] = 1;
+                            buffers[2] += assemblyLines[2][5];
+                            assemblyLines[2][5] = assemblyLines[2][4];
+                            assemblyLines[2][4] = assemblyLines[2][3];
+                            assemblyLines[2][3] = assemblyLines[2][2];
+                            assemblyLines[2][2] = assemblyLines[2][1];
+                            assemblyLines[2][1] = assemblyLines[2][0];
+                            assemblyLines[2][0] = 0;
+                            if(buffers[1] > 0)
+                            {
+                                buffers[1] -= 1;
+                                assemblyLines[2][0] = 1;
+                            }
                         }
                         displayText = "line3 ";
                         displayText += "infOcn:" + infOcn + " ";
@@ -540,16 +552,20 @@ public class GLAP
                     stasFailed[23] = ((assemblyLines[3][5] == 1) && (rs[23] > GLAPOptions.rLimits[23]));
                     if(!GLAPOptions.lineNumDownTimes[3] || (GLAPOptions.lineNumDownTimes[3] && !(stasFailed[18] || stasFailed[19] || stasFailed[20] || stasFailed[21] || stasFailed[22] || stasFailed[23])))
                     {
-                        buffers[3] += assemblyLines[3][5];
-                        assemblyLines[3][5] = assemblyLines[3][4];
-                        assemblyLines[3][4] = assemblyLines[3][3];
-                        assemblyLines[3][3] = assemblyLines[3][2];
-                        assemblyLines[3][2] = assemblyLines[3][1];
-                        assemblyLines[3][1] = assemblyLines[3][0];
-                        if(buffers[2] > 0)
+                        if(buffers[3] < GLAPOptions.BUFFER_MAX[3])
                         {
-                            buffers[2] -= 1;
-                            assemblyLines[3][0] = 1;
+                            buffers[3] += assemblyLines[3][5];
+                            assemblyLines[3][5] = assemblyLines[3][4];
+                            assemblyLines[3][4] = assemblyLines[3][3];
+                            assemblyLines[3][3] = assemblyLines[3][2];
+                            assemblyLines[3][2] = assemblyLines[3][1];
+                            assemblyLines[3][1] = assemblyLines[3][0];
+                            assemblyLines[3][0] = 0;
+                            if(buffers[2] > 0)
+                            {
+                                buffers[2] -= 1;
+                                assemblyLines[3][0] = 1;
+                            }
                         }
                         displayText = "line4 ";
                         displayText += "infOcn:" + infOcn + " ";
@@ -657,6 +673,7 @@ public class GLAP
                         assemblyLines[4][3] = assemblyLines[4][2];
                         assemblyLines[4][2] = assemblyLines[4][1];
                         assemblyLines[4][1] = assemblyLines[4][0];
+                        assemblyLines[4][0] = 0;
                         if(buffers[3] > 0)
                         {
                             buffers[3] -= 1;

@@ -173,7 +173,7 @@ public class SimpleMift
                     else
                     {
                         numOfPartsInLine1 = assemblyLine1[0] + assemblyLine1[1] + assemblyLine1[2];
-                        if (((numOfPartsInLine1 == 0) && (infOcn > 0)) || ((t > (t1Prev + SimpleMiftOptions.CYCLE_TIME_SECONDS_1))))
+                        if(((numOfPartsInLine1 == 0) && (infOcn > 0)) || ((t > (t1Prev + SimpleMiftOptions.CYCLE_TIME_SECONDS_1))))
                         {
                             t1Prev = t;
                             r1 = new Random().nextDouble();
@@ -255,7 +255,7 @@ public class SimpleMift
                         assemblyLine2[2] = assemblyLine2[1];
                         assemblyLine2[1] = assemblyLine2[0];
                         assemblyLine2[0] = 0;
-                        if (buffer1 > 0)
+                        if(buffer1 > 0)
                         {
                             buffer1 -= 1;
                             assemblyLine2[0] = 1;
