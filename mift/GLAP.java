@@ -178,12 +178,33 @@ public class GLAP
                             displayText += "output:" + output + " ";
                             System.out.println(displayText);
                             outputs[i++] = displayText;
-                            try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch (Exception exception) {}
+                            try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch(Exception exception) {}
                         }
                     }
                     else if(GLAPOptions.half_1_6AndAHalf)
                     {
-
+                        if((t >= (Constants.SECS_PER_MIN * 30)))
+                        {
+                            GLAPOptions.half_1_6AndAHalf = false;
+                            System.out.println("FAILED LINE 1, t: " + t);
+                            outputs[i++] = "FAILED LINE 1, t: " + t;
+                            displayText = "line1 ";
+                            displayText += "infOcn:" + infOcn + " ";
+                            displayText += "t:" + t + " ";
+                            displayText += "line1:" + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
+                            displayText += "buf1:" + buffers[0] + " ";
+                            displayText += "line2:" + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
+                            displayText += "buf2:" + buffers[1] + " ";
+                            displayText += "line3:" + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
+                            displayText += "buf3:" + buffers[2] + " ";
+                            displayText += "line4:" + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
+                            displayText += "buf4:" + buffers[3] + " ";
+                            displayText += "line5:" + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
+                            displayText += "output:" + output + " ";
+                            System.out.println(displayText);
+                            outputs[i++] = displayText;
+                            try {Thread.sleep(Constants.SECS_PER_HOUR);} catch(Exception exception) {}
+                        }
                     }
                     if(buffers[0] < GLAPOptions.BUFFER_MAX[0] && assemblyLines[0][5] == 1)
                     {
