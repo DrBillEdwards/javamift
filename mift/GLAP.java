@@ -1,5 +1,6 @@
 package mift;
 
+import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -10,13 +11,13 @@ public class GLAP
     static int infOcn = 1;
     static int[][] assemblyLines =
     {
-        {0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0},
+        {1, 1, 1, 1, 1, 1},
+        {1, 1, 1, 1, 1, 1},
+        {1, 1, 1, 1, 1, 1},
+        {1, 1, 1, 1, 1, 1},
+        {1, 1, 1, 1, 1, 1},
     };
-    static int buffers[] = {0, 0, 0, 0};
+    static int buffers[] = {10, 10, 0, 0};
     static int output = 0;
     static int numOfPartsInLines[] = {0, 0, 0, 0, 0};
     static double rs[] = 
@@ -34,7 +35,7 @@ public class GLAP
     static int i = 0;
     static boolean stasFailed[] = new boolean[30];
     static int staNumFailed = 0;
-    static int totalOutputs = 0;
+    static double totalOutputs = 0.0;
     static String displayText = "";
     static String outputs[] = new String[2000000]; // GLAPOptions.RUN_SECONDS * GLAPOptions.NUM_RUNS
     static boolean appendReport = false;
@@ -64,8 +65,9 @@ public class GLAP
                     {
                         displayText += GLAPOptions.NEW_LINES + "t: " + t;
                         System.out.println(displayText);
-                        int avgOutput = Math.round(totalOutputs / GLAPOptions.NUM_RUNS);
-                        System.out.println("avg output: " + totalOutputs / GLAPOptions.NUM_RUNS);
+                        double avgOutput = totalOutputs / GLAPOptions.NUM_RUNS;
+                        DecimalFormat decimalFormat = new DecimalFormat("0.00");
+                        System.out.println("avg output: " + decimalFormat.format(avgOutput));
                         FileOps.writeToOutputFile(GLAPOptions.OUTPUT_FILE_NAME, "avg output: " + avgOutput, true);
                         outputs[i++] = displayText;
                         System.exit(0);
@@ -73,7 +75,13 @@ public class GLAP
                     t = 0;
                     infOcn = 1;
                     assemblyLines = new int[5][6];
+                    assemblyLines[0][0] = 1; assemblyLines[0][1] = 1; assemblyLines[0][2] = 1; assemblyLines[0][3] = 1; assemblyLines[0][4] = 1; assemblyLines[0][5] = 1;
+                    assemblyLines[1][0] = 1; assemblyLines[1][1] = 1; assemblyLines[1][2] = 1; assemblyLines[1][3] = 1; assemblyLines[1][4] = 1; assemblyLines[1][5] = 1;
+                    assemblyLines[2][0] = 1; assemblyLines[2][1] = 1; assemblyLines[2][2] = 1; assemblyLines[2][3] = 1; assemblyLines[2][4] = 1; assemblyLines[2][5] = 1;
+                    assemblyLines[3][0] = 1; assemblyLines[3][1] = 1; assemblyLines[3][2] = 1; assemblyLines[3][3] = 1; assemblyLines[3][4] = 1; assemblyLines[3][5] = 1;
+                    assemblyLines[4][0] = 1; assemblyLines[4][1] = 1; assemblyLines[4][2] = 1; assemblyLines[4][3] = 1; assemblyLines[4][4] = 1; assemblyLines[4][5] = 1;
                     buffers = new int[4];
+                    buffers[0] = 10; buffers[1] = 10; buffers[2] = 0; buffers[3] = 0;
                     tPrevs = new int[5];
                     output = 0;
                     outputs = new String[outputs.length];
@@ -87,18 +95,18 @@ public class GLAP
             @Override
             public void run()
             {
-                if(GLAPOptions.run20Down20InfOcn)
+            if(GLAPOptions.run20Down20InfOcn)
+            {
+                if((t > (Constants.SECS_PER_MIN * 20)) && (t < ((Constants.SECS_PER_MIN * 20) * 2)))
                 {
-                    if((t > (Constants.SECS_PER_MIN * 20)) && (t < ((Constants.SECS_PER_MIN * 20) * 2)))
-                    {
-                        displayText = "FAILED INFINITE OCEAN t: " + t;
-                        System.out.println(displayText);
-                        outputs[i++] = displayText;
-                        infOcn = 0;
-                        try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch(Exception exception) {}
-                        infOcn = 1;
-                    }
+                    displayText = "FAILED INFINITE OCEAN t: " + t;
+                    System.out.println(displayText);
+                    outputs[i++] = displayText;
+                    infOcn = 0;
+                    try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch(Exception exception) {}
+                    infOcn = 1;
                 }
+            }
             }
         };
 
@@ -194,13 +202,19 @@ public class GLAP
                                     assemblyLines[0][1] = assemblyLines[0][0];
                                     assemblyLines[0][0] = infOcn;
                                 }
-                                displayText = "t: " + tPrevs[0] + " ";
-                                displayText += "assembly line 1: " + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";;
-                                displayText += "buffer1: " + buffers[0] + " ";
-                                displayText += "buffer2: " + buffers[1] + " ";
-                                displayText += "buffer3: " + buffers[2] + " ";
-                                displayText += "buffer4: " + buffers[3] + " ";
-                                displayText += "output: " + output + " ";
+                                displayText = "line1 ";
+                                displayText += "infOcn:" + infOcn + " ";
+                                displayText += "t:" + tPrevs[0] + " ";
+                                displayText += "line1:" + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
+                                displayText += "buf1:" + buffers[0] + " ";
+                                displayText += "line2:" + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
+                                displayText += "buf2:" + buffers[1] + " ";
+                                displayText += "line3:" + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
+                                displayText += "buf3:" + buffers[2] + " ";
+                                displayText += "line4:" + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
+                                displayText += "buf4:" + buffers[3] + " ";
+                                displayText += "line5:" + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
+                                displayText += "output:" + output + " ";
                                 System.out.println(displayText);
                                 outputs[i++] = displayText;
                             }
@@ -212,8 +226,8 @@ public class GLAP
                                 else if(stasFailed[3]) {staNumFailed = 4;}
                                 else if(stasFailed[4]) {staNumFailed = 5;}
                                 else if(stasFailed[5]) {staNumFailed = 6;}
-                                System.out.println("FAILED LINE 1, STATION: " + staNumFailed);
-                                outputs[i++] = "FAILED LINE 1, STATION: " + staNumFailed;
+                                System.out.println("FAILED LINE 1, STATION: " + staNumFailed + " t:" + t);
+                                outputs[i++] = "FAILED LINE 1, STATION: " + staNumFailed + " t:" + t;
                                 if (stasFailed[0])
                                 {
                                     try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
@@ -238,13 +252,19 @@ public class GLAP
                                 {
                                     try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch (Exception exception) {}
                                 }
-                                displayText = "t: " + tPrevs[0] + " ";
-                                displayText += "assembly line 1: " + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
-                                displayText += "buffer1: " + buffers[0] + " ";
-                                displayText += "buffer2: " + buffers[1] + " ";
-                                displayText += "buffer3: " + buffers[2] + " ";
-                                displayText += "buffer4: " + buffers[3] + " ";
-                                displayText += "output: " + output + " ";
+                                displayText = "line1 ";
+                                displayText += "infOcn:" + infOcn + " ";
+                                displayText += "t:" + tPrevs[0] + " ";
+                                displayText += "line1:" + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
+                                displayText += "buf1:" + buffers[0] + " ";
+                                displayText += "line2:" + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
+                                displayText += "buf2:" + buffers[1] + " ";
+                                displayText += "line3:" + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
+                                displayText += "buf3:" + buffers[2] + " ";
+                                displayText += "line4:" + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
+                                displayText += "buf4:" + buffers[3] + " ";
+                                displayText += "line5:" + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
+                                displayText += "output:" + output + " ";
                                 System.out.println(displayText);
                                 outputs[i++] = displayText;
                                 stasFailed[0] = false;
@@ -295,13 +315,19 @@ public class GLAP
                             buffers[0] -= 1;
                             assemblyLines[1][0] = 1;
                         }
-                        displayText = "t: " + t + " ";
-                        displayText += "assembly line 2: " + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
-                        displayText += "buffer1: " + buffers[0] + " ";
-                        displayText += "buffer2: " + buffers[1] + " ";
-                        displayText += "buffer3: " + buffers[2] + " ";
-                        displayText += "buffer4: " + buffers[3] + " ";
-                        displayText += "output: " + output + " ";
+                        displayText = "line2 ";
+                        displayText += "infOcn:" + infOcn + " ";
+                        displayText += "t:" + tPrevs[1] + " ";
+                        displayText += "line1:" + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
+                        displayText += "buf1:" + buffers[0] + " ";
+                        displayText += "line2:" + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
+                        displayText += "buf2:" + buffers[1] + " ";
+                        displayText += "line3:" + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
+                        displayText += "buf3:" + buffers[2] + " ";
+                        displayText += "line4:" + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
+                        displayText += "buf4:" + buffers[3] + " ";
+                        displayText += "line5:" + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
+                        displayText += "output:" + output + " ";
                         System.out.println(displayText);
                         outputs[i++] = displayText;
                     }
@@ -313,8 +339,8 @@ public class GLAP
                         else if(stasFailed[9]) {staNumFailed = 10;}
                         else if(stasFailed[10]) {staNumFailed = 11;}
                         else if(stasFailed[11]) {staNumFailed = 12;}
-                        System.out.println("FAILED LINE 2, STATION: " + staNumFailed);
-                        outputs[i++] = "FAILED LINE 2, STATION: " + staNumFailed;
+                        System.out.println("FAILED LINE 2, STATION: " + staNumFailed + " t:" + t);
+                        outputs[i++] = "FAILED LINE 2, STATION: " + staNumFailed + " t:" + t;
                         if(stasFailed[6])
                         {
                             try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
@@ -339,13 +365,19 @@ public class GLAP
                         {
                             try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
                         }
-                        displayText = "t: " + tPrevs[1] + " ";
-                        displayText += "assembly line 2: " + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
-                        displayText += "buffer1: " + buffers[0] + " ";
-                        displayText += "buffer2: " + buffers[1] + " ";
-                        displayText += "buffer3: " + buffers[2] + " ";
-                        displayText += "buffer4: " + buffers[3] + " ";
-                        displayText += "output: " + output + " ";
+                        displayText = "line2 ";
+                        displayText += "infOcn:" + infOcn + " ";
+                        displayText += "t:" + tPrevs[1] + " ";
+                        displayText += "line1:" + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
+                        displayText += "buf1:" + buffers[0] + " ";
+                        displayText += "line2:" + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
+                        displayText += "buf2:" + buffers[1] + " ";
+                        displayText += "line3:" + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
+                        displayText += "buf3:" + buffers[2] + " ";
+                        displayText += "line4:" + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
+                        displayText += "buf4:" + buffers[3] + " ";
+                        displayText += "line5:" + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
+                        displayText += "output:" + output + " ";
                         System.out.println(displayText);
                         outputs[i++] = displayText;
                         stasFailed[6] = false;
@@ -394,13 +426,19 @@ public class GLAP
                             buffers[1] -= 1;
                             assemblyLines[2][0] = 1;
                         }
-                        displayText = "t: " + t + " ";
-                        displayText += "assembly line 3: " + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
-                        displayText += "buffer1: " + buffers[0] + " ";
-                        displayText += "buffer2: " + buffers[1] + " ";
-                        displayText += "buffer3: " + buffers[2] + " ";
-                        displayText += "buffer4: " + buffers[3] + " ";
-                        displayText += "output: " + output + " ";
+                        displayText = "line3 ";
+                        displayText += "infOcn:" + infOcn + " ";
+                        displayText += "t:" + tPrevs[2] + " ";
+                        displayText += "line1:" + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
+                        displayText += "buf1:" + buffers[0] + " ";
+                        displayText += "line2:" + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
+                        displayText += "buf2:" + buffers[1] + " ";
+                        displayText += "line3:" + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
+                        displayText += "buf3:" + buffers[2] + " ";
+                        displayText += "line4:" + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
+                        displayText += "buf4:" + buffers[3] + " ";
+                        displayText += "line5:" + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
+                        displayText += "output:" + output + " ";
                         System.out.println(displayText);
                         outputs[i++] = displayText;
                     }
@@ -412,8 +450,8 @@ public class GLAP
                         else if(stasFailed[15]) {staNumFailed = 16;}
                         else if(stasFailed[16]) {staNumFailed = 17;}
                         else if(stasFailed[17]) {staNumFailed = 18;}
-                        System.out.println("FAILED LINE 3, STATION: " + staNumFailed);
-                        outputs[i++] = "FAILED LINE 3, STATION: " + staNumFailed;
+                        System.out.println("FAILED LINE 3, STATION: " + staNumFailed + " t:" + t);
+                        outputs[i++] = "FAILED LINE 3, STATION: " + staNumFailed + " t:" + t;
                         if(stasFailed[12])
                         {
                             try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
@@ -438,13 +476,19 @@ public class GLAP
                         {
                             try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
                         }
-                        displayText = "t: " + tPrevs[2] + " ";
-                        displayText += "assembly line 3: " + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
-                        displayText += "buffer1: " + buffers[0] + " ";
-                        displayText += "buffer2: " + buffers[1] + " ";
-                        displayText += "buffer3: " + buffers[2] + " ";
-                        displayText += "buffer4: " + buffers[3] + " ";
-                        displayText += "output: " + output + " ";
+                        displayText = "line3 ";
+                        displayText += "infOcn:" + infOcn + " ";
+                        displayText += "t:" + tPrevs[2] + " ";
+                        displayText += "line1:" + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
+                        displayText += "buf1:" + buffers[0] + " ";
+                        displayText += "line2:" + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
+                        displayText += "buf2:" + buffers[1] + " ";
+                        displayText += "line3:" + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
+                        displayText += "buf3:" + buffers[2] + " ";
+                        displayText += "line4:" + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
+                        displayText += "buf4:" + buffers[3] + " ";
+                        displayText += "line5:" + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
+                        displayText += "output:" + output + " ";
                         System.out.println(displayText);
                         outputs[i++] = displayText;
                         stasFailed[12] = false;
@@ -493,13 +537,19 @@ public class GLAP
                             buffers[2] -= 1;
                             assemblyLines[3][0] = 1;
                         }
-                        displayText = "t: " + t + " ";
-                        displayText += "assembly line 4: " + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
-                        displayText += "buffer1: " + buffers[0] + " ";
-                        displayText += "buffer2: " + buffers[1] + " ";
-                        displayText += "buffer3: " + buffers[2] + " ";
-                        displayText += "buffer4: " + buffers[3] + " ";
-                        displayText += "output: " + output + " ";
+                        displayText = "line4 ";
+                        displayText += "infOcn:" + infOcn + " ";
+                        displayText += "t:" + tPrevs[3] + " ";
+                        displayText += "line1:" + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
+                        displayText += "buf1:" + buffers[0] + " ";
+                        displayText += "line2:" + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
+                        displayText += "buf2:" + buffers[1] + " ";
+                        displayText += "line3:" + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
+                        displayText += "buf3:" + buffers[2] + " ";
+                        displayText += "line4:" + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
+                        displayText += "buf4:" + buffers[3] + " ";
+                        displayText += "line5:" + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
+                        displayText += "output:" + output + " ";
                         System.out.println(displayText);
                         outputs[i++] = displayText;
                     }
@@ -511,8 +561,8 @@ public class GLAP
                         else if(stasFailed[21]) {staNumFailed = 22;}
                         else if(stasFailed[22]) {staNumFailed = 23;}
                         else if(stasFailed[23]) {staNumFailed = 24;}
-                        System.out.println("FAILED LINE 4, STATION: " + staNumFailed);
-                        outputs[i++] = "FAILED LINE 4, STATION: " + staNumFailed;
+                        System.out.println("FAILED LINE 4, STATION: " + staNumFailed + " t:" + t);
+                        outputs[i++] = "FAILED LINE 4, STATION: " + staNumFailed + " t:" + t;
                         if(stasFailed[18])
                         {
                             try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
@@ -537,13 +587,19 @@ public class GLAP
                         {
                             try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
                         }
-                        displayText = "t: " + tPrevs[3] + " ";
-                        displayText += "assembly line 4: " + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
-                        displayText += "buffer1: " + buffers[0] + " ";
-                        displayText += "buffer2: " + buffers[1] + " ";
-                        displayText += "buffer3: " + buffers[2] + " ";
-                        displayText += "buffer4: " + buffers[3] + " ";
-                        displayText += "output: " + output + " ";
+                        displayText = "line4 ";
+                        displayText += "infOcn:" + infOcn + " ";
+                        displayText += "t:" + tPrevs[3] + " ";
+                        displayText += "line1:" + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
+                        displayText += "buf1:" + buffers[0] + " ";
+                        displayText += "line2:" + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
+                        displayText += "buf2:" + buffers[1] + " ";
+                        displayText += "line3:" + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
+                        displayText += "buf3:" + buffers[2] + " ";
+                        displayText += "line4:" + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
+                        displayText += "buf4:" + buffers[3] + " ";
+                        displayText += "line5:" + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
+                        displayText += "output:" + output + " ";
                         System.out.println(displayText);
                         outputs[i++] = displayText;
                         stasFailed[18] = false;
@@ -592,13 +648,19 @@ public class GLAP
                             buffers[3] -= 1;
                             assemblyLines[4][0] = 1;
                         }
-                        displayText = "t: " + t + " ";
-                        displayText += "assembly line 5: " + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
-                        displayText += "buffer1: " + buffers[0] + " ";
-                        displayText += "buffer2: " + buffers[1] + " ";
-                        displayText += "buffer3: " + buffers[2] + " ";
-                        displayText += "buffer4: " + buffers[3] + " ";
-                        displayText += "output: " + output + " ";
+                        displayText = "line5 ";
+                        displayText += "infOcn:" + infOcn + " ";
+                        displayText += "t:" + tPrevs[4] + " ";
+                        displayText += "line1:" + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
+                        displayText += "buf1:" + buffers[0] + " ";
+                        displayText += "line2:" + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
+                        displayText += "buf2:" + buffers[1] + " ";
+                        displayText += "line3:" + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
+                        displayText += "buf3:" + buffers[2] + " ";
+                        displayText += "line4:" + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
+                        displayText += "buf4:" + buffers[3] + " ";
+                        displayText += "line5:" + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
+                        displayText += "output:" + output + " ";
                         System.out.println(displayText);
                         outputs[i++] = displayText;
                     }
@@ -610,8 +672,8 @@ public class GLAP
                         else if(stasFailed[27]) {staNumFailed = 28;}
                         else if(stasFailed[28]) {staNumFailed = 29;}
                         else if(stasFailed[29]) {staNumFailed = 30;}
-                        System.out.println("FAILED LINE 5, STATION: " + staNumFailed);
-                        outputs[i++] = "FAILED LINE 5, STATION: " + staNumFailed;
+                        System.out.println("FAILED LINE 5, STATION: " + staNumFailed + " t:" + t);
+                        outputs[i++] = "FAILED LINE 5, STATION: " + staNumFailed + " t:" + t;
                         if(stasFailed[24])
                         {
                             try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
@@ -636,13 +698,18 @@ public class GLAP
                         {
                             try {Thread.sleep(GLAPOptions.DOWN_TIME);} catch(Exception exception) {}
                         }
-                        displayText = "t: " + tPrevs[4] + " ";
-                        displayText += "assembly line 5: " + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
-                        displayText += "buffer1: " + buffers[0] + " ";
-                        displayText += "buffer2: " + buffers[1] + " ";
-                        displayText += "buffer3: " + buffers[2] + " ";
-                        displayText += "buffer4: " + buffers[3] + " ";
-                        displayText += "output: " + output + " ";
+                        displayText = "line5 ";
+                        displayText += "t:" + tPrevs[4] + " ";
+                        displayText += "line1:" + assemblyLines[0][0] + assemblyLines[0][1] + assemblyLines[0][2] + assemblyLines[0][3] + assemblyLines[0][4] + assemblyLines[0][5] + " ";
+                        displayText += "buf1:" + buffers[0] + " ";
+                        displayText += "line2:" + assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5] + " ";
+                        displayText += "buf2:" + buffers[1] + " ";
+                        displayText += "line3:" + assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5] + " ";
+                        displayText += "buf3:" + buffers[2] + " ";
+                        displayText += "line4:" + assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5] + " ";
+                        displayText += "buf4:" + buffers[3] + " ";
+                        displayText += "line5:" + assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5] + " ";
+                        displayText += "output:" + output + " ";
                         System.out.println(displayText);
                         outputs[i++] = displayText;
                         stasFailed[24] = false;
