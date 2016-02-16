@@ -107,6 +107,18 @@ public class GLAP
                     infOcn = 1;
                 }
             }
+            else if(GLAPOptions.half_1_6AndAHalfInfOcn)
+            {
+                if((t > (Constants.SECS_PER_HOUR / 2)) && (t < ((Constants.SECS_PER_HOUR / 2) + Constants.SECS_PER_HOUR)))
+                {
+                    displayText[1] = "FAILED INFINITE OCEAN t: " + t;
+                    System.out.println(displayText[1]);
+                    outputs[i++] = displayText[1];
+                    infOcn = 0;
+                    try {Thread.sleep(Constants.SECS_PER_HOUR);} catch(Exception exception) {}
+                    infOcn = 1;
+                }
+            }
             }
         };
 
