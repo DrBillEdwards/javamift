@@ -6,8 +6,8 @@ public class GLAPOptions
     public static long CYCLE_TIME_SECONDS[] = {47, 50, 53, 56, 60};
     public static double RUN_SECONDS = Constants.SECS_IN_8_HOURS;
     public static long DOWN_TIME = 6;
-    public static int NUM_RUNS = 3;
-    public static boolean lineNumDownTimes[] = {false, false, true, false, false};
+    public static int NUM_RUNS = 100;
+    public static boolean lineNumDownTimes[] = {false, false, false, false, true};
     public static boolean half_1_6AndAHalf = true; // EITHER OR
     public static boolean interjectDownTime = false; // EITHER
     public static boolean interjectDownTimes = false; // OR
