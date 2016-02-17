@@ -21,5 +21,5 @@ hs_err_pid*
 *report*.txt
 *Report*.txt
 
-#/mift/SimpleMiftOptions.java
-#/mift/GLAPOptions.java
+/mift/SimpleMiftOptions.java
+/mift/GLAPOptions.java

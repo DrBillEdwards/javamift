@@ -7,8 +7,13 @@ public class GLAPOptions
     public static double RUN_SECONDS = Constants.SECS_IN_8_HOURS;
     public static long DOWN_TIME = 6;
     public static int NUM_RUNS = 100;
-    public static boolean lineNumDownTimes[] = {false, false, false, false, true};
-    public static boolean half_1_6AndAHalf = true; // EITHER OR
+    public static boolean lineNumDownTimes[] = {true, true, true, true, true};
+    public static boolean half_1_6AndAHalfInfOcn = false;
+    public static boolean half_1_6AndAHalf = false;
+    public static boolean half_1_6_AndAHalfLine2 = false;
+    public static boolean half_1_6_AndAHalfLine3 = true;
+    public static boolean half_1_6_AndAHalfLine4 = false;
+    public static boolean half_1_6_AndAHalfLine5 = true;
     public static boolean interjectDownTime = false; // EITHER
     public static boolean interjectDownTimes = false; // OR
     public static boolean infOceanDownTimes = false; // EITHER
