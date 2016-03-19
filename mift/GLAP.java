@@ -107,7 +107,7 @@ public class GLAP
                     infOcn = 1;
                 }
             }
-            else if(GLAPOptions.half_1_6AndAHalfInfOcn)
+            else if(GLAPOptions.half_20_6AndAHalfInfOcn)
             {
                 if((t > (Constants.SECS_PER_HOUR / 2)) && (t < ((Constants.SECS_PER_HOUR / 2) + Constants.SECS_PER_HOUR)))
                 {
@@ -115,7 +115,7 @@ public class GLAP
                     System.out.println(displayText[1]);
                     outputs[i++] = displayText[1];
                     infOcn = 0;
-                    try {Thread.sleep(Constants.SECS_PER_HOUR);} catch(Exception exception) {}
+                    try {Thread.sleep(Constants.SECS_PER_HOUR / 2);} catch(Exception exception) {}
                     infOcn = 1;
                 }
             }
@@ -193,7 +193,7 @@ public class GLAP
                             try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch(Exception exception) {}
                         }
                     }
-                    else if(GLAPOptions.half_1_6AndAHalf)
+                    else if(GLAPOptions.half_20_6AndAHalf)
                     {
                         if((t >= (Constants.SECS_PER_MIN * 30)) && (t < (Constants.SECS_PER_HOUR)))
                         {
@@ -214,7 +214,7 @@ public class GLAP
                             displayText[2] += "output:" + output + " ";
                             System.out.println(displayText[2]);
                             outputs[i++] = displayText[2];
-                            try {Thread.sleep(Constants.SECS_PER_HOUR);} catch(Exception exception) {}
+                            try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch(Exception exception) {}
                         }
                     }
                     if(buffers[0] < GLAPOptions.BUFFER_MAX[0] && assemblyLines[0][5] == 1)
@@ -337,7 +337,7 @@ public class GLAP
             public void run()
             {
                 numOfPartsInLines[1] = assemblyLines[1][0] + assemblyLines[1][1] + assemblyLines[1][2] + assemblyLines[1][3] + assemblyLines[1][4] + assemblyLines[1][5];
-                if(GLAPOptions.half_1_6_AndAHalfLine2)
+                if(GLAPOptions.half_20_6_AndAHalfLine2)
                 {
                     if ((t >= (Constants.SECS_PER_MIN * 30)) && (t < (Constants.SECS_PER_HOUR)))
                     {
@@ -358,7 +358,7 @@ public class GLAP
                         displayText[3] += "output:" + output + " ";
                         System.out.println(displayText[3]);
                         outputs[i++] = displayText[3];
-                        try {Thread.sleep(Constants.SECS_PER_HOUR);} catch(Exception exception) {}
+                        try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch(Exception exception) {}
                     }
                 }
                 if(((numOfPartsInLines[1] == 0) && (buffers[0] > 0)) || ((t >= (tPrevs[1] + GLAPOptions.CYCLE_TIME_SECONDS[1]))))
@@ -476,7 +476,7 @@ public class GLAP
             public void run()
             {
                 numOfPartsInLines[2] = assemblyLines[2][0] + assemblyLines[2][1] + assemblyLines[2][2] + assemblyLines[2][3] + assemblyLines[2][4] + assemblyLines[2][5];
-                if(GLAPOptions.half_1_6_AndAHalfLine3)
+                if(GLAPOptions.half_20_6_AndAHalfLine3)
                 {
                     if ((t >= (Constants.SECS_PER_MIN * 30)) && (t < (Constants.SECS_PER_HOUR)))
                     {
@@ -497,7 +497,7 @@ public class GLAP
                         displayText[4] += "output:" + output + " ";
                         System.out.println(displayText[4]);
                         outputs[i++] = displayText[4];
-                        try {Thread.sleep(Constants.SECS_PER_HOUR);} catch(Exception exception) {}
+                        try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch(Exception exception) {}
                     }
                 }
                 if(((numOfPartsInLines[2] == 0) && (buffers[1] > 0)) || ((t >= (tPrevs[2] + GLAPOptions.CYCLE_TIME_SECONDS[2]))))
@@ -615,7 +615,7 @@ public class GLAP
             public void run()
             {
                 numOfPartsInLines[3] = assemblyLines[3][0] + assemblyLines[3][1] + assemblyLines[3][2] + assemblyLines[3][3] + assemblyLines[3][4] + assemblyLines[3][5];
-                if(GLAPOptions.half_1_6_AndAHalfLine4)
+                if(GLAPOptions.half_20_6_AndAHalfLine4)
                 {
                     if ((t >= (Constants.SECS_PER_MIN * 30)) && (t < (Constants.SECS_PER_HOUR)))
                     {
@@ -636,7 +636,7 @@ public class GLAP
                         displayText[5] += "output:" + output + " ";
                         System.out.println(displayText[5]);
                         outputs[i++] = displayText[5];
-                        try {Thread.sleep(Constants.SECS_PER_HOUR);} catch(Exception exception) {}
+                        try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch(Exception exception) {}
                     }
                 }
                 if(((numOfPartsInLines[3] == 0) && (buffers[2] > 0)) || ((t >= (tPrevs[3] + GLAPOptions.CYCLE_TIME_SECONDS[3]))))
@@ -754,7 +754,7 @@ public class GLAP
             public void run()
             {
             numOfPartsInLines[4] = assemblyLines[4][0] + assemblyLines[4][1] + assemblyLines[4][2] + assemblyLines[4][3] + assemblyLines[4][4] + assemblyLines[4][5];
-            if(GLAPOptions.half_1_6_AndAHalfLine5)
+            if(GLAPOptions.half_20_6_AndAHalfLine5)
             {
                 if((t >= (Constants.SECS_PER_MIN * 30)) && (t < (Constants.SECS_PER_HOUR)))
                 {
@@ -775,7 +775,7 @@ public class GLAP
                     displayText[6] += "output:" + output + " ";
                     System.out.println(displayText[6]);
                     outputs[i++] = displayText[6];
-                    try {Thread.sleep(Constants.SECS_PER_HOUR);} catch(Exception exception) {}
+                    try {Thread.sleep(Constants.SECS_PER_MIN * 20);} catch(Exception exception) {}
                 }
             }
             if(((numOfPartsInLines[4] == 0) && (buffers[3] > 0)) || ((t >= (tPrevs[4] + GLAPOptions.CYCLE_TIME_SECONDS[4]))))
